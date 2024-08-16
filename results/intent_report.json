@@ -197,7 +197,7 @@
     "support": 4,
     "confused_with": {}
   },
-  "điều kiện theo phương thức riêng": {
+  "điều kiện tuyển thẳng": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
