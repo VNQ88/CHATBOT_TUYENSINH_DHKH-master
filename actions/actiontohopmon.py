@@ -13,7 +13,7 @@ class ActionRecommend(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         conn = DbQueryingMethods.create_connection(db_file="diem2021.db")
-        values = tracker.get_slot("major")
+        values = tracker.get_slot("major").upper()
         major = "Nganh"
 
         get_query_results = DbQueryingMethods.get_info_vaccine(conn=conn,major=major,value=values)
