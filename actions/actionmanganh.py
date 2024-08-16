@@ -13,12 +13,16 @@ class ActionRecommend(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         conn = DbQueryingMethods.create_connection(db_file="diem2021.db")
-        values = tracker.get_slot("major")
+        print("Connected to the database.")
+        if conn is None:
+            print("Failed to connect to the database.")
+        values = tracker.get_slot("major").capitalize()
         major = "Nganh"
 
         get_query_results = DbQueryingMethods.get_info_vaccine(conn=conn,major=major,value=values)
         return_text = DbQueryingMethods.rows_info_as_text(get_query_results)
         dispatcher.utter_message(text=str(return_text))
+        print(f"Truy vấn: Nganh = {values}")
 
         return
 
@@ -37,6 +41,7 @@ class DbQueryingMethods:
         c.execute(f'''select * from diem2021
                   where {major}="{value}"''')
         records = c.fetchall()
+        print(f"Kết quả truy vấn: {records}")
         return records
 
     def rows_info_as_text(records):
@@ -44,6 +49,7 @@ class DbQueryingMethods:
             return f"Không có thông tin mã ngành về ngành này"
         else:
             for result in records:
+                print(result)
                 Nganh = result[1]
                 Ma = result[0]
                 return f" {(result[0])} là mã ngành của ngành {result[1]} ."

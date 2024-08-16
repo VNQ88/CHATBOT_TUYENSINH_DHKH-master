@@ -317,3 +317,10 @@ stories:
   - action: utter_VieclamnganhXahoihoc
 
 
+
+- story: interactive_story_1
+  steps:
+  - intent: chaohoi
+  - action: utter_chaohoi
+  - intent: hocbong
+  - action: utter_hocbong
