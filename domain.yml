@@ -3,141 +3,61 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- chaohoi
-- hocbong
-- tracuu
-- kytucxa
-- chaohoi2
-- thongtintoanbo
-- chaohoi1
-- chon1
-- chon2
-- chon3
-- tohopmon:
-    use_entities: []
-- Manganh:
-    use_entities: []
-- diemchuan2021:
-    use_entities: []
-- cachxettuyenhocba
-- xettuyentheophuongthucrieng
-- xettuyentheophuongthucdiemthiTHPT
-- chaohoithongminh
-- faq
-- tambiet
-- infomation
-- majors
-- hocphi
-- tuyensinh
-- phuongthucrieng
-- phuongthuchocba
-- phuongthucxetdiemthithpt
-- điều kiện xét tuyển học bạ
-- điều kiện xét tuyển theo điểm thi THPT
-- điều kiện theo phương thức riêng
-- benchmark
-- job
-- bot_challenge
-- Vieclam_Baochi:
-    use_entities:
-    - major
-    - job
-- Vieclam_Congnghekythuatdienthu-Vienthong:
-    use_entities:
-    - major
-    - job
-- Vieclam_Congnghekythuathoahoc:
-    use_entities:
-    - major
-    - job
-- Vieclam_Congnghesinhhoc:
-    use_entities:
-    - major
-    - job
-- Vieclam_Congnghethongtin:
-    use_entities:
-    - major
-    - job
-- Vieclam_Congtacxahoi:
-    use_entities:
-    - major
-    - job
-- Vieclam_Diakythuatxaydung:
-    use_entities:
-    - major
-    - job
-- Vieclam_Dongphuonghoc:
-    use_entities:
-    - major
-    - job
-- Vieclam_Hannom:
-    use_entities:
-    - major
-    - job
-- Vieclam_Hoahoc:
-    use_entities:
-    - major
-    - job
-- Vieclam_Khoahocmoitruong:
-    use_entities:
-    - major
-    - job
-- Viemlam_Kientruc:
-    use_entities:
-    - major
-    - job
-- Vieclam_Kythuatphanmem:
-    use_entities:
-    - major
-    - job
-- Vieclam_Kythuattracdiabando:
-    use_entities:
-    - major
-    - job
-- Vieclam_Lichsu:
-    use_entities:
-    - major
-    - job
-- Vieclam_Quanlyantoansuckhoevamoitruong:
-    use_entities:
-    - major
-    - job
-- Vieclam_Quanlynhanuoc:
-    use_entities:
-    - major
-    - job
-- Vieclam_Quanlytainguyenvamoitruong:
-    use_entities:
-    - major
-    - job
-- Vieclam_Quantrivaphantichdulieu:
-    use_entities:
-    - major
-    - job
-- Vieclam_Triethoc:
-    use_entities:
-    - major
-    - job
-- Vieclam_Truyenthongso:
-    use_entities:
-    - major
-    - job
-- Vieclam_Vanhoc:
-    use_entities:
-    - major
-    - job
-- Vieclam_Xahoihoc:
-    use_entities:
-    - major
-    - job
+  - chaohoi
+  - hocbong
+  - tracuu
+  - kytucxa
+  - chaohoi2
+  - thongtintoanbo
+  - chaohoi1
+  - chon1
+  - chon2
+  - chon3
+  - tohopmon:
+      use_entities: [ ]
+  - Manganh:
+      use_entities: [ ]
+  - diemchuan2021:
+      use_entities: [ ]
+  - cachxettuyenhocba
+  - xettuyentheophuongthucrieng
+  - xettuyentheophuongthucdiemthiTHPT
+  - chaohoithongminh
+  - faq
+  - tambiet
+  - infomation
+  - majors
+  - hocphi
+  - tuyensinh
+  - phuongthucrieng
+  - phuongthuchocba
+  - phuongthucxetdiemthithpt
+  - điều kiện xét tuyển học bạ
+  - điều kiện xét tuyển theo điểm thi THPT
+  - điều kiện tuyển thẳng
+  - benchmark
+  - job
+  - bot_challenge
+  - Vieclam_CongNgheThongTin:
+      use_entities:
+        - major
+        - job
+  - Vieclam_AnToanThongTin:
+      use_entities:
+        - major
+        - job
+  - Vieclam_DienTuVienThong:
+      use_entities:
+        - major
+        - job
 entities:
-- code
-- diem
-- job
-- major
-- mon
-- name
-- sex
+  - code
+  - diem
+  - job
+  - major
+  - mon
+  - name
+  - sex
 slots:
   major:
     type: text
@@ -150,388 +70,195 @@ slots:
     influence_conversation: true
 responses:
   utter_toanbo:
-  - text: ' Thông tin tuyển sinh '
-    image: https://i.imgur.com/89IYwu5.png
+    - text: ' Thông tin tuyển sinh '
+      image: https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2021/9/16/954205/Diem-Chuan-Ky-Thuat-.jpg
   utter_manganh:
-  - text: ' Thông tin về mã ngành tuyển sinh '
-    image: https://i.imgur.com/H2c552k.png
+    - text: ' Thông tin về mã ngành tuyển sinh '
+      image: https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2021/9/16/954205/Diem-Chuan-Ky-Thuat-.jpg
   utter_diem:
-  - text: ' Thông tin về điểm chuẩn '
-    image: https://i.imgur.com/Ru3xerL.png
+    - text: ' Thông tin về điểm chuẩn '
+      image: https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2021/9/16/954205/Diem-Chuan-Ky-Thuat-.jpg
   utter_tohopmon:
-  - text: ' Thông tin về tổ hợp môn '
-    image: https://i.imgur.com/B6c05n5.png
+    - text: ' Thông tin về tổ hợp môn '
+      image: https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2021/9/16/954205/Diem-Chuan-Ky-Thuat-.jpg
   utter_thongtintuyensinhnam2021_local:
-  - text: Thông tin về ngành
-    buttons:
-    - title: Thông tin toàn bộ về ngành
-      payload: /thongtintoanbo
-    - title: Điểm 2021
-      payload: /chon1
-    - title: Mã ngành 2021
-      payload: /chon2
-    - title: Tổ hợp môn
-      payload: /chon3
+    - text: Thông tin về ngành
+      buttons:
+        - title: Thông tin toàn bộ về ngành
+          payload: /thongtintoanbo
+        - title: Điểm 2021
+          payload: /chon1
+        - title: Mã ngành 2021
+          payload: /chon2
+        - title: Tổ hợp môn
+          payload: /chon3
   utter_thongtintuyensinhnam2021:
-  - text: Thông tin về ngành
-    buttons:
-    - title: Thông tin toàn bộ về ngành
-      payload: /thongtintoanbo
+    - text: Thông tin về ngành
+      buttons:
+        - title: Thông tin toàn bộ về ngành
+          payload: /thongtintoanbo
   utter_thongtindiemnam2021:
-  - text: thông tin về điểm
-    buttons:
-    - title: Điểm 2021
-      payload: /chon1
+    - text: thông tin về điểm
+      buttons:
+        - title: Điểm 2021
+          payload: /chon1
   utter_thongtinmanganhnam2021:
-  - text: thông tin về ngành
-    buttons:
-    - title: Mã ngành 2021
-      payload: /chon2
+    - text: thông tin về ngành
+      buttons:
+        - title: Mã ngành 2021
+          payload: /chon2
   utter_thongtintohopmonnam2021:
-  - text: thông tin về tổ hợp môn
-    buttons:
-    - title: Tổ hợp môn
-      payload: /chon3
+    - text: thông tin về tổ hợp môn
+      buttons:
+        - title: Tổ hợp môn
+          payload: /chon3
   utter_chaohoithongminh:
-  - text: Kính chào {sex} {name}. Bot có thể giúp gì được cho {sex} {name} ạ !!
+    - text: Kính chào {sex} {name}. Bot có thể giúp gì được cho {sex} {name} ạ !!
   utter_tracuu:
-  - text: 'Bạn có thể xem kết quả tra cứu tại: https://dkxt.hueuni.edu.vn/ketquaxettuyen'
+    - text: 'Bạn có thể xem kết quả tra cứu tại: https://laodong.vn/giao-duc/diem-chuan-2021-cua-hoc-vien-ky-thuat-mat-ma-hoc-vien-toa-an-tang-954205.ldo'
   utter_kytucxa:
-  - text: |2-
-       Trung tâm Phục vụ Sinh viên – Đại học Huế (PVSV) hiện có 03 khu Ký túc xá (KTX) với tổng số khoảng 670 phòng đáp ứng hơn 4.000 chỗ ở phục vụ toàn bộ sinh viên nội trú và lưu học sinh nước ngoài cho các Trường, Khoa, Viện, Trung tâm và các đơn vị của Đại học Huế. Các phòng ở rộng rãi, thoáng mát, công trình phụ khép kín, đảm bảo an ninh, trật tự, tiện lợi cho học sinh, sinh viên (HSSV) Đại học Huế sinh hoạt, học tập, rèn luyện và lưu trú.
-       Đối tượng tiếp nhận ở nội trú tất cả học sinh, sinh viên có nhu cầu ở trong toàn quốc tham gia học tập tại các đơn vị đào tạo của Đại học Huế. Nếu số lượng học sinh, sinh viên đăng ký đông hơn số phòng hiện có thì Trung tâm sẽ xét ưu tiên theo thứ tự quy định của nhà nước (theo Thông tư số 27/2011/TT-BGDĐT ngày 27 tháng 06 năm 2011 của Bộ Giáo dục Đào tạo).
-       1. Ký túc xá Trường Bia: Có 580 phòng, đáp ứng khoảng 3.500 chỗ ở
-       - Địa điểm: KTX Trường Bia, 40,42 Nguyễn Khánh Toàn-TP. Huế (cách nhà thi đấu thể thao Đại học Huế 20m, Trường ĐH Kinh Tế 300m, Trường ĐH Ngoại Ngữ 30m, Trường ĐH Luật 500m.
-       - Địa chỉ liên hệ: BQL KTX Trường Bia, số 40,42 Nguyễn Khánh Toàn, TP. Huế.
-       - Điện thoại: 02343.816.109.
-       2. Ký túc xá Đống Đa: Có 30 phòng, đáp ứng được khoảng 350 chỗ
-       - Địa điểm: 32 Lê Hồng Phong – Huế (cách trường ĐH Khoa Học 500m, ĐH Y Dược 1500m, ĐH Sư phạm 1.5km).
-       - Địa chỉ liên hệ: BQL KTX Đống Đa, số 32 Lê Hồng Phong – TP. Huế.
-       - Điện thoại: 02343.822.972.
-       3. Ký túc xá Tây Lộc: Có 60 phòng, đáp ứng được khoảng 460 chỗ
-       - Địa điểm: 100 Trần Văn Kỷ– Huế (cách trường ĐH Nông Lâm 500m, ĐH  Nghệ thuật 700m).
-       - Địa chỉ liên hệ: BQL KTX Tây Lộc, số 100 Trần Văn Kỷ – TP. Huế.
-       - Điện thoại: 02343.516.240.
+    - text: |2-
+         Hiện tại Học viện Kỹ thuật Mật Mã không hỗ trợ kí túc xá cho các bạn thi xét tuyển hệ dân sự, bạn có thể tìm kiếm chỗ ở từ rất nhiều khu nhà trọ xung quanh trường.
   utter_hocbong:
-  - text: |-
-      - Thủ khoa của ngành có điểm đầu vào từ 25.00 điểm trở lên (không tính điểm ưu tiên, chưa nhân hệ số) được cấp học bổng trị giá 100% học phí theo ngành trúng tuyển cho học kỳ đầu tiên. Học bổng được chi trả vào đầu học kỳ 2, năm thứ nhất.
-       - Thủ khoa của ngành có điểm đầu vào từ 23.00 đến dưới 25.00 điểm (không tính điểm ưu tiên, chưa nhân hệ số) được cấp học bổng trị giá 50% học phí theo ngành trúng tuyển cho học kỳ đầu tiên. Học bổng được chi trả vào đầu học kỳ 2, năm thứ nhất.
-       - Sinh viên có điểm đầu vào từ 23.00 điểm trở lên (không tính điểm ưu tiên, chưa nhân hệ số) được cấp học bổng trị giá 25% học phí theo ngành trúng tuyển cho học kỳ đầu tiên. Học bổng được chi trả được chi trả vào đầu học kỳ 2, năm thứ nhất.
-       - Sinh viên được xem xét cấp học bổng hỗ trợ tham gia chương trình Career Design với trị giá 250 triệu/sinh viên từ dự án KIS GE Internship Program.
-
-       - Sinh viên thủ khoa toàn trường (xét theo kết quả thi THPT) được cấp 10.000.000 đồng từ các nguồn học bổng khuyến khích học tập, nhà tài trợ.
-       - Học bổng khuyến khích học tập do nhà trường quy định.
-  - text: 'Chính sách học bổng riêng cho từng ngành:'
-    image: https://i.imgur.com/3phNMVL.png
+    - text: |-
+        - Hiện nay, học viên Kỹ thuật Mật Mã có 3 loại học bổng:
+        - Học bổng du học: học bổng du học gồm học bổng của Ban Cơ yếu Chính phủ và học bổng của Bộ Giáo dục và Đào tạo, học bổng bao gồm 100% tiền học phí và phí sinh hoạt, sinh viên được sắp xếp công việc phù hợp tại cơ quan, đơn vị sau khi tốt nghiệp.
+        - Thời gian xét: kết thúc học kỳ 1 của năm học đầu tiên của khóa học.
+        - Chỉ tiêu: Học viện Kỹ thuật mật mã có tổng 20-30 chỉ tiêu (cho cả cơ sở Hà Nội và Phân hiệu Học viện KTMM tại TP. Hồ Chí Minh)
+        - Yêu cầu: Chỉ xét cho các sinh viên năm thứ nhất; sinh viên thuộc TOP điểm tổng kết học kỳ 1 của năm học đầu tiên của khóa học; sinh viên thuộc TOP điểm đầu vào; sinh viên chấp hành kỷ luật tốt.
+        - Học bổng học kỳ: quỹ học bổng khuyến khích học tập được bố trí tối thiểu bằng 8% nguồn thu học phí của trường, các thông tin chi tiết:
+        - Thời gian xét: kết thúc học kỳ
+        - Học bổng loại xuất sắc: bằng số tiền học phí của 1 học kỳ (5 tháng) x 1,4
+        - Học bổng loại giỏi: bằng số tiền học phí của 1 học kỳ (5 tháng) x 1,2
+        - Học bổng loại khá: bằng số tiền học phí của 1 học kỳ (5 tháng)  
+        - Yêu cầu: sinh viên học lực khá trở lên; không thi lại môn nào; chấp hành kỷ luật tốt.
+        - Học bổng khuyến học: hàng năm trường trao suất học bổng dành cho các sinh viên có hoàn cảnh khó khăn, có ý chí vươn lên trong học tập, đạt kết quả học tập tốt.
+        - Phân hiệu Học viện Kỹ thuật mật mã tại TP. Hồ Chí Minh thực hiện các chế độ miễn giảm học phí cho sinh viên theo các quy định hiện hành.
   utter_chaohoi:
-  - text: Chào bạn. Mình là Chatbot hỗ trợ tư vấn tuyển sinh Học viện Kĩ thuật Mật mã. Bạn cần tư vấn về vấn đề gì?
+    - text: Chào bạn. Mình là Chatbot hỗ trợ tư vấn tuyển sinh Học viện Kĩ thuật Mật mã. Bạn cần tư vấn về vấn đề gì?
   utter_fallback:
-  - text: |-
-      Xin lỗi, Tôi chưa hiểu ý muốn của bạn ạ. Bạn có thể nói lại được không ạ
-       - Bạn có thể tham khảo các câu hỏi thường gặp ở website tư vấn tuyển sinh của Trường Đại học Khoa học tại http://127.0.0.1:8000/home/hoi-dap/
-       - Hoặc xem thêm thông tin tuyển sinh tại website: https://tuyensinh.husc.edu.vn/ - Ngoài ra bạn có thể tra cứu các câu hỏi thường gặp ở website tư vấn tuyển sinh của Đại Học Huế : https://tuyensinh.hueuni.edu.vn/Consultant
+    - text: |-
+        Xin lỗi, Tôi chưa hiểu ý muốn của bạn ạ. Bạn có thể nói lại được không ạ
+         - Bạn có thê xem thêm thông tin tuyển sinh tại website: https://tuyensinh.actvn.edu.vn/ - Ngoài ra bạn có thể tra cứu các thông tin của người học tại website chính của học viện: https://actvn.edu.vn/
   utter_tambiet:
-  - text: Cám ơn bạn đã đến đây.Tạm biệt bạn
+    - text: Cám ơn bạn đã đến đây.Tạm biệt bạn
   utter_info1:
-  - text: Trường Đại học Khoa học , Đại học Huế (ĐHKH) là một đơn vị đào tạo và nghiên cứu có uy tín và bề dày thành tích ở khu vực miền Trung và Tây Nguyên. Với lịch sử hơn 63 năm xây dựng và phát triển (1957 – 2020), Trường ĐHKH hiện nay đã xây dựng được một mô hình giáo dục hiện đại, đa dạng ngành nghề, nhiều tiềm năng hợp tác quốc tế và liên kết với các doanh nghiệp. Nhà trường có 15 khoa, 05 trung tâm nghiên cứu, 01 viện nghiên cứu. Đội ngũ giảng viên, cán bộ của Trường hiện nay có 03 giáo sư, 44 phó giáo sư, 67 tiến sĩ và 197 nghiên cứu sinh, thạc sĩ; đã đạt nhiều thành tích trong giảng dạy, nghiên cứu khoa học và ứng dụng, chuyển giao công nghệ với hơn 1.535 đề tài khoa học cùng nhiều bài báo quốc tế có uy tín. Trong đó, có 22 đề tài hợp tác quốc tế, 4 đề tài cấp Nhà nước, 159 đề tài nghiên cứu cơ bản, 312 đề tài cấp Bộ và cấp Bộ trọng điểm, 108 đề tài cấp Tỉnh và các đề tài cơ sở. Cơ sở vật chất của Nhà trường đang không ngừng hiện đại hóa nhằm bắt kịp với xu thế giáo dục trong nền văn minh công nghiệp 4.0.
-  utter_info2:
-  - text: Trường ĐHKH hiện có 09 tòa nhà đã và đang được xây dựng, với 92 phòng học đạt tiêu chuẩn. Trong đó, có 12 phòng học được trang bị hệ thống nghe nhìn hiện đại; 47 phòng thí nghiệm cơ bản, phòng thí nghiệm chuyên đề, phòng tư liệu và phòng bảo tàng; 08 phòng thực hành máy tính và 01 thư viện trung tâm. Các phòng thí nghiệm được xây dựng hiện đại, thư viện có nguồn tài liệu bao gồm sách, báo, tạp chí… đáp ứng tốt cho công tác đào tạo và nghiên cứu khoa học của cán bộ, sinh viên, học viên của Trường. Ngoài ra, Nhà trường còn có hệ thống căng tin, nhà ở dành cho chuyên gia, giảng viên thỉnh giảng, học viên khang trang, hiện đại phục vụ dạy học. Hiện nay, trong bối cảnh toàn cầu hóa tri thức, nền công nghiệp 4.0 đang diễn ra mạnh mẽ, mọi lĩnh vực đều hướng đến hội nhập quốc tế sâu rộng, Trường ĐHKH đã nhanh chóng đổi mới chương trình dạy và học theo hướng tự chủ, phát huy tối đa tính nhân văn, sáng tạo, khai phóng. Vấn đề cấp bách hiện nay đặt ra được Lãnh đạo Nhà trường cùng toàn thể giảng viên, cán bộ hết sức quan tâm, đó là vấn đề chất lượng đầu ra và cơ hội việc làm cho người học nói chung (sinh viên, học viên cao học, nghiên cứu sinh).
+    - text: 'Học viện Kỹ thuật Mật mã là một trường đại học công lập trực thuộc Ban Cơ yếu Chính phủ của Bộ Quốc phòng, được thành lập ngày 17 tháng 2 năm 1995 có chức năng đào tạo cán bộ có trình độ đại học, sau đại học và nghiên cứu khoa học kỹ thuật mật mã của ngành Cơ yếu Việt Nam.'
   utter_info3:
-  - text: |2-
-       Địa chỉ 77 Nguyễn Huệ, TP. Huế
-       Số điện thoại (0234) 3823290
-       Email: khcndhkh@hueuni.edu.vn
-       Facebook: facebook.com/husc.edu.vn
+    - text: |2-
+         Địa chỉ 141 Chiến Thắng, Tân Triều, Thanh Trì, Hà Nội
+         Năm thành lập: 1995
+         Số điện thoại: 024 3854 4244
+         Email: kma@vnn.vn
+         Là bộ phận của: Ban Cơ yếu Chính phủ của Bộ Quốc phòng
+         Facebook: facebook.com/hocvienkythuatmatma
   utter_majors:
-  - text: |2-
-       Các khoa ngành trường đang đào tạo:
-       - Báo chí
-       - Công nghệ kỹ thuật điện tử - Viễn thông
-       - Công nghệ kỹ thuật hóa học
-       - Công nghệ sinh học
-       - Công nghệ thông tin
-       - Công tác xã hội
-       - Đông phương học
-       - Hán - Nôm
-       - Hoá học
-       - Khoa học môi trường
-       - Kiến trúc
-       - Kỹ thuật địa chất
-       - Kỹ thuật môi trường
-       - Kỹ thuật phần mềm (Cơ chế đặc thù)
-       - Kỹ thuật trắc địa - bản đồ
-       - Lịch sử
-       - Quản lý an toàn, sức khỏe và môi trường - Quản lý nhà nước
-       - Quản lý tài nguyên và môi trường
-       - Quản trị và phân tích dữ liệu
-       - Triết học
-       - Truyền thông số
-       - Văn học
-       - Xã hội học
+    - text: |2-
+         Các khoa ngành học viện đang đào tạo:
+         - Công nghệ thông tin
+         - An toàn thông tin
+         - Điện tử viễn thông
   utter_hocphi:
-  - text: |2
-       Khoa học Xã hội: 320.000đ/tín chỉ. Tổng 9.600.000đ/năm
-       Khoa học tự nhiên và Công nghệ:385.000đ/tín chỉ. Tổng khoảng  11.550.000đ/năm
+    - text: |2
+         Hiện tại, tiền học phí chung của học viện là 450.000đ/tín chỉ. Tổng 8.550.000đ/kỳ
   utter_tuyensinh:
-  - text: |
-      Bạn muốn hỏi về việc đăng ký xét tuyển theo phương thức nào? Phương thức riêng, phương thức học bạ hay phương thức xét điểm tốt nghiệp? https://i.imgur.com/qNEAziK.jpg
-       https://i.imgur.com/GjQUK2q.jpg
-       https://i.imgur.com/3QrwOd9.jpg
-    image: https://i.imgur.com/eMAsNZf.jpg
-  utter_dieukientheophuongthucrieng:
-  - text: |2-
-       Xét tuyển theo phương thức riêng 
-       Trường Đại học Khoa học ưu tiên xét tuyển đối với thí sinh thỏa mãn một trong các tiêu chí sau:
-       - Đoạt giải nhất, nhì, ba trong các kỳ thi học sinh giỏi cấp tỉnh, thành phố trực thuộc trung ương trở lên các năm 2021, 2022 (môn đoạt giải phải thuộc tổ hợp môn xét tuyển);
-       - Học sinh của các trường THPT chuyên trên cả nước có điểm học bạ theo tổ hợp xét tuyển đạt từ 21.0 điểm trở lên.
-       - Học sinh của các trường THPT có học lực năm học lớp 12 đạt danh hiệu học sinh giỏi trở lên;
-       - Có chứng chỉ Tiếng Anh (còn thời hạn đến ngày nộp hồ sơ đăng ký xét tuyển) IELTS ≥ 5.0 hoặc TOEFL iBT ≥ 60 hoặc TOEFL ITP ≥ 500 đối với những ngành.
+    - text: |
+        Hiện tại học viện kỹ thuật mật mã có 2 phương thức xét tuyển:
+        - Sử dụng kết quả kỳ thi THPT Quốc gia (Được cộng điểm ưu tiên nếu có Chứng chỉ IELTS, TOEIC hoặc TOEFL iBT)
+        - Xét tuyển thẳng
+        Bạn đang hỏi xét tuyển theo phương thức nào?
+  utter_dieukientuyenthang:
+    - text: |2-
+         Thí sinh đoạt giải nhất, nhì, ba trong kỳ thi chọn học sinh giỏi Quốc gia (điều kiện: môn được giải là Toán hoặc Tin học hoặc giải thưởng sáng tạo về khoa học công nghệ cấp Quốc gia), đã tốt nghiệp Trung học phổ thông.
   utter_cachxettuyentheophuongthucrieng:
-  - text: |2-
-       - Hồ sơ đăng ký xét tuyển: Phiếu ĐKXT theo mẫu (thí sinh có thể tải tại địa chỉ: https://bit.ly/MAUDONXETTUYENRIENG); bản sao Giấy chứng nhận đạt giải, học bạ, chứng chỉ, … theo quy định của từng trường.
-       - Lệ phí xét tuyển: Thí sinh được miễn lệ phí xét tuyển.
-       - Thời gian nộp hồ sơ ĐKXT: Từ ngày 22/4/2022 đến 17h00 ngày 25/6/2022.
-       - Địa chỉ nộp hồ sơ ĐKXT: Thí sinh chuyển phát nhanh (EMS) qua đường Bưu điện theo địa chỉ: Ban Đào tạo và Công tác sinh viên Đại học Huế, số 01 Điện Biên Phủ, thành phố Huế, tỉnh Thừa Thiên Huế (thời gian nộp qua EMS được tính theo dấu bưu điện).
-       CÔNG BỐ KẾT QUẢ XÉT TUYỂN: 
-       Dự kiến trước 17h00 ngày 30/6/2022. 
+    - text: |2-
+         - Hồ sơ đăng ký xét tuyển: Phiếu ĐKXT theo mẫu (thí sinh có thể tải tại địa chỉ: https://bit.ly/MAUDONXETTUYENRIENG); bản sao Giấy chứng nhận đạt giải, học bạ, chứng chỉ, … theo quy định của từng trường.
+         - Lệ phí xét tuyển: Thí sinh được miễn lệ phí xét tuyển.
+         - Thời gian nộp hồ sơ ĐKXT: Từ ngày 22/4/2022 đến 17h00 ngày 25/6/2022.
+         - Địa chỉ nộp hồ sơ ĐKXT: Thí sinh chuyển phát nhanh (EMS) qua đường Bưu điện theo địa chỉ: Ban Đào tạo và Công tác sinh viên Học viện Kỹ thuật Mật Mã, số 141 Chiến Thắng, Tân Triều, Thanh Trì, Hà Nội (thời gian nộp qua EMS được tính theo dấu bưu điện).
+         CÔNG BỐ KẾT QUẢ XÉT TUYỂN: 
+         Dự kiến trước 17h00 ngày 30/6/2022.
   utter_dieukienxettuyendiemthi:
-  - text: |2
-
-      Điểm các môn trong tổ hợp môn xét tuyển là điểm thi của các môn đó trong kỳ thi tốt nghiệp THPT năm 2021. Điều kiện xét tuyển là tổng điểm 3 môn (chưa nhân hệ số, đã cộng điểm ưu tiên) tối thiểu bằng mức điểm nhận hồ sơ ĐKXT. 
-       - Điểm chuẩn các ngành:  http://tuyensinh.husc.edu.vn/wp-content/uploads/2021/09/1.jpg
-       - Phiếu đăng ký: http://tuyensinh.husc.edu.vn/wp-content/uploads/2021/09/Phieu_DKXT_BSD1_THPT-web.jpg
+    - text: |2
+        Học viện Kỹ thuật Mật Mã sử dụng kết quả kỳ thi THPT Quốc gia năm 2024 do Bộ GD&ĐT tổ chức để xét tuyển. Điểm xét tuyển là tổng điểm của một trong ba tổ hợp môn xét tuyển:
+        - A00: Toán, Vật lí, Hóa học;
+        - A01: Toán, Vật lí, Tiếng Anh;
+        - D90: Toán, Khoa học tự nhiên, Tiếng Anh.
+        Ngoài điểm ưu tiên theo quy chế tuyển sinh hiện hành, Học viện cộng thêm điểm ưu tiên với thí sinh (sử dụng kết quả kỳ thi THPT Quốc gia để xét tuyển) có chứng chỉ tiếng Anh quốc tế (còn giá trị sử dụng tính đến ngày xét tuyển), theo 3 mức ưu tiên như sau:
+        - Chứng chỉ IELTS từ 5.5 – 6.0 hoặc TOEIC từ 650 đến dưới 750 hoặc TOEFL iBT từ 65 đến dưới 80 : 1,5 điểm;
+        - Chứng chỉ IELTS từ 6.5 – 7.0  hoặc TOEIC từ 750 đến dưới 850 hoặc TOEFL iBT từ 80 đến dưới 95: 2,0 điểm;
+        - Chứng chỉ IELTS từ 7.5 trở lên hoặc TOEIC từ 850 trở lên hoặc TOEFL iBT từ 95 trở lên: 2,5 điểm;
+        Điều kiện dự tuyển:
+        - Tốt nghiệp THPT và đủ điều kiện được xét tuyển vào đại học theo quy định của Bộ Giáo dục và Đào tạo.
   utter_cachxettuyendiemthi:
-  - text: |2
-       Với trực tiếp: Hồ sơ đăng ký xét tuyển gồm có: -	Phiếu ĐKXT theo mẫu đính kèm; 
-       -	Bản chính Giấy chứng nhận kết quả thi tốt nghiệp THPT năm 2021;
-       -	Bản chính Giấy chứng nhận kết quả thi năng khiếu (đối với thí sinh ĐKXT vào các ngành năng khiếu);
-       -	Lệ phí xét tuyển: Thí sinh được miễn lệ phí xét tuyển.
-       Với trực tuyến: - Thí sinh ĐKXT xét tuyển trực tuyến tại địa chỉ: http://dkxt.hueuni.edu.vn. Thí sinh trúng tuyển sẽ nộp bản chính các hồ sơ liên quan (ở mục 1) khi làm thủ tục nhập học tại trường
-       - Thời gian: Từ ngày 23/9/2021 đến 17g00 ngày 05/10/2021
-       - Địa điểm (đối với hình thức ĐKXT trực tiếp):
-       Thí sinh nộp hồ sơ ĐKXT bằng cách gửi chuyển phát nhanh (EMS) qua đường bưu điện về Ban Đào tạo và Công tác sinh viên Đại học Huế, số 01 đường Điện Biên Phủ, phường Vĩnh Ninh, thành phố Huế, tỉnh Thừa Thiên Huế.
-       - Công bố kết quả: Dự kiến trước 17h00 ngày 07 tháng 10 năm 2021.
+    - text: |2
+         Với trực tiếp: Hồ sơ đăng ký xét tuyển gồm có: -	Phiếu ĐKXT theo mẫu đính kèm; 
+         -	Bản chính Giấy chứng nhận kết quả thi tốt nghiệp THPT năm 2021;
+         -	Bản sao Giấy chứng chỉ tiếng anh (đối với thí sinh có chứng chỉ tiếng anh được quy định);
+         -	Lệ phí xét tuyển: Thí sinh được miễn lệ phí xét tuyển.
+         Với trực tuyến: - Thí sinh ĐKXT xét tuyển trực tuyến tại địa chỉ: http://dkxt.hueuni.edu.vn. Thí sinh trúng tuyển sẽ nộp bản chính các hồ sơ liên quan (ở mục 1) khi làm thủ tục nhập học tại trường
+         - Thời gian: Theo kế hoạch hỗ trợ tuyển sinh chung cho các cơ sở giáo dục đại học của Bộ Giáo dục và Đào tạo;
+         - Địa điểm (đối với hình thức ĐKXT trực tiếp):
+         Thí sinh nộp hồ sơ ĐKXT bằng cách gửi chuyển phát nhanh (EMS) qua đường bưu điện về Ban Đào tạo và Công tác sinh viên Học viện Kỹ thuật Mật Mã, số 141 Chiến Thắng, Tân Triều, Thanh Trì, Hà Nội.
+         - Công bố kết quả: Dự kiến trước 17h00 ngày 07 tháng 10 năm 2021.
   utter_dieukienxethocba:
-  - text: |
-      Sử dụng kết quả học tập các môn trong tổ hợp môn xét tuyển ở cấp THPT của 02 học kỳ năm học lớp 11 và học kỳ I năm học lớp 12 để xét tuyển. Điểm các môn trong tổ hợp môn xét tuyển là điểm trung bình chung (làm tròn đến 1 chữ số thập phân) mỗi môn học của 02 học kỳ năm học lớp 11 và học kỳ I năm học lớp 12, điểm xét tuyển là tổng điểm các môn trong tổ hợp môn xét tuyển cộng với điểm ưu tiên theo khu vực và đối tượng nếu có (làm tròn đến 2 chữ số thập phân). Điều kiện xét tuyển là tổng điểm các môn trong tổ hợp môn xét tuyển phải ≥ 18,0 (chưa nhân hệ số).
+    - text: |
+        Hiện tại Học viện Kỹ thuật Mật Mã không cung cấp phương thức xét tuyển bằng học bạ.
   utter_cachxettuyenhocba:
-  - text: |2-
-       - Thí sinh có thể truy cập địa chỉ http://dkxt.hueuni.edu.vn và làm theo hướng dẫn ở trang chủ để thực hiện ĐKXT trực tuyến.
-       - Lệ phí xét tuyển: Thí sinh được miễn lệ phí xét tuyển.
-       - Thời gian ĐKXT trực tuyến: Từ ngày 22/4/2022 đến 17h00 ngày 25/6/2022.
-       CÔNG BỐ KẾT QUẢ XÉT TUYỂN: 
-       Dự kiến trước 17h00 ngày 30/6/2022.
+    - text: |2-
+         Hiện tại Học viện Kỹ thuật Mật Mã không cung cấp phương thức xét tuyển bằng học bạ.
   utter_reg_ask:
-  - text: |2
-       Bạn hỏi về điều kiện xét tuyển hay phương thức xét tuyển?
+    - text: |2
+         Hiện tại Học viện Kỹ thuật Mật Mã không cung cấp phương thức xét tuyển bằng học bạ.
   utter_benchmark:
-  - text: ''
-    image: https://i.imgur.com/7BjgJ2G.jpg
+    - text: ''
+      image: https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2021/9/16/954205/Diem-Chuan-Ky-Thuat-.jpg
   utter_iamabot:
-  - text: '- mình là auto chatbot, mình có khả năng trả lời các câu hỏi về tuyển sinh của trường đại học khoa học'
+    - text: '- mình là auto chatbot, mình có khả năng trả lời các câu hỏi về tuyển sinh của trường Học viện Kỹ thuật Mật Mã'
   utter_job:
-  - text: Bạn muốn hỏi công việc cho ngành đào tạo nào?
-  utter_VieclamBaochi:
-  - text: |2-
+    - text: Bạn muốn hỏi công việc cho ngành đào tạo nào?
 
-       - Sinh viên tốt nghiệp có thể làm việc trong các lĩnh vực và vị trí sau:
-       - Chuyên viên gia công, phát triển và kiểm thử phần mềm, thiết kế Website tại các công ty phần mềm trong và ngoài nước;
-       - Chuyên viên tư vấn và thiết kế giải pháp mạng, giải pháp công nghệ thông tin, vận hành và phát triển các hệ thống thông tin cho các cơ quan và doanh nghiệp;
-       - Chuyên viên phân tích, thiết kế, cài đặt, quản trị, bảo trì các phần mềm máy tính trong các tổ chức, doanh nghiệp;
-       - Giảng dạy về ngành Công nghệ thông tin tại các trường đại học, cao đẳng, trung cấp  chuyên nghiệp, dạy nghề và các trường phổ thông.
-       
-  utter_VieclamnganhCongnghekythuatdientu-Vienthong:
-  - text: |-
-      Sinh viên tốt nghiệp có thể làm việc trong các lĩnh vực và vị trí sau:
-       Chuyên viên tư vấn, thiết kế, vận hành, điều hành kỹ thuật tại các đài phát thanh, đài truyền hình, các công ty hoạt động trong lĩnh vực đa phương tiện;
-       Chuyên viên thiết kế, quy hoạch mạng và tối ưu mạng, quản lý mạng, vận hành hệ thống mạng và hệ thống viễn thông tại các công ty viễn thông;
-       Chuyên viên thiết kế và viết chương trình phần mềm cho các thiết bị điện tử thông minh như điện thoại di động, rô bốt, xe ô tô, đầu thu truyền hình kỹ thuật số,…, kiểm thử phần mềm nhúng tại các công ty phần mềm, trung tâm nghiên cứu phát triển của những hãng công nghệ lớn;
-       Chuyên viên vận hành, bảo dưỡng thiết bị y tế, thiết kế hệ thống thông tin y tế;
-       Chuyên viên vận hành, quản lý hệ thống dẫn đường và kiểm soát không lưu, trạm mặt đất, bảo dưỡng các thiết bị điện tử trên máy bay,... cho các công ty hoạt động trong lĩnh vực điện tử hàng không - vũ trụ;
-       Giám đốc kỹ thuật, Trưởng bộ phận kỹ thuật tại các công ty, doanh nghiệp hoạt động trong lĩnh vực điện tử, viễn thông, truyền thông.
-  utter_VieclamnganhCongnghekythuathoahoc:
-  - text: |-
-      Sinh viên tốt nghiệp có thể làm việc trong các lĩnh vực và vị trí sau:
-       Kỹ sư phụ trách kỹ thuật, quản lý chất lượng, phát triển sản phẩm tại các đơn vị sản xuất trong lĩnh vực công nghệ kỹ thuật hóa học
-       Kỹ sư phụ trách tư vấn, thiết kế tại các đơn vị chuyển giao công nghệ, cung cấp thiết bị, vật tư, phụ gia, hóa chất trong lĩnh vực công nghệ kỹ thuật hóa học;
-       Chuyên viên tại các cơ quan quản lý có liên quan đến công nghệ kỹ thuật hóa học;
-       Chuyên viên nghiên cứu về công nghệ kỹ thuật hóa học ở các viện nghiên cứu, trung tâm và cơ quan nghiên cứu của các bộ, ngành, trường đại học và cao đẳng;
-       Giảng viên các trường đại học, cao đẳng, trung học chuyên nghiệp, dạy nghề.
-  utter_VieclamnganhCongnghesinhhoc:
-  - text: |2-
+  utter_ViecLamNganhCongNgheThongTin:
+    - text: |-
+        Sinh viên tốt nghiệp ngành Công nghệ Thông tin có thể làm việc trong các lĩnh vực và vị trí sau:
+         - Chuyên viên phát triển phần mềm, ứng dụng di động, và web tại các công ty công nghệ.
+         - Chuyên viên quản trị hệ thống, quản trị cơ sở dữ liệu, và bảo mật thông tin tại các doanh nghiệp, tổ chức.
+         - Kỹ sư hệ thống, kỹ sư mạng tại các công ty viễn thông, trung tâm dữ liệu.
+         - Chuyên viên phát triển hệ thống nhúng, thiết kế phần mềm cho các thiết bị điện tử thông minh tại các công ty phần mềm và công ty sản xuất thiết bị điện tử.
+         - Chuyên viên phân tích dữ liệu, khoa học dữ liệu tại các tổ chức tài chính, ngân hàng, và công ty khởi nghiệp.
+         - Giám đốc kỹ thuật, Trưởng bộ phận công nghệ thông tin tại các công ty, tập đoàn.
+         - Chuyên viên phát triển trí tuệ nhân tạo, máy học, và các hệ thống thông minh tại các trung tâm nghiên cứu, doanh nghiệp công nghệ cao.
 
-       - Sinh viên tốt nghiệp có thể làm việc trong các lĩnh vực và vị trí sau:
-       - Cán bộ kỹ thuật, cán bộ kiểm nghiệm ở Bệnh viện, Sở Công an, Sở Y tế, Xí nghiệp dược phẩm, Trung tâm phân tích, cơ sở nuôi trồng thủy sản, khu chế xuất, các cơ sở sản xuất nuôi cấy mô, cơ sở chế biến thực phẩm;
-       - Cán bộ kỹ thuật tại cácTrung tâm chuyển giao công nghệ và phát triển sản xuất: nuôi cấy mô, giống cây trồng và vật nuôi, nuôi trồng và chế biến các loại nấm, chế biến thực phẩm, công nghệ bảo quản sản phẩm sau thu hoạch, dược phẩm (sản xuất, chế biến thuốc, vacxin), xử lý môi trường;
-       - Giảng dạy và nghiên cứu tại các viện nghiên cứu, trường đại học, cao đẳng và trung cấp chuyên nghiệp.
-       
-  utter_VieclamnganhCongnghethongtin:
-  - text: |-
-      Sinh viên tốt nghiệp có thể làm việc trong các lĩnh vực và vị trí sau:
-       Chuyên viên gia công, phát triển và kiểm thử phần mềm, thiết kế Website tại các công ty phần mềm trong và ngoài nước;
-       Chuyên viên tư vấn và thiết kế giải pháp mạng, giải pháp công nghệ thông tin, vận hành và phát triển các hệ thống thông tin cho các cơ quan và doanh nghiệp;
-       Chuyên viên phân tích, thiết kế, cài đặt, quản trị, bảo trì các phần mềm máy tính trong các tổ chức, doanh nghiệp;
-       Giảng dạy về ngành Công nghệ thông tin tại các trường đại học, cao đẳng, trung cấp chuyên nghiệp, dạy nghề và các trường phổ thông.
-  utter_VieclamnganhCongtacxahoi:
-  - text: |-
-      Sinh viên tốt nghiệp có thể làm việc trong các lĩnh vực và vị trí sau:
-       Chuyên viên tại các cơ quan Nhà nước, các trung tâm và tổ chức tư nhân trong các lĩnh vực về lao động, việc làm, tiền lương, tổ chức nhân sự, thương binh - xã hội, bà mẹ - trẻ em, hoạt động xã hội - phong trào, tổ chức sự kiện xã hội;
-       Chuyên viên các chương trình dự án, tổ chức phi chính phủ (NGO) quốc tế và địa phương, tham gia nghiên cứu và phát triển chính sách hỗ trợ xã hội ở các cấp;
-       Làm việc độc lập với vai trò như là một cán bộ hoạch định chính sách, nhân viên xã hội, một kiểm huấn viên, một chuyên gia tâm lý, hay một nhà nghiên cứu…;
-       Giảng dạy và nghiên cứu khoa học trong các viện nghiên cứu, các trường đại học, cao đẳng và trung cấp chuyên nghiệp.
-  utter_VieclamnganhDiakythuatxaydung:
-  - text: |-
-      Trong chương trình đào tạo theo định hướng thực hành thực tế, sinh viên sẽ được hướng dẫn thực tập hiện trường trong 2 năm đầu. Trong năm 3 và năm 4, sinh viên sẽ thực tập công việc chuyên môn tại các công ty xây dựng và có cơ hội được tuyển dụng trước khi tốt nghiệp. 100% sinh viên tốt nghiệp sẽ được giới thiệu và đảm bảo công việc đúng chuyên môn với thu nhập ổn định. Sinh viên tốt nghiệp có thể làm việc trong các lĩnh vực và vị trí sau:
-       Cán bộ quản lý nhà nước trong các Sở, Ban ngành có liên quan đến lĩnh vực Xây dựng, Tài nguyên khoáng sản và môi trường…;
-       Cán bộ kỹ thuật và quản lý thuộc Công ty và các tập đoàn đa quốc gia về Tư vấn, khảo sát, thiết kế, kiểm định các công trình xây dựng, lĩnh vực địa chất khoáng sản và tài nguyên nước;
-       Cán bộ kỹ thuật và quản lý Phòng thí nghiệm thuộc lĩnh vực Địa chất công trình - Địa kỹ thuật;
-       Cán bộ tư vấn và điều hành dự án đầu tư cơ sở hạ tầng, khai thác mỏ…;
-       Cán bộ kỹ thuật và quản lý các doanh nghiệp cung cấp thiết bị, các giải pháp xây dựng nền móng công trình và vật liệu xây dựng tái chế;
-       Giảng viên và nghiên cứu viên tại các trường đại học, cao đẳng và viện nghiên cứu về lĩnh vực xây dựng, địa chất khoáng sản và tài nguyên nước;
-       Khởi nghiệp thành lập các doanh nghiệp hoạt động trong lĩnh vực tư vấn thiết kế - thi công - kiểm định công trình xây dựng, tư vấn - khai thác và đánh giá tác động môi trường hoạt động khai thác mỏ nói chung và vật liệu xây dựng nói riêng.
-  utter_VieclamnganhDongphuonghoc:
-  - text: |-
-      Sinh viên tốt nghiệp có thể làm việc trong các lĩnh vực và vị trí sau:
-       Làm việc tại các cơ quan ban ngành Nhà nước từ Trung ương đến địa phương về lịch sử, văn hóa, xã hội, ngoại giao, an ninh - quốc phòng; các cơ sở ngoại giao, học viện, trường chính trị, cơ quan tuyên giáo, công ty nước ngoài, công ty du lịch, chương trình, dự án, tổ chức phi chính phủ;
-       Chuyên viên tổng hợp văn phòng, nhân sự, kinh doanh, hướng dẫn viên du lịch… cho các tổ chức tư nhân, công ty, doanh nghiệp trong các lĩnh vực du lịch, lữ hành, văn hóa, xã hội, đối ngoại;
-       Làm việc tại các nước trong khu vực châu Á (Nhật Bản, Hàn Quốc, Trung Quốc, Thái Lan, Malaysia, Singapore…) theo các chương trình, dự án hợp tác của Chính phủ hoặc các công ty, cơ quan nghiên cứu, ngoại giao, du lịch… ở nước ngoài.
-  utter_VieclamnganhHanNom:
-  - text: |-
-      Sinh viên tốt nghiệp có thể làm việc trong các lĩnh vực và vị trí sau:
-       Cán bộ nghiên cứu tại Sở Khoa học và Công nghệ, các Viện nghiên cứu, Trung tâm khoa học xã hội và nhân văn;
-       Cán bộ, nhân viên tại các cơ quan bảo tồn, bảo tàng, Sở Văn hóa;
-       Hướng dẫn viên du lịch tại các trung tâm di tích;
-       Thông dịch viên tại các công ty có sử dụng tiếng Trung;
-       Biên tập viên tại các cơ quan báo chí, nhà xuất bản;
-       Giảng dạy tại các trường đại học, cao đẳng và trung cấp chuyên nghiệp.
-  utter_VieclamnganhHoahoc:
-  - text: |-
-      Sinh viên tốt nghiệp có thể làm việc trong các lĩnh vực và vị trí sau:
-       Chuyên viên nghiên cứu, tư vấn tại các viện, trung tâm nghiên cứu, các cơ quan quản lý liên quan đến hóa học, hóa học môi trường...;
-       Chuyên viên quản lý, kỹ thuật, kiểm tra chất lượng sản phẩm tại các công ty, nhà máy sản xuất liên quan đến lĩnh vực hóa học (sản xuất vật liệu xây dựng, chế biến thực phẩm, mỹ phẩm, dược phẩm, bảo vệ và kiểm soát chất lượng môi trường...);
-       Giảng viên các trường đại học, cao đẳng, trung học phổ thông và trung học chuyên nghiệp.
-  utter_VieclamnganhKhoahocmoitruong:
-  - text: |-
-      Sinh viên tốt nghiệp có thể làm việc trong các lĩnh vực và vị trí sau:
-       Chuyên viên trong các cơ quan Nhà nước như: Bộ Tài nguyên - Môi trường (TN-MT), Tổng cục Môi trường, Sở TN-MT, Chi cục Bảo vệ Môi trường, Phòng TN-MT huyện thị xã, Sở Y tế, Trung tâm Y tế dự phòng, Bệnh viện, Trung tâm Bảo tồn thiên nhiên, các Vườn Quốc gia, Trung tâm Tư vấn môi trường, các tổ chức phi chính phủ, các dự án liên quan đến TN-MT;
-       Nghiên cứu viên ở các cơ quan nghiên cứu như: Viện Khoa học Công nghệ, Trung tâm TN-MT thuộc hệ thống Viện Khoa học và Công nghệ Việt Nam, các Hiệp hội Khoa học Công nghệ;
-       Sĩ quan, chiến sĩ ở các phòng cảnh sát môi trường;
-       Cán bộ quản lý, kỹ thuật ở các doanh nghiệp về môi trường như: Công ty Môi trường Đô thị, Công ty cấp thoát nước, Công ty hạ tầng Khu đô thị;
-       Giảng dạy tại các trường đại học, cao đẳng và trung cấp chuyên nghiệp.
-  utter_VieclamnganhKientruc:
-  - text: |-
-      Sinh viên tốt nghiệp ngành Kiến trúc được cấp bằng Kiến trúc sư, có thể làm việc trong các lĩnh vực và vị trí sau:
-       Tự khởi nghiệp với vai trò chủ đầu tư, nhà thiết kế, thi công kiến trúc - quy hoạch - nội thất - vật liệu;
-       Cán bộ trong các tổ chức chính trị - xã hội - nghề nghiệp, các doanh nghiệp Nhà nước, tư nhân và nước ngoài (đặc biệt tại Nhật Bản và Hàn Quốc);
-       Kiến trúc sư tư vấn, thiết kế công trình kiến trúc dân dụng và công nghiệp, thiết kế nội thất, thiết kế quy hoạch, thiết kế bảo tồn và cảnh quan, giám sát thi công các công trình kiến trúc;
-       Chuyên viên tư vấn, điều phối, xây dựng, thẩm định và đánh giá dự án;
-       Giảng dạy và nghiên cứu tại các cơ sở giáo dục đào tạo và các Viện, trung tâm nghiên cứu, các trường đại học liên quan đến chuyên ngành Kiến trúc - Quy hoạch - Nội thất - xây dựng.
-  utter_VieclamnganhKythuatphanmem:
-  - text: |-
-      Sinh viên tốt nghiệp có thể làm việc trong các lĩnh vực và vị trí sau:
-       Làm việc trong các công ty sản xuất, gia công phần mềm trong nước cũng như nước ngoài; các công ty tư vấn về đề xuất giải pháp, xây dựng và bảo trì các hệ thống thông tin;
-       Chuyên viên phân tích, thiết kế, cài đặt, quản trị, bảo trì các phần mềm máy tính trong các tổ chức, doanh nghiệp;
-       Cán bộ quản lý, chuyên viên phụ trách mảng ứng dụng công nghệ thông tin của các cơ quan hành chính sự nghiệp, ngân hàng, viễn thông, hàng không, xây dựng,…;
-       Giảng dạy về ngành Công nghệ thông tin tại các trường đại học, cao đẳng và trung cấp chuyên nghiệp.
-  utter_VieclamnganhKythuattracdiabando:
-  - text: |-
-      Sau khi ra trường, các tân kỹ sư ngành Kỹ thuật Trắc địa - Bản đồ có thể làm việc tại các cơ quan, doanh nghiệp, cụ thể như sau:
-       Cục đo đạc và bản đồ Việt Nam - Bộ Tài nguyên và Môi trường; Nhà xuất bản Tài nguyên - Môi trường và bản đồ Việt Nam; Cục bản đồ Bộ tổng tham mưu;...
-       Các Sở (cấp tỉnh): Sở Tài nguyên và Môi trường; Sở Nông nghiệp và Phát triển Nông thôn, Sở Xây dựng, Sở Kế hoạch và Đầu tư; Sở Giao thông Vận tải; Sở Khoa học và Công nghệ, Viện Quy hoạch,…
-       Ban Quản lý Dự án các Khu kinh tế; Khu công nghiệp; Ban quản lý các dự án thuộc các tổ chức trong và ngoài nước liên quan đến Môi trường đô thị, công nghiệp, nông thôn, biến đổi khí hậu, tai biến thiên nhiên…
-       Các phòng (cấp huyện): Phòng Tài nguyên và Môi trường; Văn phòng Ủy ban.
-       Các trung tâm: Trung tâm Quan trắc và Phân tích Môi trường; Trung tâm Môi trường ở các khu công nghiệp, thành phố; Trung tâm Kiểm định, các phòng thí nghiệm phân tích, quan trắc và đánh giá chất lượng môi trường; Trung tâm Nước sạch và Vệ sinh môi trường; Trung tâm Tư vấn xây dựng và dịch vụ môi trường.
-       Các viện, trung tâm, các trường đại học, cao đẳng liên quan đến lĩnh vực tài nguyên và môi trường (Viện Tài nguyên & Môi trường, Viện Hàn lâm Khoa học và Công nghệ, Trường Đại học Tài nguyên và Môi trường, Trường Đại học Khoa học...).
-       Các công ty, doanh nghiệp hoạt động trong lĩnh vực tài  nguyên và Môi trường, trắc địa, khảo sát trắc địa, địa hình,...
-       Có nhiều cơ hội khởi nghiệp trong lĩnh vực số hóa không gian, thực tại ảo… phục vụ cách mạng 4.0;
-       Mức lương ngành Kỹ thuật Trắc địa - Bản đồ đối với những sinh viên mới ra trường khoảng từ 7 - 8 triệu/tháng và sau một hai năm kinh nghiệm có thể lên tới 10 - 12 triệu/tháng; với những kỹ sư ở vị trí cấp quản lý dự án có thể đạt tới 20 - 30 triệu/tháng.
-  utter_VieclamnganhLichsu:
-  - text: |-
-      Sinh viên tốt nghiệp có thể làm việc trong các lĩnh vực và vị trí sau:
-       Làm việc tại các cơ quan, ban ngành Nhà nước từ Trung ương đến địa phương về lịch sử, văn hóa, xã hội, du lịch, quân sự, ngoại vụ;
-       Cán bộ viên chức của các tổ chức Chính trị - xã hội (Trường chính trị, Mặt trận Tổ quốc, Viện kiểm sát, Tòa án, Hội Phụ nữ, Đoàn Thanh niên, Công đoàn…);
-       Cán bộ viên chức của các tổ chức Văn hóa - xã hội (cơ quan báo chí, sở, ban, ngành văn hóa, bảo tàng, hội khoa học kỹ thuật…);
-       Cán bộ viên chức của các tổ chức An ninh - quốc phòng (quân đội , công an);…
-       Làm việc cho các chương trình, dự án, các tổ chức phi chính phủ, các công ty về văn hóa - xã hội, du lịch, lữ hành, quảng cáo, sự kiện, từ thiện, nhận đạo, môi trường;
-       Giảng dạy và nghiên cứu lịch sử Việt Nam, lịch sử thế giới, nhân học, khảo cổ và văn hóa du lịch trong các trường đại học, cao đẳng và trung cấp chuyên nghiệp.
-  utter_VieclamnganhQuanlyantoansuckhoevamoitruong:
-  - text: |-
-      Sinh viên tốt nghiệp có thể làm việc trong các lĩnh vực và vị trí sau:
-       - Các doanh nghiệp, khu công nghiệp (bộ phận an toàn và sức khỏe nghề nghiệp,  bộ phận quản lý chất lượng môi trường );
-       - Công ty tư vấn môi trường;
-       - Cơ quan quản lý nhà nước (Bộ/Sở Lao Động – Thương binh và xã hội, Bộ/Sở Tài nguyên và Môi trường, Tổng liên đoàn lao động Việt Nam, Chi cục bảo vệ môi trường, Cảnh sát môi trường, Trung tâm quan trắc môi trường, Phòng tài nguyên và môi trường); - Các cơ quan nghiên cứu và đào tạo (Các viện nghiên cứu về môi trường và các trường đại học, cao đẳng, ...);
-       - Chuyên viên/chuyên gia  tại các tổ chức phi chính phủ. 
-       - Lương ngành HSE Về mức lương, cán bộ an toàn lao động HSE có khoảng lương phổ biến vào khoảng từ 10 – 13 triệu đồng/tháng. Khi đã có nhiều kinh nghiệm và đảm nhiệm vị trí quản lý HSE tại các công ty, tập đoàn lớn, chuyên viên  HSE sẽ có mức lương rất hấp dẫn, từ 17 – 37 triệu đồng/tháng.
-  utter_VieclamnganhQuanlynhanuoc:
-  - text: |-
-      Sinh viên tốt nghiệp có thể làm việc trong các lĩnh vực và vị trí sau:
-       Lãnh đạo, quản lý, chuyên viên hành chính các khu vực công và khu vực tư, đặc biệt là hệ thống chính quyền ở cấp xã, huyện, tỉnh và Trung ương;
-       Nghiên cứu viên về khoa học hành chính, khoa học quản lý ở các cơ sở nghiên cứu, các cơ quan tham mưu hoạch định chiến lược, chính sách của Đảng và Nhà nước;
-       Giảng dạy về khoa học hành chính, cán bộ hành chính, khoa học quản lý tại các cơ sở đào tạo, bồi dưỡng cán bộ hành chính;
-       Có cơ hội học tập, nâng cao trình độ chuyên môn ở bậc sau đại học chuyên ngành Quản lý nhà nước, Hành chính công, Quản lý công, Chính trị học.
-  utter_VieclamnganhQuanlytainguyenvamoitruong:
-  - text: |-
-      Sinh viên tốt nghiệp có thể làm việc trong các lĩnh vực và vị trí sau:
-       Theo quyết định số 1216/QĐ-TTg ký ngày 22/7/2011 của Thủ tướng Chính phủ thì nhu cầu nhân lực ngành này khoảng 300 cán bộ đại học/năm;
-       Cán bộ quản lý về lĩnh vực tài nguyên, môi trường cho các cơ quan quản lý Nhà nước như các Bộ, Sở, Phòng Tài nguyên và Môi trường, Chi cục Bảo vệ Môi trường;
-       Cán bộ quản lý đất đai ở các xã, phường, thị trấn;
-       Cán bộ quản lý môi trường ở các công ty, nhà máy, xí nghiệp;
-       Giảng dạy và nghiên cứu tại các trường đại học, viện nghiên cứu liên quan đến tài nguyên và môi trường, giảm nhẹ thiên tai, thích ứng với biến đổi khí hậu…
-  utter_Quantrivaphantichdulieu:
-  - text: |-
-      Sinh viên tốt nghiệp có thể làm việc trong các lĩnh vực và vị trí sau:
-       Chuyên viên quản trị, phân tích, phát triển và tích hợp cơ sở dữ liệu;
-       Chuyên viên khai phá dữ liệu và xây dựng mô hình;
-       Chuyên viên phân tích thống kê, phân tích kinh doanh;
-       Quản lý (trưởng phòng/ giám đốc) phân tích dữ liệu;
-       Chuyên viên trong các cơ quan hành chính nhà nước hay tư nhân, hỗ trợ các công việc kỹ thuật về xử lý dữ liệu, thống kê và làm các quyết định;
-       Chuyên viên trong các tổ chức, công ty kinh doanh, quản lý và xử lý các tập dữ liệu phát sinh mỗi ngày;
-       Chuyên viên và nghiên cứu tại các viện và trung tâm lớn của quốc gia và cấp tỉnh về xử lý dữ liệu;
-       Trở thành giảng viên và chuyên gia trong các lĩnh vực xử lý dữ liệu, big data hay khoa học dữ liệu.
-  utter_VieclamnganhTriethoc:
-  - text: |-
-      Sinh viên tốt nghiệp có thể làm việc trong các lĩnh vực và vị trí sau:
-       Chuyên viên tại các cơ quan Nhà nước, trong hệ thống chính trị, chính quyền các cấp, các tổ chức Đảng, Đoàn thể như: Văn phòng Chính phủ, Mặt trận Tổ quốc, Công đoàn, Đoàn Thanh niên, Hội Liên hiệp Phụ nữ, Hội Nông dân...;
-       Làm công tác tham mưu trong các cơ quan, tổ chức chính trị - xã hội, các tổ chức kinh tế Nhà nước và tư nhân;
-       Nghiên cứu viên ở các cơ quan lý luận chính trị, các Viện nghiên cứu thuộc lĩnh vực xã hội;
-       Chuyên viên phân tích, bình luận, viết bài về chính trị, thời sự ở các báo, đài Trung ương và địa phương;
-       Giảng dạy tại các trường đại học, cao đẳng và trung cấp chuyên nghiệp.
-  utter_VieclamnganhTruyenthongso:
-  - text: |-
-      Sinh viên tốt nghiệp có thể làm việc trong các lĩnh vực và vị trí sau:
-       Phóng viên, Biên tập viên tại các cơ quan thông tấn báo chí.
-       Quản lý, biên tập, xây dựng các nội dung tác phẩm truyền thông, báo chí tại các công ty truyền thông, các cơ quan báo chí, các doanh nghiệp và các cơ quan nhà nước.
-       Thiết kế sản phẩm game, kỹ xảo điện ảnh, hoạt hình tại các công ty quảng cáo, doanh nghiệp.
-       Chuyên gia thiết kế, tư vấn quảng cáo, thiết kế nhãn hiệu sản phẩm, thiết kế logo, làm phim quảng cáo, bộ nhận dạng thương hiệu tại các công ty quảng cáo.
-       Thiết kế, xây dựng website, thiết kế giao diện, thiết kế chức năng, xây dựng nội dung (tại các công ty phát triển phần mềm, tạo dựng website).
-       Thiết kế đồ họa, mô phỏng, ứng dụng tại các công ty thiết kế đồ họa.
-       Giảng dạy tại các cơ sở đào tạo, giáo dục đại học. Cao đẵng hoặc trung cấp chuyên nghiệp có liên quan đến ngành.
-  utter_VieclamnganhVanhoc:
-  - text: |-
-      Sinh viên tốt nghiệp có thể làm việc trong các lĩnh vực và vị trí sau:
-       Cán bộ nghiên cứu tại Sở Khoa học và Công nghệ, các Viện nghiên cứu, Trung tâm khoa học xã hội và nhân văn;
-       Phóng viên, biên tập viên ở các cơ quan báo chí - truyền thông, nhà xuất bản;
-       Nhân viên văn thư, văn phòng, cán bộ hành chính trong các cơ quan Đảng, Nhà nước và doanh nghiệp tư nhân;
-       Hướng dẫn viên du lịch tại các trung tâm di tích;
-       Nhân viên tại các trung tâm tổ chức sự kiện;
-       Giảng dạy tại các trường đại học, cao đẳng và trung cấp chuyên nghiệp.
-  utter_VieclamnganhXahoihoc:
-  - text: |-
-      Sinh viên tốt nghiệp có thể làm việc trong các lĩnh vực và vị trí sau:
-       Cán bộ nghiên cứu tại Sở Khoa học và Công nghệ, các Viện nghiên cứu, Trung tâm khoa học xã hội và nhân văn;
-       Phóng viên, biên tập viên ở các cơ quan báo chí - truyền thông, nhà xuất bản;
-       Nhân viên văn thư, văn phòng, cán bộ hành chính trong các cơ quan Đảng, Nhà nước và doanh nghiệp tư nhân;
-       Hướng dẫn viên du lịch tại các trung tâm di tích;
-       Nhân viên tại các trung tâm tổ chức sự kiện;
-       Giảng dạy tại các trường đại học, cao đẳng và trung cấp chuyên nghiệp.
+  utter_ViecLamNganhAnToanThongTin:
+    - text: |-
+        Sinh viên tốt nghiệp ngành An toàn Thông tin có thể làm việc trong các lĩnh vực và vị trí sau:
+         - Chuyên viên bảo mật thông tin, phân tích và quản lý rủi ro bảo mật tại các doanh nghiệp, tổ chức.
+         - Kỹ sư bảo mật mạng, thiết kế và triển khai các giải pháp bảo mật cho hệ thống mạng và dữ liệu.
+         - Chuyên viên phân tích và điều tra sự cố bảo mật, phản ứng với các cuộc tấn công mạng tại các công ty bảo mật, tổ chức chính phủ.
+         - Chuyên viên kiểm thử bảo mật, thực hiện các bài kiểm tra và đánh giá lỗ hổng bảo mật cho các hệ thống phần mềm và phần cứng.
+         - Quản trị viên an ninh hệ thống, quản lý và bảo trì các hệ thống bảo mật, giám sát các hoạt động để đảm bảo an toàn thông tin.
+         - Giám đốc an ninh thông tin (CISO), lãnh đạo và xây dựng chiến lược bảo mật cho các tổ chức lớn.
+         - Chuyên viên tư vấn bảo mật, cung cấp các giải pháp và dịch vụ tư vấn bảo mật cho các doanh nghiệp và tổ chức.
+
+  utter_ViecLamNganhDienTuVienThong:
+    - text: |-
+        Sinh viên tốt nghiệp ngành Điện tử Viễn thông có thể làm việc trong các lĩnh vực và vị trí sau:
+         - Kỹ sư thiết kế và phát triển hệ thống viễn thông, bao gồm các thiết bị mạng, trạm phát sóng và các công nghệ liên quan.
+         - Chuyên viên quản trị mạng, thiết kế, cài đặt và bảo trì các hệ thống mạng và thiết bị viễn thông.
+         - Kỹ sư hệ thống viễn thông, làm việc với các công ty viễn thông để triển khai và duy trì các hệ thống truyền thông và dữ liệu.
+         - Chuyên viên phát triển phần mềm nhúng và ứng dụng cho các thiết bị viễn thông như điện thoại di động, bộ định tuyến, và thiết bị truyền thông.
+         - Kỹ sư mạng, giám sát và tối ưu hóa hiệu suất mạng, đảm bảo sự ổn định và an toàn của hệ thống.
+         - Kỹ sư bảo trì và hỗ trợ kỹ thuật cho các thiết bị và hệ thống viễn thông tại các công ty cung cấp dịch vụ viễn thông.
+         - Chuyên viên phân tích và phát triển các giải pháp công nghệ mới trong lĩnh vực điện tử và viễn thông.
+
 actions:
-- action_Manganh
-- action_diemchuan2021
-- action_template
-- action_template2
-- action_template3
-- action_templatetong
-- action_tohopmon
-- utter_chaohoi
-- utter_hocbong
-- utter_chaohoithongminh
+  - action_Manganh
+  - action_diemchuan2021
+  - action_template
+  - action_template2
+  - action_template3
+  - action_templatetong
+  - action_tohopmon
+  - utter_chaohoi
+  - utter_hocbong
+  - utter_chaohoithongminh

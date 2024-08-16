@@ -1,443 +1,303 @@
 version: "2.0"
 nlu:
-- intent: thongtintoanbo
-  examples: |
-    - Thông tin toàn bộ của các ngành đào tạo
-    - thông tin toàn bộ của các ngành đào tạo
-    - all ngành đào tạo
-    - tất cả thông tin về các ngành đào tạo
-- intent: chaohoi1
-  examples: |
-    - hi thầy
-    - hi cô
-    - hi bạn
-    - hi ad
-    - cho em hỏi về thông tin tuyển sinh các năm trước
-    - Thầy ơi, cho em hỏi thông tin tuyển sinh các năm trước
-    - Cô ơi , cho em hỏi thông tin truyển sinh các năm trước
-    - Chào thầy, em hỏi thông tin tuyển sinh các năm trước
-    - Chào cô, cho em hỏi thông tin tuyển sinh các năm trước
-    - Cô có thể cho em biết thông tin tuyển sinh các năm trước
-    - Thưa thầy
-- intent: chaohoi2
-  examples: |
-    - chào admin cho em hỏi thông tin tuyển sinh các năm trước
-    - chào local cho em hỏi thông tin tuyển sinh các năm trước
-    - admin có thể cho em biết thông tin tuyển sinh các năm trước
-    - chào bot cho tôi hỏi thông tin tuyển sinh các năm trước
-    - admin
-    - chào local
-    - chào admin
-- intent: chon1
-  examples: |
-    - Điểm của các ngành
-    - điểm của các ngành
-    - điểm của ngành
-    - điểm của các ngành đào tạo
-- intent: chon2
-  examples: |
-    - Mã của các ngành
-    - mã của các ngành
-    - Mã của ngành
-    - Mã của các ngành đào tạo
-- intent: chon3
-  examples: |
-    - Tổ hợp môn của các ngành
-    - tổ hợp môn của các ngành
-    - Tổ hợp môn của ngành đào tạo
-    - tổ hợp môn của các ngành đào tạo
-- intent: Manganh
-  examples: |
-    - [Mã ngành](code) [Công nghệ thông tin](major)
-    - [Mã ngành](code) [An toàn thông tin](major)
-    - [Mã ngành](code) [Điện tử viễn thông](major)
-    - Ngành [Công nghệ thông tin](major) có [mã](code) là gì?
-    - Ngành [An toàn thông tin](major) có [mã](code) là gì?
-    - Ngành [Điện tử viễn thông](major) có [mã](code) là gì?
-    - [Công nghệ thông tin](major) có [mã ngành](code) là gì?
-    - [An toàn thông tin](major) có [mã ngành](code) là gì?
-    - [Điện tử viễn thông](major) có [mã ngành](code) là gì?
+  - intent: thongtintoanbo
+    examples: |
+      - Thông tin toàn bộ của các ngành đào tạo
+      - thông tin toàn bộ của các ngành đào tạo
+      - all ngành đào tạo
+      - tất cả thông tin về các ngành đào tạo
+  - intent: chaohoi1
+    examples: |
+      - cho em hỏi về thông tin tuyển sinh các năm trước
+      - Thầy ơi, cho em hỏi thông tin tuyển sinh các năm trước
+      - Cô ơi , cho em hỏi thông tin truyển sinh các năm trước
+      - Chào thầy, em hỏi thông tin tuyển sinh các năm trước
+      - Chào cô, cho em hỏi thông tin tuyển sinh các năm trước
+      - Cô có thể cho em biết thông tin tuyển sinh các năm trước
+  - intent: chaohoi2
+    examples: |
+      - chào admin cho em hỏi thông tin tuyển sinh các năm trước
+      - chào local cho em hỏi thông tin tuyển sinh các năm trước
+      - admin có thể cho em biết thông tin tuyển sinh các năm trước
+      - chào bot cho tôi hỏi thông tin tuyển sinh các năm trước
+  - intent: chon1
+    examples: |
+      - Điểm của các ngành
+      - điểm của các ngành
+      - điểm của ngành
+      - điểm của các ngành đào tạo
+  - intent: chon2
+    examples: |
+      - Mã của các ngành
+      - mã của các ngành
+      - Mã của ngành
+      - Mã của các ngành đào tạo
+  - intent: chon3
+    examples: |
+      - Tổ hợp môn của các ngành
+      - tổ hợp môn của các ngành
+      - Tổ hợp môn của ngành đào tạo
+      - tổ hợp môn của các ngành đào tạo
+  - intent: Manganh
+    examples: |
+      - [Mã ngành](code) [Công nghệ thông tin](major)
+      - [Mã ngành](code) [An toàn thông tin](major)
+      - [Mã ngành](code) [Điện tử viễn thông](major)
+      - Ngành [Công nghệ thông tin](major) có [mã](code) là gì?
+      - Ngành [An toàn thông tin](major) có [mã](code) là gì?
+      - Ngành [Điện tử viễn thông](major) có [mã](code) là gì?
+      - [Công nghệ thông tin](major) có [mã ngành](code) là gì?
+      - [An toàn thông tin](major) có [mã ngành](code) là gì?
+      - [Điện tử viễn thông](major) có [mã ngành](code) là gì?
 
-- intent: tohopmon
-  examples: |
-    - [Tổ hợp môn xét tuyển ngành](code) [Hán - Nôm](major) năm 2021
-    - [Tổ hợp môn xét tuyển ngành](code) [Triết học](major) năm 2021
-    - [Tổ hợp môn xét tuyển ngành](code) [Lịch sử](major) năm 2021
-    - [Tổ hợp môn xét tuyển ngành](code) [Văn học](major) năm 2021
-    - [Tổ hợp môn xét tuyển ngành](code) [Quản lý nhà nước](major) năm 2021
-    - [Tổ hợp môn xét tuyển ngành](code) [Xã hội học](major) năm 2021
-    - [Tổ hợp môn xét tuyển ngành](code) [Đông phương học](major) năm 2021
-    - [Tổ hợp môn xét tuyển ngành](code) [Báo chí](major) năm 2021
-    - [Tổ hợp môn xét tuyển ngành](code) [Công nghệ sinh học](major) năm 2021
-    - [Tổ hợp môn xét tuyển ngành](code) [Kỹ thuật sinh học](major) năm 2021
-    - [Tổ hợp môn xét tuyển ngành](code) [Hoá học]{"entity": "major", "value": "H\u00f3a h\u1ecdc"} năm 2021
-    - [Tổ hợp môn xét tuyển ngành](code) [Khoa học môi trường](major) năm 2021
-    - [Tổ hợp môn xét tuyển ngành](code) [Toán ứng dụng](major) năm 2021
-    - [Tổ hợp môn xét tuyển ngành](code) [Kỹ thuật phần mềm](major) năm 2021
-    - [Tổ hợp môn xét tuyển ngành](code) [Quản trị và phân tích dữ liệu](major) năm 2021
-    - [Tổ hợp môn xét tuyển ngành](code) [Công nghệ thông tin](major) năm 2021
-    - [Tổ hợp môn xét tuyển ngành](code) [Công nghệ kỹ thuật điện tử - Viễn thông](major) năm 2021
-    - [Tổ hợp môn xét tuyển ngành](code) [Công nghệ kỹ thuật hoá học](major) năm 2021
-    - [Tổ hợp môn xét tuyển ngành](code) [Kỹ thuật môi trường](major) năm 2021
-    - [Tổ hợp môn xét tuyển ngành](code) [Kỹ thuật địa chất](major) năm 2021
-    - [Tổ hợp môn xét tuyển ngành](code) [Kiến trúc](major) năm 2021
-    - [Tổ hợp môn xét tuyển ngành](code) [Công tác xã hội](major) năm 2021
-    - [Tổ hợp môn xét tuyển ngành](code) [Quản lý tài nguyên và môi trường](major) năm 2021
-- intent: diemchuan2021
-  examples: |
-    - [Điểm ngành](code) [Công nghệ thông tin](major) năm 2021
-    - [Điểm ngành](code) [An toàn thông tin](major) năm 2021
-    - [Điểm ngành](code) [Điện tử viễn thông](major) năm 2021
-    - Ngành [Công nghệ thông tin](major) có [điểm chuẩn](code) là bao nhiêu?
-    - Ngành [An toàn thông tin](major) có [điểm chuẩn](code) là bao nhiêu?
-    - Ngành [Điện tử viễn thông](major) có [điểm chuẩn](code) là bao nhiêu?
-    - [Công nghệ thông tin](major) có [điểm chuẩn](code) là bao nhiêu?
-    - [An toàn thông tin](major) có [điểm chuẩn](code) là bao nhiêu?
-    - [Điện tử viễn thông](major) có [điểm chuẩn](code) là bao nhiêu?
-    - [Công nghệ thông tin](major) năm 2021 lấy bao nhiêu [điểm](code)?
-    - [An toàn thông tin](major) năm 2021 lấy bao nhiêu [điểm](code)?
-    - [Điện tử viễn thông](major) năm 2021 lấy bao nhiêu [điểm](code)?
+  - intent: tohopmon
+    examples: |
+      - [Tổ hợp môn xét tuyển ngành](code) [Công nghệ thông tin](major) năm 2021
+      - [Tổ hợp môn xét tuyển ngành](code) [An toàn thông tin](major) năm 2021
+      - [Tổ hợp môn xét tuyển ngành](code) [Điện tử viễn thông](major) năm 2021
+      - Ngành [Điện tử viễn thông](major) có [Tổ hợp môn xét tuyển ngành](code) là gì
+      - Ngành [An toàn thông tin](major) có [Tổ hợp môn xét tuyển ngành](code) là gì
+      - Ngành [Công nghệ thông tin](major) có [Tổ hợp môn xét tuyển ngành](code) là gì
+  - intent: diemchuan2021
+    examples: |
+      - [Điểm ngành](code) [Công nghệ thông tin](major) năm 2021
+      - [Điểm ngành](code) [An toàn thông tin](major) năm 2021
+      - [Điểm ngành](code) [Điện tử viễn thông](major) năm 2021
+      - Ngành [Công nghệ thông tin](major) có [điểm chuẩn](code) là bao nhiêu?
+      - Ngành [An toàn thông tin](major) có [điểm chuẩn](code) là bao nhiêu?
+      - Ngành [Điện tử viễn thông](major) có [điểm chuẩn](code) là bao nhiêu?
+      - [Công nghệ thông tin](major) có [điểm chuẩn](code) là bao nhiêu?
+      - [An toàn thông tin](major) có [điểm chuẩn](code) là bao nhiêu?
+      - [Điện tử viễn thông](major) có [điểm chuẩn](code) là bao nhiêu?
+      - [Công nghệ thông tin](major) năm 2021 lấy bao nhiêu [điểm](code)?
+      - [An toàn thông tin](major) năm 2021 lấy bao nhiêu [điểm](code)?
+      - [Điện tử viễn thông](major) năm 2021 lấy bao nhiêu [điểm](code)?
 
-- intent: chaohoithongminh
-  examples: |
-    - [Anh](sex) là [Long](name)
-    - [Anh](sex) là [Hoàng Long]{"entity": "name", "value": "Ho\u00e0ngLong"}
-    - [Anh](sex) là [Tiến](name)
-    - [Chị](sex) là [Phước](name)
-    - [Chị](sex) là [Hồng Phước](name)
-    - [Anh](sex) là [Thủy](name)
-    - [Anh](sex) là [Đăng Bình](name)
-- intent: tracuu
-  examples: |
-    - kết quả xét tuyển
-    - cho em xin kết quả xét tuyển
-    - kết quả xét tuyển năm 2022
-    - kết quả xét tuyển năm nay
-    - xem điểm chuẩn
-    - xem điểm chuẩn năm 2022
+  - intent: chaohoithongminh
+    examples: |
+      - [Anh](sex) là [Long](name)
+      - [Anh](sex) là [Hoàng Long]{"entity": "name", "value": "Ho\u00e0ngLong"}
+      - [Anh](sex) là [Tiến](name)
+      - [Chị](sex) là [Phước](name)
+      - [Chị](sex) là [Hồng Phước](name)
+      - [Anh](sex) là [Thủy](name)
+      - [Anh](sex) là [Đăng Bình](name)
+  - intent: tracuu
+    examples: |
+      - kết quả xét tuyển
+      - cho em xin kết quả xét tuyển
+      - kết quả xét tuyển năm 2022
+      - kết quả xét tuyển năm nay
+      - xem điểm chuẩn
+      - xem điểm chuẩn năm 2022
 
-- intent: kytucxa
-  examples: |
-    - cho em biết thông tin về ký túc xá
-    - ký túc xá đại học huế
-    - ký túc xã đại học khoa học
-    - Học ở huế có ký túc xá không
-    - ký túc xa ở Huế như thế nào
-- intent: hocbong
-  examples: |
-    - cho em hỏi học bổng của trường mình như thế nào
-    - thưa thầy, cho em hỏi học bổng của trường mình được trao như thế nào
-    - học bổng
-    - Thông tin về học bổng
-    - Chính sách về học bổng
-    - học bổng của trường
-    - học bổng của trường mình
-    - làm sao để có học bổng?
-    - học bổng của trường như thế nào?
-    - học bổng của trường mình như thế nào?
-    - làm sao để có học bổng của trường mình?
+  - intent: kytucxa
+    examples: |
+      - cho em biết thông tin về ký túc xá
+      - ký túc xá học viện mật mã
+      - Học viện mật mã có ký túc xá không
+      - ký túc xa ở học viện mật mã như thế nào
+      - ký túc xá
+  - intent: hocbong
+    examples: |
+      - cho em hỏi học bổng của trường mình như thế nào
+      - thưa thầy, cho em hỏi học bổng của trường mình được trao như thế nào
+      - học bổng
+      - Thông tin về học bổng
+      - Chính sách về học bổng
+      - học bổng của trường
+      - học bổng của trường mình
+      - làm sao để có học bổng?
+      - học bổng của trường như thế nào?
+      - học bổng của trường mình như thế nào?
+      - làm sao để có học bổng của trường mình?
 
-- intent: chaohoi
-  examples: |
-    - xin chào
-    - xin chao
-    - chào
-    - chào ad
-    - chào bot
-    - hello
-    - hi
-    - alo
-- intent: tambiet
-  examples: |
-    - tạm biệt
-    - bye bye
-    - cám ơn
-    - cám ơn nhiều
-    - pp
-    - bai bai
-    - bai
-    - bye
+  - intent: chaohoi
+    examples: |
+      - admin
+      - chào local
+      - chào admin
+      - Thưa thầy
+      - hi thầy
+      - hi cô
+      - hi bạn
+      - hi ad
+      - xin chào
+      - xin chao
+      - chào
+      - chào ad
+      - chào bot
+      - hello
+      - hi
+      - alo
+  - intent: tambiet
+    examples: |
+      - tạm biệt
+      - bye bye
+      - cám ơn
+      - cám ơn nhiều
+      - pp
+      - bai bai
+      - bai
+      - bye
 
-- intent: bot_challenge
-  examples: |
-    - khả năng của bot
-    - bot có khả năng gì
-    - hãy nêu chức năng của bot
+  - intent: bot_challenge
+    examples: |
+      - khả năng của bot
+      - bot có khả năng gì
+      - hãy nêu chức năng của bot
+      - bạn có thể làm gì
 
-- intent: infomation
-  examples: |
-    - thông tin học viện kĩ thuật mật mã
-    - thông tin trường học viện kĩ thuật mật mã
-    - thông tin về trường
-    - thông tin về học viện
-    - thông tin về KMA
-    - trường có những đặc điểm gì
-    - lịch sử của trường
-    - học viện kĩ thuật mật mã là gì
-    - school infomation
-    - info
-    - KMA là gì
-    - KMA có những gì
+  - intent: infomation
+    examples: |
+      - thông tin học viện kĩ thuật mật mã
+      - thông tin trường học viện kĩ thuật mật mã
+      - thông tin về trường
+      - thông tin về học viện
+      - thông tin về KMA
+      - trường có những đặc điểm gì
+      - lịch sử của trường
+      - học viện kĩ thuật mật mã là gì
+      - school infomation
+      - info
+      - KMA là gì
+      - KMA có những gì
 
-- intent: majors
-  examples: |
-    - trường đào tạo những ngành gì
-    - thông tin ngành
-    - ngành
-    - những ngành trường đào tạo
-    - trường dạy những ngành gì
-    - majors
-    - major
-- intent: hocphi
-  examples: |
-    - học phí của trường là bao nhiêu
-    - học phí tại trường như thế nào
-    - mức học phí
-    - học phí
-    - học phí của ngành tự nhiên
-    - học phí ngành xã hội
-    - học phí hiện tại
-    - học phí năm nay như thế nào
-- intent: tuyensinh
-  examples: |
-    - thông tin đăng ký xét tuyển
-    - cách đăng ký xét tuyển
-    - cho em hỏi cách đăng ký xét tuyển
-    - đăng ký xét tuyển như thế nào
-    - làm sao để đăng ký xét tuyển
-    - làm hồ sơ xét tuyển
-    - nộp hồ sơ xét tuyển
-    - cách gửi hồ sơ xét tuyển
-    - thông tin tuyển sinh
-    - thông tin tuyển sinh năm nay
-    - thông tin tuyển sinh năm 2022
-- intent: phuongthucrieng
-  examples: |
-    - phương thức riêng
-    - tuyển thẳng
-    - phương thức xét tuyển riêng
-    - Phương thức riêng
-    - Phương thức tuyển thẳng
-    - xét tuyển riêng
-    - riêng
-- intent: điều kiện theo phương thức riêng
-  examples: |
-    - điều kiện xét tuyển theo phương thức riêng
-    - các điều kiện để xét tuyển theo phương thức riêng
-    - các điều kiện cần để xét tuyển theo phương thức riêng
-    - các điều kiện cần để xét tuyển theo phương thức tuyển thẳng
-    - điều kiện để được xét tuyển theo phương thức tuyển thẳng
-- intent: xettuyentheophuongthucrieng
-  examples: |
-    - làm thế nào để xét tuyển theo phương thức riêng
-    - cách để xét tuyển theo phương thức riêng
-    - làm cách nào để nộp hồ sơ xét tuyển phương thức riêng
-    - cách để làm hồ sơ nhập học theo phương thức riêng
-- intent: phuongthuchocba
-  examples: |
-    - phương thức học bạ
-    - học bạ
-    - hb
-    - xét tuyển học bạ
-    - xét học bạ
-- intent: điều kiện xét tuyển học bạ
-  examples: |
-    - điều kiện xét tuyển học bạ
-    - các điều kiện để xét tuyển học bạn
-    - các điều kiện cần để xét tuyển học bạ
-    - các điều kiện để có thể xét học bạ
-    - điều kiện để được xét tuyển học bạ
-- intent: cachxettuyenhocba
-  examples: |
-    - làm thế nào để xét theo phương thức học bạ
-    - cách để xét tuyển học bạ
-    - làm cách nào để nộp hồ sơ xét tuyển học bạ
-    - cách để làm hồ sơ nhập học theo phương thức xét tuyển học ba
-    - nhập học học bạ
-    - làm hồ sơ xét tuyển học bạ như thế nào
-- intent: phuongthucxetdiemthithpt
-  examples: |
-    - phương thức điểm thi tốt nghiệp trung học phổ thông
-    - phương thức điểm thi tốt nghiệp
-    - điểm thi
-    - tốt nghiệp
-    - phương thức xét điểm thi tốt nghiệp
-    - phương thức xét điểm thi tốt nghiệp trung học phổ thông
-- intent: điều kiện xét tuyển theo điểm thi THPT
-  examples: |
-    - điều kiện xét tuyển điểm thi THPT
-    - các điều kiện để xét tuyển theo điểm thi THPT
-    - các điều kiện cần để xét tuyển theo điểm thi THPT
-    - các điều kiện cần để có thể xét tuyển theo điểm thi THPT
-    - điều kiện để được xét tuyển theo điểm thi THPT
-- intent: xettuyentheophuongthucdiemthiTHPT
-  examples: |
-    - làm thế nào để xét tuyển theo phương thức điểm thi THPT
-    - cách để xét tuyển theo phương thức lấy điểm thi THPT
-    - làm cách nào để nộp hồ sơ xét tuyển phương thức lấy điểm thi THPT
-    - cách để làm hồ sơ nhập học theo phương thức điểm thi THPT
-- intent: benchmark
-  examples: |
-    - Điểm chuẩn năm 2021
-    - Điểm chuẩn năm trước
-    - Bảng điểm chuẩn năm 2021
-    - Điểm chuẩn các ngành năm 2021
-- intent: job
-  examples: |
-    - Công việc sau khi ra trường
-    - Công việc
-    - [Việc làm](job) sau khi ra trường
-    - Cơ hội việc làm
-    - [Việc làm](job)
-    - Triển vọng nghề nghiệp
-- intent: Vieclam_Baochi
-  examples: |
-    - [Việc làm](job) ngành [Báo chí](major)
-    - Công việc cho ngành [Báo chí](major)
-    - ngành [Báo chí](major) ra làm gì?
-    - Ngành [Báo chí](major) ra trường làm gì?
-- intent: Vieclam_Congnghekythuatdienthu-Vienthong
-  examples: |
-    - [Việc làm](job) ngành [Công nghệ kỹ thuật điện tử - Viễn thông](major)
-    - Công việc cho ngành [Công nghệ kỹ thuật điện tử - Viễn thông](major)
-    - ngành [Công nghệ kỹ thuật điện tử - Viễn thông](major) ra làm gì?
-    - Ngành [Công nghệ kỹ thuật điện tử - Viễn thông](major) ra trường làm gì?
-- intent: Vieclam_Congnghekythuathoahoc
-  examples: |
-    - [Việc làm](job) ngành [Công nghệ kỹ thuật hóa học](major)
-    - Công việc cho ngành [Công nghệ kỹ thuật hóa học](major)
-    - ngành [Công nghệ kỹ thuật hóa học](major) ra làm gì?
-    - Ngành [Công nghệ kỹ thuật hóa học](major) ra trường làm gì?
-- intent: Vieclam_Congnghesinhhoc
-  examples: |
-    - [Việc làm](job) ngành [Công nghệ sinh học](major)
-    - Ngành [Công nghệ sinh học](major) ra trường làm gì?
-    - [Việc làm](job) ngành [Công nghệ sinh học](major) ra trường làm gì
-- intent: Vieclam_Congnghethongtin
-  examples: |
-    - [Việc làm](job) ngành [Công nghệ thông tin](major)
-    - [Việc làm](job) ngành [IT]{"entity": "major", "value": "C\u00f4ng ngh\u1ec7 th\u00f4ng tin"}
-    - Ngành [Công nghệ thông tin](major) ra trường làm gì?
-    - [Việc làm](job) ngành [Công nghệ thông tin](major) trường làm gì
-- intent: Vieclam_Congtacxahoi
-  examples: |
-    - [Việc làm](job) ngành [Công tác xã hội](major)
-    - Công việc cho ngành [Công tác xã hội](major)
-    - ngành [Công tác xã hội](major) ra làm gì?
-    - Ngành [Công tác xã hội](major) ra trường làm gì?
-- intent: Vieclam_Diakythuatxaydung
-  examples: |
-    - [Việc làm](job) ngành [Kỹ thuật xây dựng](major)
-    - Công việc cho ngành [Kỹ thuật xây dựng](major)
-    - ngành [Kỹ thuật xây dựng](major) ra làm gì?
-    - Ngành [Kỹ thuật xây dựng](major) ra trường làm gì?
-- intent: Vieclam_Dongphuonghoc
-  examples: |
-    - [Việc làm](job) ngành [Đông phương học](major)
-    - Công việc cho ngành [Đông phương học](major)
-    - ngành [Đông phương học](major) ra làm gì?
-    - Ngành [Đông phương học](major) ra trường làm gì?
-- intent: Vieclam_Hannom
-  examples: |
-    - [Việc làm](job) ngành [Hán - Nôm](major)
-    - Công việc cho ngành [Hán - Nôm](major)
-    - ngành [Hán - Nôm](major) ra làm gì?
-    - Ngành [Hán - Nôm](major) ra trường làm gì?
-- intent: Vieclam_Hoahoc
-  examples: |
-    - [Việc làm](job) ngành [Hoá học](major)
-    - Công việc cho ngành [Hoá học](major)
-    - ngành [Hoá học](major) ra làm gì?
-    - [Hoá học](major) ra trường làm gì?
-    - Ngành [Hoá học](major) ra trường làm gì?
-    - những công việc mà ngành [Hóa học]{"entity": "major", "value": "Ho\u00e1 h\u1ecdc"} ?
-- intent: Vieclam_Khoahocmoitruong
-  examples: |
-    - [Việc làm](job) ngành [Khoa học môi trường](major)
-    - Công việc cho ngành [Khoa học môi trường](major)
-    - ngành [Khoa học môi trường](major) ra làm gì?
-    - Ngành [Khoa học môi trường](major) ra trường làm gì?
-- intent: Viemlam_Kientruc
-  examples: |
-    - [Việc làm](job) ngành [Kiến trúc](major)
-    - Công việc cho ngành [Kiến trúc](major)
-    - ngành [Kiến trúc](major) ra làm gì?
-    - Ngành [Kiến trúc](major) ra trường làm gì?
-- intent: Vieclam_Kythuatphanmem
-  examples: |
-    - [Việc làm](job) ngành [Kỹ thuật phần mềm](major)
-    - Công việc cho ngành [Kỹ thuật phần mềm](major)
-    - ngành [Kỹ thuật phần mềm](major) ra làm gì?
-    - Ngành [Kỹ thuật phần mềm](major) ra trường làm gì?
-- intent: Vieclam_Kythuattracdiabando
-  examples: |
-    - [Việc làm](job) ngành [Kỹ thuật trắc địa - bản đồ](major)
-    - Công việc cho ngành [Kỹ thuật trắc địa - bản đồ](major)
-    - ngành [Kỹ thuật trắc địa - bản đồ](major) ra làm gì?
-    - Ngành [Kỹ thuật trắc địa - bản đồ](major) ra trường làm gì?
-- intent: Vieclam_Lichsu
-  examples: |
-    - [Việc làm](job) ngành [Lịch sử](major)
-    - Công việc cho ngành [Lịch sử](major)
-    - ngành [Lịch sử](major) ra làm gì?
-    - Ngành [Lịch sử](major) ra trường làm gì?
-- intent: Vieclam_Quanlyantoansuckhoevamoitruong
-  examples: |
-    - [Việc làm](job) ngành [Quản lý an toàn, sức khỏe và môi trường](major)
-    - Công việc cho ngành [Quản lý an toàn, sức khỏe và môi trường](major)
-    - ngành [Quản lý an toàn, sức khỏe và môi trường](major) ra làm gì?
-    - Ngành [Quản lý an toàn, sức khỏe và môi trường](major) ra trường làm gì?
-- intent: Vieclam_Quanlynhanuoc
-  examples: |
-    - [Việc làm](job) ngành [Quản lý nhà nước](major)
-    - Công việc cho ngành [Quản lý nhà nước](major)
-    - ngành [Quản lý nhà nước](major) ra làm gì?
-    - Ngành [Quản lý nhà nước](major) ra trường làm gì?
-- intent: Vieclam_Quanlytainguyenvamoitruong
-  examples: |
-    - [Việc làm](job) ngành [Quản lý tài nguyên và môi trường](major)
-    - Công việc cho ngành [Quản lý tài nguyên và môi trường](major)
-    - ngành [Quản lý tài nguyên và môi trường](major) ra làm gì?
-    - Ngành [Quản lý tài nguyên và môi trường](major) ra trường làm gì?
-- intent: Vieclam_Quantrivaphantichdulieu
-  examples: |
-    - [Việc làm](job) ngành [Quản trị và phân tích dữ liệu](major)
-    - Công việc cho ngành [Quản trị và phân tích dữ liệu](major)
-    - ngành [Quản trị và phân tích dữ liệu](major) ra làm gì?
-    - Ngành [Quản trị và phân tích dữ liệu](major) ra trường làm gì?
-- intent: Vieclam_Triethoc
-  examples: |
-    - [Việc làm](job) ngành [Triết học](major)
-    - Công việc cho ngành [Triết học](major)
-    - ngành [Triết học](major) ra làm gì?
-    - Ngành [Triết học](major) ra trường làm gì?
-- intent: Vieclam_Truyenthongso
-  examples: |
-    - [Việc làm](job) ngành [Truyền thông số](major)
-    - Công việc cho ngành [Truyền thông số](major)
-    - ngành [Truyền thông số](major) ra làm gì?
-    - Ngành [Truyền thông số](major) ra trường làm gì?
-- intent: Vieclam_Vanhoc
-  examples: |
-    - [Việc làm](job) ngành [Văn học](major)
-    - Công việc cho ngành [Văn học](major)
-    - ngành [Văn học](major) ra làm gì?
-    - Ngành [Văn học](major) ra trường làm gì?
-- intent: Vieclam_Xahoihoc
-  examples: |
-    - [Việc làm](job) ngành [Xã hội học](major)
-    - Công việc cho ngành [Xã hội học](major)
-    - ngành [Xã hội học](major) ra làm gì?
-    - Ngành [Xã hội học](major) ra trường làm gì?
-- synonym: Hóa học
-  examples: |
-    - Hoá học
-- synonym: HoàngLong
-  examples: |
-    - Hoàng Long
-- synonym: Công nghệ thông tin
-  examples: |
-    - IT
-- synonym: Hoá học
-  examples: |
-    - Hóa học
+  - intent: majors
+    examples: |
+      - trường đào tạo những ngành gì
+      - thông tin ngành
+      - ngành
+      - những ngành trường đào tạo
+      - trường dạy những ngành gì
+      - majors
+      - major
+  - intent: hocphi
+    examples: |
+      - học phí của trường là bao nhiêu
+      - học phí tại trường như thế nào
+      - mức học phí
+      - học phí
+      - học phí của ngành tự nhiên
+      - học phí ngành xã hội
+      - học phí hiện tại
+      - học phí năm nay như thế nào
+  - intent: tuyensinh
+    examples: |
+      - cách xét tuyển
+      - phương thức xét tuyển
+      - thông tin đăng ký xét tuyển
+      - cách đăng ký xét tuyển
+      - cho em hỏi cách đăng ký xét tuyển
+      - đăng ký xét tuyển như thế nào
+      - làm sao để đăng ký xét tuyển
+      - làm hồ sơ xét tuyển
+      - nộp hồ sơ xét tuyển
+      - cách gửi hồ sơ xét tuyển
+      - thông tin tuyển sinh
+      - thông tin tuyển sinh năm nay
+      - thông tin tuyển sinh năm 2022
+  - intent: phuongthucrieng
+    examples: |
+      - phương thức riêng
+      - tuyển thẳng
+      - phương thức xét tuyển riêng
+      - Phương thức riêng
+      - Phương thức tuyển thẳng
+      - xét tuyển riêng
+      - riêng
+  - intent: điều kiện tuyển thẳng
+    examples: |
+      - điều kiện xét tuyển thẳng
+      - các điều kiện để xét tuyển theo phương thức tuyển thẳng
+      - các điều kiện cần để xét tuyển thẳng
+      - các điều kiện cần để xét tuyển theo phương thức tuyển thẳng
+      - điều kiện để được xét tuyển theo phương thức tuyển thẳng
+  - intent: xettuyentheophuongthucrieng
+    examples: |
+      - làm thế nào để xét tuyển thẳng
+      - cách để xét tuyển theo phương thức tuyển thẳng
+      - làm cách nào để nộp hồ sơ xét tuyển phương thức tuyển thẳng
+      - cách để làm hồ sơ nhập học theo phương thức tuyển thẳng
+  - intent: phuongthuchocba
+    examples: |
+      - phương thức học bạ
+      - học bạ
+      - hb
+      - xét tuyển học bạ
+      - xét học bạ
+  - intent: điều kiện xét tuyển học bạ
+    examples: |
+      - điều kiện xét tuyển học bạ
+      - các điều kiện để xét tuyển học bạn
+      - các điều kiện cần để xét tuyển học bạ
+      - các điều kiện để có thể xét học bạ
+      - điều kiện để được xét tuyển học bạ
+  - intent: cachxettuyenhocba
+    examples: |
+      - làm thế nào để xét theo phương thức học bạ
+      - cách để xét tuyển học bạ
+      - làm cách nào để nộp hồ sơ xét tuyển học bạ
+      - cách để làm hồ sơ nhập học theo phương thức xét tuyển học ba
+      - nhập học học bạ
+      - làm hồ sơ xét tuyển học bạ như thế nào
+  - intent: phuongthucxetdiemthithpt
+    examples: |
+      - phương thức điểm thi tốt nghiệp trung học phổ thông
+      - phương thức điểm thi tốt nghiệp
+      - điểm thi
+      - tốt nghiệp
+      - phương thức xét điểm thi tốt nghiệp
+      - phương thức xét điểm thi tốt nghiệp trung học phổ thông
+  - intent: điều kiện xét tuyển theo điểm thi THPT
+    examples: |
+      - điều kiện xét tuyển điểm thi THPT
+      - các điều kiện để xét tuyển theo điểm thi THPT
+      - các điều kiện cần để xét tuyển theo điểm thi THPT
+      - các điều kiện cần để có thể xét tuyển theo điểm thi THPT
+      - điều kiện để được xét tuyển theo điểm thi THPT
+  - intent: xettuyentheophuongthucdiemthiTHPT
+    examples: |
+      - làm thế nào để xét tuyển theo phương thức điểm thi THPT
+      - cách để xét tuyển theo phương thức lấy điểm thi THPT
+      - làm cách nào để nộp hồ sơ xét tuyển phương thức lấy điểm thi THPT
+      - cách để làm hồ sơ nhập học theo phương thức điểm thi THPT
+  - intent: benchmark
+    examples: |
+      - Điểm năm 2021
+      - Điểm chuẩn năm 2021
+      - Điểm chuẩn năm trước
+      - Bảng điểm chuẩn năm 2021
+      - Điểm chuẩn các ngành năm 2021
+  - intent: job
+    examples: |
+      - Công việc sau khi ra trường
+      - Công việc
+      - [Việc làm](job) sau khi ra trường
+      - Cơ hội việc làm
+      - [Việc làm](job)
+      - Triển vọng nghề nghiệp
+  - intent: Vieclam_CongNgheThongTin
+    examples: |
+      - học xong ngành [An toàn thông tin](major) thì làm gì
+      - [Việc làm](job) ngành [Công nghệ thông tin](major)
+      - Công việc cho ngành [Công nghệ thông tin](major)
+      - ngành [Công nghệ thông tin](major) ra làm gì?
+      - Ngành [Công nghệ thông tin](major) ra trường làm gì?
+  - intent: Vieclam_AnToanThongTin
+    examples: |
+      - học xong ngành [An toàn thông tin](major) thì làm gì
+      - [Việc làm](job) ngành [An toàn thông tin](major)
+      - Công việc cho ngành [An toàn thông tin](major)
+      - ngành [An toàn thông tin](major) ra làm gì?
+      - Ngành [An toàn thông tin](major) ra trường làm gì?
+  - intent: Vieclam_DienTuVienThong
+    examples: |
+      - học xong ngành [Điện tử viễn thông](major) thì làm gì
+      - [Việc làm](job) ngành [Điện tử viễn thông](major)
+      - Công việc cho ngành [Điện tử viễn thông](major)
+      - ngành [Điện tử viễn thông](major) ra làm gì?
+      - Ngành [Điện tử viễn thông](major) ra trường làm gì?
+  - synonym: Công nghệ thông tin
+    examples: |
+      - IT
