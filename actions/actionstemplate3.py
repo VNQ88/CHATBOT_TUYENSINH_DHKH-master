@@ -35,8 +35,7 @@ class DbQueryingMethods:
     def get_info_vaccine(conn):
         c = conn.cursor()
 
-        c.execute(f'''select Nganh,ToHopMon from diem2021
-                  ''')
+        c.execute(f'''select Nganh,ToHopMon from diem2021''')
         records = c.fetchall()
         return records
 

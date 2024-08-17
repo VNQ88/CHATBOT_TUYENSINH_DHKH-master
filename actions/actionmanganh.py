@@ -16,7 +16,7 @@ class ActionRecommend(Action):
         print("Connected to the database.")
         if conn is None:
             print("Failed to connect to the database.")
-        values = tracker.get_slot("major").capitalize()
+        values = tracker.get_slot("major").upper()
         major = "Nganh"
 
         get_query_results = DbQueryingMethods.get_info_vaccine(conn=conn,major=major,value=values)
@@ -46,7 +46,7 @@ class DbQueryingMethods:
 
     def rows_info_as_text(records):
         if len(list(records)) < 1:
-            return f"Không có thông tin mã ngành về ngành này"
+            return f"Không có thông tin mã ngành về ngành này. Bạn có nhập sai gì không? Hãy nhập lại"
         else:
             for result in records:
                 print(result)
