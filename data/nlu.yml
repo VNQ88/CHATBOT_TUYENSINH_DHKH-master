@@ -167,6 +167,9 @@ nlu:
     examples: |
       - trường đào tạo những ngành gì
       - thông tin ngành
+      - ngành học
+      - thông tin ngành đào tạo
+      - ngành đào tạo 
       - ngành
       - những ngành trường đào tạo
       - trường dạy những ngành gì
@@ -206,6 +209,15 @@ nlu:
       - Phương thức tuyển thẳng
       - xét tuyển riêng
       - riêng
+
+  - intent : tuyenthang
+    examples: |
+      - xét tuyển thẳng
+      - xét tuyển theo phương thức tuyển thẳng
+      - tuyển thẳng
+      - học viện có xét tuyển thẳng không
+      - trường có xét tuyển thẳng không
+      - xét tuyển thẳng không
   - intent: điều kiện tuyển thẳng
     examples: |
       - điều kiện xét tuyển thẳng
@@ -223,7 +235,9 @@ nlu:
     examples: |
       - phương thức học bạ
       - học bạ
-      - hb
+      - trường có xét tuyển học bạ không
+      - học bạ có xét tuyển không
+      - học viện có xét tuyển học bạ không
       - xét tuyển học bạ
       - xét học bạ
   - intent: điều kiện xét tuyển học bạ
@@ -301,3 +315,12 @@ nlu:
   - synonym: Công nghệ thông tin
     examples: |
       - IT
+      - CNTT
+
+  - synonym: An toàn thông tin
+    examples: |
+      - ATTT
+
+  - synonym: Điện tử viễn thông
+    examples: |
+      - ĐTVT

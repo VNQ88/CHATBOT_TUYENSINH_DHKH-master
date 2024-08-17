@@ -32,6 +32,7 @@ intents:
   - phuongthucrieng
   - phuongthuchocba
   - phuongthucxetdiemthithpt
+  - tuyenthang
   - điều kiện xét tuyển học bạ
   - điều kiện xét tuyển theo điểm thi THPT
   - điều kiện tuyển thẳng
@@ -169,7 +170,7 @@ responses:
         Bạn đang hỏi xét tuyển theo phương thức nào?
   utter_dieukientuyenthang:
     - text: |2-
-         Thí sinh đoạt giải nhất, nhì, ba trong kỳ thi chọn học sinh giỏi Quốc gia (điều kiện: môn được giải là Toán hoặc Tin học hoặc giải thưởng sáng tạo về khoa học công nghệ cấp Quốc gia), đã tốt nghiệp Trung học phổ thông.
+         Điều kiện xét tuyển thẳng: Thí sinh đoạt giải nhất, nhì, ba trong kỳ thi chọn học sinh giỏi Quốc gia (điều kiện: môn được giải là Toán hoặc Tin học hoặc giải thưởng sáng tạo về khoa học công nghệ cấp Quốc gia), đã tốt nghiệp Trung học phổ thông.
   utter_cachxettuyentheophuongthucrieng:
     - text: |2-
          - Hồ sơ đăng ký xét tuyển: Phiếu ĐKXT theo mẫu (thí sinh có thể tải tại địa chỉ: https://bit.ly/MAUDONXETTUYENRIENG); bản sao Giấy chứng nhận đạt giải, học bạ, chứng chỉ, … theo quy định của từng trường.

@@ -143,6 +143,15 @@ stories:
       - intent: xettuyentheophuongthucrieng
       - action: utter_cachxettuyentheophuongthucrieng
 
+  - story: hỏi điều kiện xét tuyển thẳng
+    steps:
+      - intent: tuyensinh
+      - action: utter_tuyensinh
+      - intent: tuyenthang
+      - action: utter_dieukientuyenthang
+      - intent: xettuyentheophuongthucrieng
+      - action: utter_cachxettuyentheophuongthucrieng
+
   - story: hỏi điểm chuẩn
     steps:
       - intent: benchmark
