@@ -59,6 +59,7 @@ entities:
   - mon
   - name
   - sex
+  - year
 slots:
   major:
     type: text
@@ -67,6 +68,9 @@ slots:
     type: text
     influence_conversation: true
   name:
+    type: text
+    influence_conversation: true
+  year:
     type: text
     influence_conversation: true
 responses:
