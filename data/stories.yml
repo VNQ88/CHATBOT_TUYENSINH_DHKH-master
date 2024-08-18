@@ -161,7 +161,7 @@ stories:
       - intent: job
       - action: utter_job
 
-  - story: hỏi việc làm ngành Báo chí
+  - story: hỏi việc làm ngành Công nghệ thông tin
     steps:
       - intent: Vieclam_CongNgheThongTin
         entities:
