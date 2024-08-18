@@ -14,10 +14,11 @@ class ActionRecommend(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         conn = DbQueryingMethods.create_connection(db_file="diem2021.db")
         values = tracker.get_slot("major").upper()
+        year = int(tracker.get_slot("year"))
         major = "Nganh"
 
         get_query_results = DbQueryingMethods.get_info_vaccine(conn=conn,major=major,value=values)
-        return_text = DbQueryingMethods.rows_info_as_text(get_query_results)
+        return_text = DbQueryingMethods.rows_info_as_text(get_query_results, year)
         dispatcher.utter_message(text=str(return_text))
 
         return
@@ -40,11 +41,13 @@ class DbQueryingMethods:
         records = c.fetchall()
         return records
 
-    def rows_info_as_text(records):
+    def rows_info_as_text(records, year):
         if len(list(records)) < 1:
             return f"Không có thông tin điểm về ngành này"
         else:
+            i_2021 = 3
+            year_index = i_2021 + year - 2021
             for result in records:
                 Nganh = result[1]
                 Diem = result[3]
-                return f"Ngành {(result[1])} năm 2021 lấy {result[3]} điểm."
+                return f"Ngành {(result[1])} năm 2021 lấy {result[year_index]} điểm."

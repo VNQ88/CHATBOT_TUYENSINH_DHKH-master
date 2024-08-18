@@ -43,35 +43,50 @@ nlu:
       - [Mã ngành](code) [Công nghệ thông tin](major)
       - [Mã ngành](code) [An toàn thông tin](major)
       - [Mã ngành](code) [Điện tử viễn thông](major)
+      - [Mã ngành](code) [CNTT](major)
+      - [Mã ngành](code) [ATTT](major)
+      - [Mã ngành](code) [DTVT](major)
       - Ngành [Công nghệ thông tin](major) có [mã](code) là gì?
       - Ngành [An toàn thông tin](major) có [mã](code) là gì?
       - Ngành [Điện tử viễn thông](major) có [mã](code) là gì?
       - [Công nghệ thông tin](major) có [mã ngành](code) là gì?
       - [An toàn thông tin](major) có [mã ngành](code) là gì?
       - [Điện tử viễn thông](major) có [mã ngành](code) là gì?
+      - Ngành [CNTT](major) có [mã](code) là gì?
+      - Ngành [ATTT](major) có [mã](code) là gì?
+      - Ngành [DTVT](major) có [mã](code) là gì?
+      - [CNTT](major) có [mã ngành](code) là gì?
+      - [ATTT](major) có [mã ngành](code) là gì?
+      - [DTVT](major) có [mã ngành](code) là gì?
 
   - intent: tohopmon
     examples: |
-      - [Tổ hợp môn xét tuyển ngành](code) [Công nghệ thông tin](major) năm 2021
-      - [Tổ hợp môn xét tuyển ngành](code) [An toàn thông tin](major) năm 2021
-      - [Tổ hợp môn xét tuyển ngành](code) [Điện tử viễn thông](major) năm 2021
+      - [Tổ hợp môn xét tuyển ngành](code) [Công nghệ thông tin](major)
+      - [Tổ hợp môn xét tuyển ngành](code) [An toàn thông tin](major)
+      - [Tổ hợp môn xét tuyển ngành](code) [Điện tử viễn thông](major)
+      - [Tổ hợp môn xét tuyển ngành](code) [CNTT](major)
+      - [Tổ hợp môn xét tuyển ngành](code) [ATTT](major)
+      - [Tổ hợp môn xét tuyển ngành](code) [DTVT](major)
       - Ngành [Điện tử viễn thông](major) có [Tổ hợp môn xét tuyển ngành](code) là gì
       - Ngành [An toàn thông tin](major) có [Tổ hợp môn xét tuyển ngành](code) là gì
       - Ngành [Công nghệ thông tin](major) có [Tổ hợp môn xét tuyển ngành](code) là gì
   - intent: diemchuan2021
     examples: |
-      - [Điểm ngành](code) [Công nghệ thông tin](major) năm 2021
-      - [Điểm ngành](code) [An toàn thông tin](major) năm 2021
-      - [Điểm ngành](code) [Điện tử viễn thông](major) năm 2021
-      - Ngành [Công nghệ thông tin](major) có [điểm chuẩn](code) là bao nhiêu?
-      - Ngành [An toàn thông tin](major) có [điểm chuẩn](code) là bao nhiêu?
-      - Ngành [Điện tử viễn thông](major) có [điểm chuẩn](code) là bao nhiêu?
-      - [Công nghệ thông tin](major) có [điểm chuẩn](code) là bao nhiêu?
-      - [An toàn thông tin](major) có [điểm chuẩn](code) là bao nhiêu?
-      - [Điện tử viễn thông](major) có [điểm chuẩn](code) là bao nhiêu?
-      - [Công nghệ thông tin](major) năm 2021 lấy bao nhiêu [điểm](code)?
-      - [An toàn thông tin](major) năm 2021 lấy bao nhiêu [điểm](code)?
-      - [Điện tử viễn thông](major) năm 2021 lấy bao nhiêu [điểm](code)?
+      - [Điểm ngành](code) [Công nghệ thông tin](major) năm [2021](year)
+      - [Điểm ngành](code) [An toàn thông tin](major) năm [2021](year)
+      - [Điểm ngành](code) [Điện tử viễn thông](major) năm [2021](year)
+      - [Điểm ngành](code) [CNTT](major) năm [2021](year)
+      - [Điểm ngành](code) [ATTT](major) năm [2021](year)
+      - [Năm nay](year) Ngành [Công nghệ thông tin](major) có [điểm chuẩn](code) là bao nhiêu?
+      - [Năm nay](year) Ngành [An toàn thông tin](major) có [điểm chuẩn](code) là bao nhiêu?
+      - [Năm nay](year) Ngành [Điện tử viễn thông](major) có [điểm chuẩn](code) là bao nhiêu?
+      - [Năm nay](year) Ngành [DTVT](major) có [điểm chuẩn](code) là bao nhiêu?
+      - [Công nghệ thông tin](major) năm [2022](year) có [điểm chuẩn](code) là bao nhiêu?
+      - [An toàn thông tin](major) năm [2023](year) có [điểm chuẩn](code) là bao nhiêu?
+      - [Điện tử viễn thông](major) năm [2024](year) có [điểm chuẩn](code) là bao nhiêu?
+      - [Công nghệ thông tin](major) năm [2021](year) lấy bao nhiêu [điểm](code)?
+      - [An toàn thông tin](major) năm [2021](year) lấy bao nhiêu [điểm](code)?
+      - [Điện tử viễn thông](major) năm [2021](year) lấy bao nhiêu [điểm](code)?
 
   - intent: chaohoithongminh
     examples: |
@@ -181,10 +196,23 @@ nlu:
       - học phí tại trường như thế nào
       - mức học phí
       - học phí
-      - học phí của ngành tự nhiên
-      - học phí ngành xã hội
       - học phí hiện tại
       - học phí năm nay như thế nào
+      - học phí của trường
+      - học phí của trường mình
+      - học phí của trường mình như thế nào
+      - học phí 1 năm là bao nhiêu
+      - học phí 1 năm
+      - bao nhiêu tiền 1 tín
+      - học phí 1 tín
+      - học phí 1 tín là bao nhiêu
+      - bao nhiêu tiền 1 tín
+      - học phí bao nhiêu tiền 1 kì
+      - học phí 1 kì
+      - học phí 1 kì là bao nhiêu
+      - bao nhiêu tiền 1 kì
+      - học phí bao nhiêu tiền 1 học kì
+      - học phí 1 học kì
   - intent: tuyensinh
     examples: |
       - cách xét tuyển
@@ -199,7 +227,11 @@ nlu:
       - cách gửi hồ sơ xét tuyển
       - thông tin tuyển sinh
       - thông tin tuyển sinh năm nay
-      - thông tin tuyển sinh năm 2022
+      - thông tin tuyển sinh năm 2021
+      - tuyển sinh năm 2021
+      - tuyển sinh năm nay
+      - tuyển sinh
+
   - intent: phuongthucrieng
     examples: |
       - phương thức riêng
@@ -291,13 +323,21 @@ nlu:
       - Cơ hội việc làm
       - [Việc làm](job)
       - Triển vọng nghề nghiệp
+      - [Việc làm](job) sau khi học xong
+      - [Việc làm](job) sau khi học xong ngành
+      - Ra trường làm gì
   - intent: Vieclam_CongNgheThongTin
     examples: |
-      - học xong ngành [An toàn thông tin](major) thì làm gì
+      - học xong ngành [Công nghệ thông tin](major) thì làm gì
       - [Việc làm](job) ngành [Công nghệ thông tin](major)
       - Công việc cho ngành [Công nghệ thông tin](major)
       - ngành [Công nghệ thông tin](major) ra làm gì?
       - Ngành [Công nghệ thông tin](major) ra trường làm gì?
+      - học xong ngành [CNTT](major) thì làm gì
+      - [Việc làm](job) ngành [CNTT](major)
+      - Công việc cho ngành [IT](major)
+      - ngành [CNTT](major) ra làm gì?
+      - Ngành [IT](major) ra trường làm gì?
   - intent: Vieclam_AnToanThongTin
     examples: |
       - học xong ngành [An toàn thông tin](major) thì làm gì
@@ -305,6 +345,11 @@ nlu:
       - Công việc cho ngành [An toàn thông tin](major)
       - ngành [An toàn thông tin](major) ra làm gì?
       - Ngành [An toàn thông tin](major) ra trường làm gì?
+      - học xong ngành [ATTT](major) thì làm gì
+      - [Việc làm](job) ngành [ATTT](major)
+      - Công việc cho ngành [ATTT](major)
+      - ngành [ATTT](major) ra làm gì?
+      - Ngành [ATTT](major) ra trường làm gì?
   - intent: Vieclam_DienTuVienThong
     examples: |
       - học xong ngành [Điện tử viễn thông](major) thì làm gì
@@ -312,15 +357,25 @@ nlu:
       - Công việc cho ngành [Điện tử viễn thông](major)
       - ngành [Điện tử viễn thông](major) ra làm gì?
       - Ngành [Điện tử viễn thông](major) ra trường làm gì?
-  - synonym: Công nghệ thông tin
+      - học xong ngành [DTVT](major) thì làm gì
+      - [Việc làm](job) ngành [DTVT](major)
+      - Công việc cho ngành [DTVT](major)
+      - ngành [DTVT](major) ra làm gì?
+      - Ngành [DTVT](major) ra trường làm gì?
+  - synonym: "Công nghệ thông tin"
     examples: |
       - IT
       - CNTT
 
-  - synonym: An toàn thông tin
+  - synonym: "An toàn thông tin"
     examples: |
       - ATTT
 
-  - synonym: Điện tử viễn thông
+  - synonym: "Điện tử viễn thông"
     examples: |
-      - ĐTVT
+      - DTVT
+
+  - synonym: "2024"
+    examples: |
+      - năm 2024
+      - năm nay

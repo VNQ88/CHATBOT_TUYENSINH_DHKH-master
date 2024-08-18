@@ -13,9 +13,6 @@ class ActionRecommend(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         conn = DbQueryingMethods.create_connection(db_file="diem2021.db")
-
-
-
         get_query_results = DbQueryingMethods.get_info_vaccine(conn=conn)
         return_text = DbQueryingMethods.rows_info_as_text(get_query_results)
         dispatcher.utter_message(text=str(return_text))

@@ -168,14 +168,14 @@ stories:
           - job: "Việc làm"
           - major: "Công nghệ thông tin"
       - action: utter_ViecLamNganhCongNgheThongTin
-  - story: hỏi việc làm ngành Công nghệ kỹ thuật điện tử - Viễn thông
+  - story: hỏi việc làm ngành An toàn thông tin
     steps:
       - intent: Vieclam_AnToanThongTin
         entities:
           - job: "Việc làm"
           - major: "An toàn thông tin"
       - action: utter_ViecLamNganhAnToanThongTin
-  - story: hỏi việc làm ngành Công nghệ kỹ thuật hóa học
+  - story: hỏi việc làm ngành Điện tử viễn thông
     steps:
       - intent: Vieclam_DienTuVienThong
         entities:
