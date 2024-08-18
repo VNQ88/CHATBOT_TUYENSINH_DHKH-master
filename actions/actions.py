@@ -45,9 +45,13 @@ class DbQueryingMethods:
         if len(list(records)) < 1:
             return f"Không có thông tin điểm về ngành này"
         else:
-            i_2021 = 3
-            year_index = i_2021 + year - 2021
-            for result in records:
-                Nganh = result[1]
-                Diem = result[3]
-                return f"Ngành {(result[1])} năm 2021 lấy {result[year_index]} điểm."
+            valid_years = {2021, 2022, 2023, 2024}
+            if year in valid_years:
+                i_2021 = 3
+                year_index = i_2021 + year - 2021
+                for result in records:
+                    Nganh = result[1]
+                    Diem = result[3]
+                    return f"Ngành {(result[1])} năm {year} lấy {result[year_index]} điểm."
+            else:
+                return f"Hiện tại tôi chỉ có điểm từ năm 2021 đến 2024. Xin vui lòng nhập lại"
