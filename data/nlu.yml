@@ -390,9 +390,148 @@ nlu:
     - Công việc cho ngành [DTVT](major)
     - ngành [DTVT](major) ra làm gì?
     - Ngành [DTVT](major) ra trường làm gì?
-- synonym: HoàngLong
+- intent: tochatnganhCNTT
   examples: |
-    - Hoàng Long
+    - Ngành [Công nghệ thông tin](major) yêu cầu những tố chất gì
+    - Ngành [Công nghệ thông tin](major) yêu cầu những gì
+    - Học [Công nghệ thông tin](major) cần những tố chất gì
+    - Để học ngành [Công nghệ thông tin](major) cần có những tố chất nào
+    - Để vào ngành [Công nghệ thông tin](major) cần có những tố chất gì
+    - Những tố chất cần có cho ngành [Công nghệ thông tin](major) là gì
+    - Ngành [Công nghệ thông tin](major) cần tố chất nào
+    - Ngành [Công nghệ thông tin](major) đòi hỏi những tố chất gì
+- intent: tochatnganhATTT
+  examples: |
+    - Ngành [An toàn thông tin](major) yêu cầu những gì
+    - Ngành [An toàn thông tin](major) yêu cầu những tố chất gì
+    - Học [An toàn thông tin](major) cần những tố chất gì
+    - Để học ngành [An toàn thông tin](major) cần có những tố chất nào
+    - Để vào ngành [An toàn thông tin](major) cần có những tố chất gì
+    - Những tố chất cần có cho ngành [An toàn thông tin](major) là gì
+    - Ngành [An toàn thông tin](major) cần tố chất nào
+    - Ngành [An toàn thông tin](major) đòi hỏi những tố chất gì
+- intent: tochatnganhDTVT
+  examples: |
+    - Ngành [Điện tử viễn thông](major) yêu cầu những tố chất gì
+    - Ngành [Điện tử viễn thông](major) yêu cầu những gì
+    - Học [Điện tử viễn thông](major) cần những tố chất gì
+    - Để học ngành [Điện tử viễn thông](major) cần có những tố chất nào
+    - Để vào ngành [Điện tử viễn thông](major) cần có những tố chất gì
+    - Những tố chất cần có cho ngành [Điện tử viễn thông](major) là gì
+    - Ngành [Điện tử viễn thông](major) cần tố chất nào
+    - Ngành [Điện tử viễn thông](major) đòi hỏi những tố chất gì
+- intent: monHocNganhCNTT
+  examples: |
+    - Chương trình đào tạo của ngành [Công nghệ thông tin](major) có những môn học nào?
+    - Ngành [Công nghệ thông tin](major) bao gồm các môn học gì trong chương trình đào tạo?
+    - Môn học trong chương trình đào tạo của ngành [Công nghệ thông tin](major) là gì?
+    - Ngành [Công nghệ thông tin](major) học những môn học nào?
+    - Ngành [Công nghệ thông tin](major) có những môn nào?
+    - Những môn học trong chương trình của ngành [Công nghệ thông tin](major) là gì?
+    - Chương trình học của ngành [Công nghệ thông tin](major) có những môn học gì?
+    - Các môn học trong chương trình đào tạo ngành [Công nghệ thông tin](major) là gì?
+- intent: monHocNganhATTT
+  examples: |
+    - Chương trình đào tạo của ngành [An toàn thông tin](major) có những môn học nào?
+    - Ngành [An toàn thông tin](major) bao gồm các môn học gì trong chương trình đào tạo?
+    - Môn học trong chương trình đào tạo của ngành [An toàn thông tin](major) là gì?
+    - Ngành [An toàn thông tin](major) học những môn học nào?
+    - Ngành [An toàn thông tin](major) có những môn nào?
+    - Những môn học trong chương trình của ngành [An toàn thông tin](major) là gì?
+    - Chương trình học của ngành [An toàn thông tin](major) có những môn học gì?
+    - Các môn học trong chương trình đào tạo ngành [An toàn thông tin](major) là gì?
+- intent: monHocNganhDTVT
+  examples: |
+    - Chương trình đào tạo của ngành [Điện tử viễn thông](major) có những môn học nào?
+    - Ngành [Điện tử viễn thông](major) bao gồm các môn học gì trong chương trình đào tạo?
+    - Môn học trong chương trình đào tạo của ngành [Điện tử viễn thông](major) là gì?
+    - Ngành [Điện tử viễn thông](major) học những môn học nào?
+    - Ngành [Điện tử viễn thông](major) có những môn nào?
+    - Những môn học trong chương trình của ngành [Điện tử viễn thông](major) là gì?
+    - Chương trình học của ngành [Điện tử viễn thông](major) có những môn học gì?
+    - Các môn học trong chương trình đào tạo ngành [Điện tử viễn thông](major) là gì?
+- intent: trinhDoGiaoVien
+  examples: |
+    - Giảng viên của trường có kinh nghiệm như thế nào?
+    - Kinh nghiệm của giảng viên trường là gì?
+    - giảng viện thế nào?
+    - Kinh nghiệm của giảng viên trường
+    - Giảng viên trường có gì đặc biệt về kinh nghiệm?
+    - Giảng viên trường có bao nhiêu năm kinh nghiệm?
+    - Kinh nghiệm làm việc của giảng viên trường là gì?
+    - Cần bao nhiêu kinh nghiệm để làm giảng viên ở trường này?
+    - Kinh nghiệm giảng viên của trường ra sao?
+    - Kinh nghiệm của các giảng viên tại trường là thế nào?
+    - Trình độ kinh nghiệm của giảng viên trong trường như thế nào??
+    - giảng viên trong trường có giỏi không?
+    - giảng viên trong trường có thế nào?
+    - giảng viên của học viện mật mã có giỏi không?
+- intent: cauLacBo
+  examples: |
+    - Trường có những câu lạc bộ sinh viên nào?
+    - Các câu lạc bộ sinh viên tại trường là gì?
+    - Danh sách các câu lạc bộ sinh viên
+    - Câu lạc bộ sinh viên của trường
+    - Những câu lạc bộ sinh viên tại trường
+    - Câu lạc bộ nào có ở trường?
+    - nhiều câu lạc bộ không?
+    - Có các câu lạc bộ sinh viên nào tại trường?
+    - Trường có câu lạc bộ nào cho sinh viên không?
+    - Sinh viên có thể tham gia các câu lạc bộ nào?
+    - Các hoạt động câu lạc bộ của sinh viên là gì?
+    - Làm cách nào để tham gia câu lạc bộ của trường?
+    - câu lạc bộ
+- intent: hocCoKhoKhong
+  examples: |
+    - Chương trình của trường có khó không?
+    - Độ khó của chương trình học ở trường như thế nào?
+    - Chương trình học của trường có nặng không?
+    - Trường có chương trình học khó không?
+    - Học ở trường này có khó không?
+    - Chương trình học ở trường có thách thức không?
+    - Chương trình học của trường có yêu cầu cao không?
+    - Trường có dễ học không?
+    - Trường có dễ ra trường không?
+    - Trường có khó ra trường không?
+    - học có khó không?
+- intent: nhieuBanNuKhong
+  examples: |
+    - Trường có nhiều nữ không?
+    - Tỉ lệ nữ ở trường như thế nào?
+    - Có nhiều bạn nữ không?
+    - Có nhiều nữ không?
+    - nhiều nữ không?
+    - Trường có số lượng nữ lớn không?
+    - Tỉ lệ sinh viên nữ ở trường?
+    - Số lượng nữ trong trường có nhiều không?
+    - Trường có nhiều sinh viên nữ không?
+    - Tình hình số lượng nữ ở trường thế nào?
+    - nữ ở trường có xinh không
+    - trường có nhiều nữ xinh không
+    - nữ có xinh không
+- synonym: nữ
+  examples: |
+    - gái
+    - bạn gái
+- synonym: giảng viên
+  examples: |
+    - giáo viên
+    - thầy
+    - cô
+- synonym: trường
+  examples: |
+    - học viện
+- synonym: tố chất
+  examples: |
+    - Phẩm chất
+    - Kỹ năng
+    - Năng lực
+    - Năng khiếu
+    - Tài năng
+    - Đặc điểm
+    - Tính cách
+    - Khả năng
+    - Yếu tố
 - synonym: Công nghệ thông tin
   examples: |
     - IT

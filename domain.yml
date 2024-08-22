@@ -249,6 +249,66 @@ responses:
        - Kỹ sư mạng, giám sát và tối ưu hóa hiệu suất mạng, đảm bảo sự ổn định và an toàn của hệ thống.
        - Kỹ sư bảo trì và hỗ trợ kỹ thuật cho các thiết bị và hệ thống viễn thông tại các công ty cung cấp dịch vụ viễn thông.
        - Chuyên viên phân tích và phát triển các giải pháp công nghệ mới trong lĩnh vực điện tử và viễn thông.
+  utter_TochatnganhCNTT:
+  - text: |-
+      Để thành công trong ngành Công nghệ thông tin, bạn cần có một số tố chất và kỹ năng quan trọng:
+       - Tư duy logic và phân tích: Ngành Công nghệ thông tin đòi hỏi bạn phải có khả năng suy nghĩ logic, phân tích vấn đề một cách hệ thống và tìm ra giải pháp tối ưu.
+       - Khả năng học hỏi và cập nhật kiến thức: Công nghệ thông tin là một lĩnh vực luôn thay đổi. Bạn cần có khả năng tự học, nắm bắt những công nghệ mới và cập nhật kiến thức liên tục.
+       - Kỹ năng giải quyết vấn đề: Làm việc trong ngành này, bạn sẽ gặp phải nhiều thách thức kỹ thuật. Kỹ năng giải quyết vấn đề sẽ giúp bạn xử lý những tình huống phức tạp và đưa ra giải pháp hiệu quả.
+       - Kiên nhẫn và tỉ mỉ: Phát triển phần mềm và xử lý dữ liệu yêu cầu sự kiên nhẫn, chú ý đến từng chi tiết nhỏ để đảm bảo sản phẩm hoạt động trơn tru.
+       - Kỹ năng làm việc nhóm: Dự án công nghệ thường đòi hỏi sự hợp tác giữa nhiều thành viên. Kỹ năng làm việc nhóm sẽ giúp bạn phối hợp hiệu quả với các đồng nghiệp.
+       - Đam mê công nghệ: Cuối cùng, đam mê với công nghệ sẽ là động lực để bạn vượt qua mọi khó khăn và tiếp tục phát triển trong sự nghiệp.
+
+  utter_TochatnganhATTT:
+  - text: |-
+      Để thành công trong ngành An toàn thông tin, bạn cần có những tố chất sau:
+       - Kỹ năng phân tích và tư duy logic: Ngành An toàn thông tin yêu cầu khả năng phân tích và giải quyết các vấn đề phức tạp, cũng như tư duy logic để phát hiện và xử lý các mối đe dọa bảo mật.
+       - Khả năng làm việc dưới áp lực: Công việc trong lĩnh vực bảo mật thường yêu cầu bạn phải làm việc trong các tình huống khẩn cấp và đối phó với các sự cố bảo mật một cách nhanh chóng và hiệu quả.
+       - Kỹ năng giải quyết vấn đề và tư duy phản biện: Để phát hiện và khắc phục các lỗ hổng bảo mật, bạn cần có khả năng tư duy phản biện và giải quyết vấn đề một cách sáng tạo và hiệu quả.
+       - Sự chú ý đến chi tiết: Bảo mật yêu cầu bạn phải chú ý đến từng chi tiết nhỏ để đảm bảo rằng không có lỗ hổng bảo mật nào bị bỏ sót.
+       - Khả năng cập nhật và học hỏi liên tục: Ngành An toàn thông tin liên tục phát triển với các công nghệ và mối đe dọa mới, vì vậy bạn cần có khả năng học hỏi và cập nhật kiến thức liên tục để duy trì khả năng bảo mật hiệu quả.
+       - Kỹ năng giao tiếp và làm việc nhóm: Bạn sẽ thường xuyên làm việc cùng các bộ phận khác và cần truyền đạt các vấn đề bảo mật một cách rõ ràng và hiệu quả.
+  utter_TochatnganhDTVT:
+  - text: |-
+      Để thành công trong ngành Điện tử viễn thông, bạn cần có những tố chất sau:
+       - Kỹ năng phân tích và tư duy logic: Ngành Điện tử viễn thông yêu cầu khả năng phân tích và xử lý các vấn đề kỹ thuật phức tạp, cũng như tư duy logic để thiết kế và triển khai các hệ thống điện tử và viễn thông.
+       - Kiến thức liên quan về điện tử: Bạn cần hiểu rõ các nguyên lý và công nghệ liên quan đến điện tử và viễn thông, vật lý bao gồm các mạch điện, tín hiệu, và truyền thông dữ liệu.
+       - Khả năng làm việc dưới áp lực: Công việc trong lĩnh vực điện tử viễn thông thường yêu cầu bạn phải đối phó với các tình huống khẩn cấp và xử lý sự cố một cách nhanh chóng và hiệu quả.
+       - Kỹ năng giải quyết vấn đề và tư duy phản biện: Để khắc phục các sự cố và tối ưu hóa hệ thống, bạn cần có khả năng tư duy phản biện và giải quyết vấn đề một cách sáng tạo và hiệu quả.
+       - Sự chú ý đến chi tiết: Ngành Điện tử viễn thông yêu cầu sự chú ý đến từng chi tiết nhỏ trong thiết kế và triển khai hệ thống để đảm bảo hoạt động chính xác và hiệu quả.
+       - Khả năng cập nhật và học hỏi liên tục: Ngành Điện tử viễn thông phát triển nhanh chóng với các công nghệ mới, vì vậy bạn cần có khả năng học hỏi và cập nhật kiến thức liên tục để duy trì khả năng làm việc hiệu quả.
+       - Kỹ năng giao tiếp và làm việc nhóm: Bạn sẽ thường xuyên làm việc cùng các bộ phận khác và cần truyền đạt các vấn đề kỹ thuật một cách rõ ràng và hiệu quả.
+  utter_monHocNganhCNTT:
+  - text: |-
+      Chương trình đào tạo ngành Công nghệ thông tin bao gồm các môn học chính như:
+       - Khối kiến thức chung: Tiếng Anh, Triết học Mác – Lênin, Kinh tế chính trị, Tư tưởng Hồ Chí Minh, Giáo dục quốc phòng và Giáo dục thể chất.
+       - Khối kiến thức theo lĩnh vực và khối ngành: Các môn học chung cho các ngành khối khoa học tự nhiên và khối ngành máy tính.
+       - Khối kiến thức theo nhóm ngành và chuyên ngành: Các môn học đặc thù cho ngành Công nghệ thông tin và môn học chuyên sâu.
+       - Thực tập tốt nghiệp và đồ án: Thực tập và đồ án tốt nghiệp để ứng dụng kiến thức vào thực tiễn.
+  utter_monHocNganhATTT:
+  - text: |-
+      Chương trình đào tạo ngành An toàn thông tin bao gồm các môn học như:
+       - Khối kiến thức giáo dục đại cương: Giải tích 1 & 2, Đại số tuyến tính, Toán xác suất thống kê, Vật lý đại cương, Tiếng Anh, Triết học Mác – Lênin, Giáo dục quốc phòng an ninh, và Kỹ năng mềm.
+       - Khối kiến thức cơ sở ngành: Tiếng Anh chuyên ngành, Phương pháp tính, Toán chuyên đề, Cơ sở lý thuyết truyền tin, Kỹ thuật truyền số liệu, Lập trình căn bản, Cấu trúc dữ liệu và giải thuật, Hệ quản trị cơ sở dữ liệu, Mạng máy tính, Quản trị mạng, và Nguyên lý hệ điều hành.
+       - Khối kiến thức chuyên ngành: Bao gồm các môn học như Chuyên đề An toàn hệ thống thông tin, Giám sát và ứng phó sự cố an toàn mạng, An toàn mạng không dây, Phân tích thiết kế an toàn mạng máy tính, và Điều tra số.
+  utter_monHocNganhDTVT:
+  - text: |-
+      Chương trình đào tạo ngành Điện tử viễn thông gồm:
+       - Khối cơ sở ngành (55 tín chỉ): Môn học về lập trình, công nghệ mạng, kỹ thuật điện, điện tử công suất, điện tử số, đo lường điện tử, thiết kế mạch điện tử, hệ thống viễn thông, và các đồ án.
+       - Khối chuyên ngành (42 tín chỉ): Môn học về thiết kế hệ thống số, kiến trúc máy tính, thiết bị ngoại vi, hệ thống nhúng, thiết kế VLSI, và các đồ án chuyên sâu.
+       - Thực tập và đồ án tốt nghiệp (11 tín chỉ): Thực tập và đồ án tốt nghiệp.
+  utter_trinhDoGiaoVien:
+  - text: |-
+      Giảng viên của trường có kinh nghiệm rất đa dạng và phong phú. Toàn bộ giảng viên trong trường đều là những thạc sĩ, tiến sĩ, là các chuyên gia hàng đầu trong lĩnh vực. Đặc biệt, nhiều giảng viên có nhiều năm kinh nghiệm giảng dạy và làm việc trong ngành, cũng như có kinh nghiệm quốc tế. Học viện luôn cung cấp chất lượng giáo dục tốt nhất với sự hỗ trợ từ đội ngũ giảng viên dày dạn kinh nghiệm và nhiệt huyết
+  utter_cauLacBo:
+  - text: |-
+      Trường có rất nhiều câu lạc bộ sinh viên hoạt động thường xuyên như Câu lạc bộ Lập trình - KIT, Câu lạc bộ Máu Mật mã, Câu lạc bộ Bóng bàn, Câu lạc bộ Cờ vua, Câu lạc bộ Bóng chuyền, Câu lạc bộ Bóng đá, và nhiều câu lạc bộ khác. Bạn có thể dễ dàng tìm kiếm thông tin về các câu lạc bộ mình quan tâm bằng cách tham gia các cộng đồng trên mạng xã hội của trường, liên hệ với các anh chị khóa trên, hoặc tham khảo thông tin từ phòng hoạt động sinh viên.
+  utter_hocCoKhoKhong:
+  - text: |-
+      Chương trình học của trường nhìn chung là không khó. Chỉ cần bạn lắng nghe và chăm chú trong các bài giảng, bạn có thể dễ dàng đạt được bằng khá. Nếu bạn duy trì được sự chăm chỉ và đều đặn trong học tập như ở cấp 3, bạn hoàn toàn có khả năng đạt được bằng giỏi hoặc thậm chí là bằng xuất sắc.
+  utter_nhieuBanNuKhong:
+  - text: |-
+      Trường của chúng tôi chủ yếu tập trung vào các ngành kỹ thuật, vì vậy số lượng nữ sinh không nhiều. Tuy nhiên, chúng tôi luôn chào đón tất cả các sinh viên và tạo điều kiện học tập tốt nhất cho mọi người. Nếu bạn có bất kỳ câu hỏi nào khác hoặc cần thêm thông tin, đừng ngần ngại liên hệ với chúng tôi.
 actions:
 - action_handle_tuyen_sinh
 - action_Manganh
