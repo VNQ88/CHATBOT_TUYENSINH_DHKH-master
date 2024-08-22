@@ -181,6 +181,46 @@ stories:
           - job: "Việc làm"
           - major: "Điện tử viễn thông"
       - action: utter_ViecLamNganhDienTuVienThong
+  - story: hỏi tố chất ngành CNTT
+    steps:
+      - intent: tochatnganhCNTT
+      - action: utter_TochatnganhCNTT
+  - story: hỏi tố chất ngành ATTT
+    steps:
+      - intent: tochatnganhATTT
+      - action: utter_TochatnganhATTT
+  - story: hỏi tố chất ngành DTVT
+    steps:
+      - intent: tochatnganhDTVT
+      - action: utter_TochatnganhDTVT
+  - story: hỏi môn học ngành CNTT
+    steps:
+      - intent: monHocNganhCNTT
+      - action: utter_monHocNganhCNTT
+  - story: hỏi môn học ngành ATTT
+    steps:
+      - intent: monHocNganhATTT
+      - action: utter_monHocNganhATTT
+  - story: hỏi môn học ngành DTVT
+    steps:
+      - intent: monHocNganhDTVT
+      - action: utter_monHocNganhDTVT
+  - story: hỏi về giảng viên
+    steps:
+      - intent: trinhDoGiaoVien
+      - action: utter_trinhDoGiaoVien
+  - story: hỏi về câu lạc bộ
+    steps:
+      - intent: cauLacBo
+      - action: utter_cauLacBo
+  - story: hỏi về có khó học không
+    steps:
+      - intent: hocCoKhoKhong
+      - action: utter_hocCoKhoKhong
+  - story: hỏi về bạn nũ
+    steps:
+      - intent: nhieuBanNuKhong
+      - action: utter_nhieuBanNuKhong
 
   - story: interactive_story_1
     steps:
