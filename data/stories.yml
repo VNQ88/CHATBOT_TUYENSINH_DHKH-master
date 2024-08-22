@@ -28,43 +28,39 @@ stories:
     steps:
       - intent: hocbong
       - action: utter_hocbong
-  - story: test
-    steps:
-      - intent: chaohoi1
-      - action: utter_thongtintuyensinhnam2021
-      - action: utter_thongtindiemnam2021
-      - action: utter_thongtinmanganhnam2021
-      - action: utter_thongtintohopmonnam2021
-      - intent: thongtintoanbo
-      - action: utter_toanbo
-      #  - action: action_templatetong
-      - intent: chon1
-      - action: utter_diem
-      #  - action: action_template
-      - intent: chon2
-      - action: utter_manganh
-      #  - action: action_template2
-      - intent: chon3
-      - action: utter_tohopmon
-  #  - action: action_template3
-  - story: test1
-    steps:
-      - intent: chaohoi2
-      - action: utter_thongtintuyensinhnam2021_local
-      - intent: thongtintoanbo
-      - action: utter_toanbo
-      #  - action: action_templatetong
-      - intent: chon1
-      - action: utter_diem
-      #  - action: action_template
-      - intent: chon2
-      - action: utter_manganh
-      #  - action: action_template2
-      - intent: chon3
-      - action: utter_tohopmon
-  #  - action: action_template3
 
-  - story: diem2021
+#  - story: test1
+#    steps:
+#      - intent: asktuyensinh
+#      - action: utter_thongTinTuyenSinhCacNam
+#      - intent: tuyenSinhCacNam
+#      - slot_was_set:
+#          - year: "2021"
+#      - action: utter_diem2021
+#      - intent: tuyenSinhCacNam
+#      - slot_was_set:
+#          - year: "2022"
+#      - action: utter_diem2022
+#      - intent: tuyenSinhCacNam
+#      - slot_was_set:
+#          - year: "2023"
+#      - action: utter_diem2023
+#      - intent: tuyenSinhCacNam
+#      - slot_was_set:
+#      - year: "2024"
+#      - action: utter_diem2024
+#      - intent: tuyenSinhCacNam
+#      - action: utter_diem2024
+
+
+  - story: handle_tuyen_sinh
+    steps:
+      - intent: asktuyensinh
+      - action: utter_thongTinTuyenSinhCacNam
+      - intent: tuyenSinhCacNam
+      - action: action_handle_tuyen_sinh
+
+  - story: diem
     steps:
       - intent: diemchuan2021
         entities:
@@ -73,7 +69,7 @@ stories:
       - slot_was_set:
           - major: "Công nghệ thông tin"
       - action: action_diemchuan2021
-  - story: manganh2021
+  - story: manganh
     steps:
       - intent: Manganh
         entities:
@@ -82,7 +78,7 @@ stories:
       - slot_was_set:
           - major: "Công nghệ thông tin"
       - action: action_Manganh
-  - story: tohopmon2021
+  - story: tohopmon
     steps:
       - intent: tohopmon
         entities:
@@ -110,38 +106,41 @@ stories:
       - intent: hocphi
       - action: utter_hocphi
 
-  - story: hỏi điều kiện xét tuyển bằng điểm tốt nghiệp
+  - story: hỏi điều kiện xét tuyển
     steps:
       - intent: tuyensinh
       - action: utter_tuyensinh
       - intent: phuongthucxetdiemthithpt
-      - action: utter_reg_ask
-      - intent: điều kiện xét tuyển theo điểm thi THPT
       - action: utter_dieukienxettuyendiemthi
       - intent: xettuyentheophuongthucdiemthiTHPT
-      - action: utter_cachxettuyendiemthi
+      - action: utter_cachxettuyendiemthithpt
+      - intent: tuyenthang
+      - action: utter_dieukientuyenthang
+      - intent: cachXetTuyenThang
+      - action: utter_cachxettuyenthang
+      - intent: phuongthuchocba
+      - action: utter_dieukienxethocba
+
+  - story: hỏi phương thức riêng
+    steps:
+      - intent: phuongthucrieng
+      - action: utter_tuyensinh
 
   - story: hỏi điều kiện bằng học bạ
     steps:
       - intent: tuyensinh
       - action: utter_tuyensinh
       - intent: phuongthuchocba
-      - action: utter_reg_ask
-      - intent: điều kiện xét tuyển học bạ
       - action: utter_dieukienxethocba
-      - intent: cachxettuyenhocba
-      - action: utter_cachxettuyenhocba
 
-  - story: hỏi điều kiện xét tuyển theo phương thức riêng
+  - story: hỏi điều kiện xét tuyển bằng điểm tốt nghiệp
     steps:
       - intent: tuyensinh
       - action: utter_tuyensinh
-      - intent: phuongthucrieng
-      - action: utter_reg_ask
-      - intent: điều kiện tuyển thẳng
-      - action: utter_dieukientuyenthang
-      - intent: xettuyentheophuongthucrieng
-      - action: utter_cachxettuyentheophuongthucrieng
+      - intent: phuongthucxetdiemthithpt
+      - action: utter_dieukienxettuyendiemthi
+      - intent: xettuyentheophuongthucdiemthiTHPT
+      - action: utter_cachxettuyendiemthithpt
 
   - story: hỏi điều kiện xét tuyển thẳng
     steps:
@@ -149,8 +148,8 @@ stories:
       - action: utter_tuyensinh
       - intent: tuyenthang
       - action: utter_dieukientuyenthang
-      - intent: xettuyentheophuongthucrieng
-      - action: utter_cachxettuyentheophuongthucrieng
+      - intent: cachXetTuyenThang
+      - action: utter_cachxettuyenthang
 
   - story: hỏi điểm chuẩn
     steps:
