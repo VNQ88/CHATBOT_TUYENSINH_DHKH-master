@@ -25,6 +25,16 @@ nlu:
     - chào bot cho tôi hỏi thông tin tuyển sinh các năm trước
     - thông tin tuyển sinh các năm
     - thông tin tuyển sinh các năm trước
+
+#-----------------------------------------------------------
+- intent: tuyensinh2021
+- intent: tuyensinh2022
+- intent: tuyensinh2023
+- intent: tuyensinh2024
+
+#-----------------------------------------------------------
+
+
 - intent: tuyenSinhCacNam
   examples: |
     - Thông tin tuyển sinh năm [2021](year)
@@ -40,22 +50,22 @@ nlu:
     - Thông tin tuyển sinh năm [2023](year)
     - Thông tin tuyển sinh năm [2023](year) của trường
     - Thông tin tuyển sinh năm [2023](year) của học viện
-    - Tuyển sinh năm [2023](year)
+    - Tuyển sinh năm [năm trước](year)
     - Tuyển sinh năm [2023](year) của trường
-    - Tuyển sinh năm [2023](year) của học viện
+    - Tuyển sinh năm [năm ngoái](year) của học viện
     - Tuyển sinh năm [2023](year) của KMA
-    - Tuyển sinh năm [2023](year) của học viện mật mã
+    - Tuyển sinh năm [năm trước](year) của học viện mật mã
     - Tuyển sinh năm [2023](year) của trường mình
     - Tuyển sinh năm [2023](year) của học viện mình
     - Thông tin tuyển sinh năm [2022](year)
     - Thông tin tuyển sinh năm [2022](year) của trường
     - Thông tin tuyển sinh năm [2022](year) của học viện
-    - Tuyển sinh năm [2022](year)
+    - Tuyển sinh năm [năm kia](year)
     - Tuyển sinh năm [2022](year) của trường
-    - Tuyển sinh năm [2022](year) của học viện
+    - Tuyển sinh năm [năm kia](year) của học viện
     - Tuyển sinh năm [2022](year) của KMA
     - Tuyển sinh năm [2022](year) của học viện mật mã
-    - Tuyển sinh năm [2022](year) của trường mình
+    - Tuyển sinh năm [năm kia](year) của trường mình
     - Tuyển sinh năm [2022](year) của học viện mình
     - thông tin tuyển sinh
     - thông tin tuyển sinh [năm nay](year)
@@ -343,7 +353,6 @@ nlu:
     - Điểm chuẩn năm nay
     - Bảng điểm chuẩn năm 2024
     - Điểm chuẩn các ngành năm 2024
-
 - intent: job
   examples: |
     - Công việc sau khi ra trường
@@ -355,7 +364,6 @@ nlu:
     - [Việc làm](job) sau khi học xong
     - [Việc làm](job) sau khi học xong ngành
     - Ra trường làm gì
-
 - intent: Vieclam_CongNgheThongTin
   examples: |
     - học xong ngành [Công nghệ thông tin](major) thì làm gì
@@ -368,7 +376,6 @@ nlu:
     - Công việc cho ngành [IT](major)
     - ngành [CNTT](major) ra làm gì?
     - Ngành [IT](major) ra trường làm gì?
-
 - intent: Vieclam_AnToanThongTin
   examples: |
     - học xong ngành [An toàn thông tin](major) thì làm gì
@@ -381,7 +388,6 @@ nlu:
     - Công việc cho ngành [ATTT](major)
     - ngành [ATTT](major) ra làm gì?
     - Ngành [ATTT](major) ra trường làm gì?
-
 - intent: Vieclam_DienTuVienThong
   examples: |
     - học xong ngành [Điện tử viễn thông](major) thì làm gì
@@ -524,6 +530,8 @@ nlu:
     - trường có nhiều nữ xinh không
     - nữ có xinh không
 
+#-----------------------------------------------------------
+
 - synonym: nữ
   examples: |
     - gái
@@ -550,7 +558,6 @@ nlu:
     - Tính cách
     - Khả năng
     - Yếu tố
-
 - synonym: Công nghệ thông tin
   examples: |
     - IT
