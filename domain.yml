@@ -4,8 +4,8 @@ session_config:
   carry_over_slots_to_new_session: true
 intents:
 - asktuyensinh
-- tuyenSinhCacNam
-#    use_entities: []
+- tuyenSinhCacNam:
+   use_entities: []
 - chaohoi
 - hocbong
 - tracuu
@@ -30,12 +30,21 @@ intents:
 - majors
 - hocphi
 - tuyensinh
+- phuongthucrieng
 - phuongthuchocba
 - phuongthucxetdiemthithpt
 - tuyenthang
 - benchmark
 - job
 - bot_challenge
+
+#---------------------------------------------
+- tuyensinh2021
+- tuyensinh2022
+- tuyensinh2023
+- tuyensinh2024
+
+#---------------------------------------------
 - Vieclam_CongNgheThongTin:
     use_entities:
     - major
@@ -94,13 +103,13 @@ responses:
   - text: Bạn cần thông tin tuyển sinh năm nào?
     buttons:
     - title: Năm 2021
-      payload: '/tuyenSinhCacNam{"year": "2021"}'
+      payload: '/tuyensinh2021'
     - title: Năm 2022
-      payload: '/tuyenSinhCacNam{"year": "2022"}'
+      payload: '/tuyensinh2022'
     - title: Năm 2023
-      payload: '/tuyenSinhCacNam{"year": "2023"}'
+      payload: '/tuyensinh2023'
     - title: Năm 2024
-      payload: '/tuyenSinhCacNam{"year": "2024"}'
+      payload: '/tuyensinh2024'
   utter_thongtintuyensinhnam2021:
   - text: Thông tin về ngành
     buttons:

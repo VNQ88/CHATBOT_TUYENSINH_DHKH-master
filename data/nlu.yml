@@ -343,6 +343,7 @@ nlu:
     - Điểm chuẩn năm nay
     - Bảng điểm chuẩn năm 2024
     - Điểm chuẩn các ngành năm 2024
+
 - intent: job
   examples: |
     - Công việc sau khi ra trường
@@ -354,6 +355,7 @@ nlu:
     - [Việc làm](job) sau khi học xong
     - [Việc làm](job) sau khi học xong ngành
     - Ra trường làm gì
+
 - intent: Vieclam_CongNgheThongTin
   examples: |
     - học xong ngành [Công nghệ thông tin](major) thì làm gì
@@ -366,6 +368,7 @@ nlu:
     - Công việc cho ngành [IT](major)
     - ngành [CNTT](major) ra làm gì?
     - Ngành [IT](major) ra trường làm gì?
+
 - intent: Vieclam_AnToanThongTin
   examples: |
     - học xong ngành [An toàn thông tin](major) thì làm gì
@@ -378,6 +381,7 @@ nlu:
     - Công việc cho ngành [ATTT](major)
     - ngành [ATTT](major) ra làm gì?
     - Ngành [ATTT](major) ra trường làm gì?
+
 - intent: Vieclam_DienTuVienThong
   examples: |
     - học xong ngành [Điện tử viễn thông](major) thì làm gì
@@ -390,6 +394,7 @@ nlu:
     - Công việc cho ngành [DTVT](major)
     - ngành [DTVT](major) ra làm gì?
     - Ngành [DTVT](major) ra trường làm gì?
+
 - intent: tochatnganhCNTT
   examples: |
     - Ngành [Công nghệ thông tin](major) yêu cầu những tố chất gì
@@ -400,6 +405,7 @@ nlu:
     - Những tố chất cần có cho ngành [Công nghệ thông tin](major) là gì
     - Ngành [Công nghệ thông tin](major) cần tố chất nào
     - Ngành [Công nghệ thông tin](major) đòi hỏi những tố chất gì
+
 - intent: tochatnganhATTT
   examples: |
     - Ngành [An toàn thông tin](major) yêu cầu những gì
@@ -410,6 +416,7 @@ nlu:
     - Những tố chất cần có cho ngành [An toàn thông tin](major) là gì
     - Ngành [An toàn thông tin](major) cần tố chất nào
     - Ngành [An toàn thông tin](major) đòi hỏi những tố chất gì
+
 - intent: tochatnganhDTVT
   examples: |
     - Ngành [Điện tử viễn thông](major) yêu cầu những tố chất gì
@@ -420,6 +427,7 @@ nlu:
     - Những tố chất cần có cho ngành [Điện tử viễn thông](major) là gì
     - Ngành [Điện tử viễn thông](major) cần tố chất nào
     - Ngành [Điện tử viễn thông](major) đòi hỏi những tố chất gì
+
 - intent: monHocNganhCNTT
   examples: |
     - Chương trình đào tạo của ngành [Công nghệ thông tin](major) có những môn học nào?
@@ -430,6 +438,7 @@ nlu:
     - Những môn học trong chương trình của ngành [Công nghệ thông tin](major) là gì?
     - Chương trình học của ngành [Công nghệ thông tin](major) có những môn học gì?
     - Các môn học trong chương trình đào tạo ngành [Công nghệ thông tin](major) là gì?
+
 - intent: monHocNganhATTT
   examples: |
     - Chương trình đào tạo của ngành [An toàn thông tin](major) có những môn học nào?
@@ -440,6 +449,7 @@ nlu:
     - Những môn học trong chương trình của ngành [An toàn thông tin](major) là gì?
     - Chương trình học của ngành [An toàn thông tin](major) có những môn học gì?
     - Các môn học trong chương trình đào tạo ngành [An toàn thông tin](major) là gì?
+
 - intent: monHocNganhDTVT
   examples: |
     - Chương trình đào tạo của ngành [Điện tử viễn thông](major) có những môn học nào?
@@ -450,6 +460,7 @@ nlu:
     - Những môn học trong chương trình của ngành [Điện tử viễn thông](major) là gì?
     - Chương trình học của ngành [Điện tử viễn thông](major) có những môn học gì?
     - Các môn học trong chương trình đào tạo ngành [Điện tử viễn thông](major) là gì?
+
 - intent: trinhDoGiaoVien
   examples: |
     - Giảng viên của trường có kinh nghiệm như thế nào?
@@ -466,6 +477,7 @@ nlu:
     - giảng viên trong trường có giỏi không?
     - giảng viên trong trường có thế nào?
     - giảng viên của học viện mật mã có giỏi không?
+
 - intent: cauLacBo
   examples: |
     - Trường có những câu lạc bộ sinh viên nào?
@@ -481,6 +493,7 @@ nlu:
     - Các hoạt động câu lạc bộ của sinh viên là gì?
     - Làm cách nào để tham gia câu lạc bộ của trường?
     - câu lạc bộ
+
 - intent: hocCoKhoKhong
   examples: |
     - Chương trình của trường có khó không?
@@ -494,6 +507,7 @@ nlu:
     - Trường có dễ ra trường không?
     - Trường có khó ra trường không?
     - học có khó không?
+
 - intent: nhieuBanNuKhong
   examples: |
     - Trường có nhiều nữ không?
@@ -509,18 +523,22 @@ nlu:
     - nữ ở trường có xinh không
     - trường có nhiều nữ xinh không
     - nữ có xinh không
+
 - synonym: nữ
   examples: |
     - gái
     - bạn gái
+
 - synonym: giảng viên
   examples: |
     - giáo viên
     - thầy
     - cô
+
 - synonym: trường
   examples: |
     - học viện
+
 - synonym: tố chất
   examples: |
     - Phẩm chất
@@ -532,6 +550,7 @@ nlu:
     - Tính cách
     - Khả năng
     - Yếu tố
+
 - synonym: Công nghệ thông tin
   examples: |
     - IT
