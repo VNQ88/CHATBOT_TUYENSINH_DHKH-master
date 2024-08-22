@@ -29,36 +29,25 @@ stories:
       - intent: hocbong
       - action: utter_hocbong
 
-#  - story: test1
-#    steps:
-#      - intent: asktuyensinh
-#      - action: utter_thongTinTuyenSinhCacNam
-#      - intent: tuyenSinhCacNam
-#      - slot_was_set:
-#          - year: "2021"
-#      - action: utter_diem2021
-#      - intent: tuyenSinhCacNam
-#      - slot_was_set:
-#          - year: "2022"
-#      - action: utter_diem2022
-#      - intent: tuyenSinhCacNam
-#      - slot_was_set:
-#          - year: "2023"
-#      - action: utter_diem2023
-#      - intent: tuyenSinhCacNam
-#      - slot_was_set:
-#      - year: "2024"
-#      - action: utter_diem2024
-#      - intent: tuyenSinhCacNam
-#      - action: utter_diem2024
 
-
-  - story: handle_tuyen_sinh
+  - story: test2
     steps:
       - intent: asktuyensinh
       - action: utter_thongTinTuyenSinhCacNam
+      - intent: tuyensinh2021
+      - action: utter_diem2021
+      - intent: tuyensinh2022
+      - action: utter_diem2022
+      - intent: tuyensinh2023
+      - action: utter_diem2023
+      - intent: tuyensinh2024
+      - action: utter_diem2024
+
+  - story: handle_tuyen_sinh
+    steps:
       - intent: tuyenSinhCacNam
       - action: action_handle_tuyen_sinh
+
 
   - story: diem
     steps:
