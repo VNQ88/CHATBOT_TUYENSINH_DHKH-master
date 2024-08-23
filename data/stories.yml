@@ -210,7 +210,34 @@ stories:
     steps:
       - intent: nhieuBanNuKhong
       - action: utter_nhieuBanNuKhong
-
+  - story: hỏi về hồ sơ
+    steps:
+      - intent: hoSo
+      - action: utter_hoSo
+  - story: hỏi về đầu ra tiếng anh
+    steps:
+      - intent: chuanDauRaTiengAnh
+      - action: utter_chuanDauRaTiengAnh
+  - story: hỏi về đầu vào tiếng anh
+    steps:
+      - intent: chuanDauVaoTiengAnh
+      - action: utter_chuanDauVaoTiengAnh
+  - story: hỏi về đổi điểm tiếng anh
+    steps:
+      - intent: doiDiemTiengAnh
+      - action: utter_doiDiemTiengAnh
+  - story: hỏi về số khóa học
+    steps:
+      - intent: soLuongKhoaHoc
+      - action: utter_soLuongKhoaHoc
+  - story: hỏi về số sinh viên
+    steps:
+      - intent: soLuongSinhVien
+      - action: utter_soLuongSinhVien
+  - story: hỏi về điểm trung bình
+    steps:
+      - intent: diemTrungBinh
+      - action: utter_diemTrungBinh
   - story: interactive_story_1
     steps:
       - intent: chaohoi

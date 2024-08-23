@@ -57,6 +57,23 @@ intents:
     use_entities:
     - major
     - job
+- tochatnganhCNTT
+- tochatnganhATTT
+- tochatnganhDTVT
+- monHocNganhCNTT
+- monHocNganhATTT
+- monHocNganhDTVT
+- trinhDoGiaoVien
+- cauLacBo
+- hocCoKhoKhong
+- nhieuBanNuKhong
+- hoSo
+- chuanDauRaTiengAnh
+- doiDiemTiengAnh
+- chuanDauVaoTiengAnh
+- soLuongKhoaHoc
+- soLuongSinhVien
+- diemTrungBinh
 entities:
 - code
 - diem
@@ -193,7 +210,7 @@ responses:
        - Thời gian nộp hồ sơ ĐKXT: Từ ngày 22/4/2024 đến 17h00 ngày 25/6/2024.
        - Địa chỉ nộp hồ sơ ĐKXT: Thí sinh chuyển phát nhanh (EMS) qua đường Bưu điện theo địa chỉ: Ban Đào tạo và Công tác sinh viên Học viện Kỹ thuật Mật Mã, số 141 Chiến Thắng, Tân Triều, Thanh Trì, Hà Nội (thời gian nộp qua EMS được tính theo dấu bưu điện).
        CÔNG BỐ KẾT QUẢ XÉT TUYỂN: 
-       Dự kiến trước 17h00 ngày 30/6/2024.
+       Dự kiến trước 17h00 ngày 30/6/2024.  
       - Thông tin chi tiết: https://tuyensinh.actvn.edu.vn/tuyen-thang-vao-hoc-vien-ky-thuat-mat-ma/
   utter_dieukienxettuyendiemthi:
   - text: |
@@ -318,6 +335,46 @@ responses:
   utter_nhieuBanNuKhong:
   - text: |-
       Trường của chúng tôi chủ yếu tập trung vào các ngành kỹ thuật, vì vậy số lượng nữ sinh không nhiều. Tuy nhiên, chúng tôi luôn chào đón tất cả các sinh viên và tạo điều kiện học tập tốt nhất cho mọi người. Nếu bạn có bất kỳ câu hỏi nào khác hoặc cần thêm thông tin, đừng ngần ngại liên hệ với chúng tôi.
+  utter_hoSo:
+  - text: |-
+      Để nộp hồ sơ bạn cần mang các giấy tờ đến phòng tuyển sinh của học viện:
+       - Bản sao Giấy báo trúng tuyển kiêm Giấy báo nhập học.
+       - Bản sao có công chứng Học bạ THPT hoặc Bổ túc văn hóa.
+       - Bản sao có công chứng Giấy chứng nhận tốt nghiệp hoặc bằng tốt nghiệp (THPT hoặc THCN hoặc tương đương).
+       - Bản sao các loại: Giấy khai sinh, căn cước công dân.
+       - Sơ yếu lý lịch học sinh, sinh viên (02 bản) theo mẫu của Bộ Giáo dục và Đào tạo, có dán ảnh.
+       - Các giấy tờ xác nhận ưu tiên (nếu có).
+       - Bản sao Thẻ bảo hiểm y tế (với thí sinh sử dụng BHYT theo đối tượng ưu tiên hoặc hộ gia đình).
+       - Sổ Đoàn (chuyển về Đoàn thanh niên Học viện Kỹ thuật mật mã).
+       - Phiếu sinh viên.
+       - Bản phô tô công chứng chứng chỉ tiếng Anh (với thí sinh trúng tuyển có sử dụng chứng chỉ tiếng Anh để được cộng điểm ưu tiên)
+       - Giấy đăng ký nghĩa vụ quân sự và Giấy di chuyển nghĩa vụ quân sự của Ban chỉ huy quân sự quận/huyện hoặc tương đương cấp đối với nam sinh viên (bắt buộc).
+       - Giấy giới thiệu chuyển sinh hoạt Đảng về Đảng ủy Ban Cơ yếu Chính phủ (đối với sinh viên là đảng viên).
+  utter_chuanDauRaTiengAnh:
+  - text: |-
+      Theo Quyết định số 40 ngày 10/1/2017 của Giám đốc HV KTMM, tất cả học viên từ khoá H23, sinh viên từ khoá AT10, CT1; ĐT1 đều phải đạt chuẩn đầu ra Tiếng Anh tối thiểu 450 TOEIC mới đủ điều kiện xét tốt nghiệp ra trường.
+  utter_chuanDauVaoTiengAnh:
+    - text: |-
+        Từ khóa tuyển sinh 12 (năm 2015) chuẩn đầu vào tiếng Anh được quy định đạt tối thiểu trình độ A1 theo khung tham chiếu châu Âu (Tương đương TOEIC 250 điểm). Những sinh viên không đạt chuẩn đầu vào sau kỳ kiểm tra sát hạch (dưới 250 điểm TOEIC) phải đăng ký học bổ sung  6 tín chỉ tiếng Anh đầu vào tại cơ sở đào tạo Tiếng Anh của Học viện do Bộ môn Ngoại ngữ - Khoa Cơ bản phụ trách.
+  utter_doiDiemTiengAnh:
+  - text: |-
+      Sinh viên có thể dùng chứng chỉ Tiếng Anh nội bộ của Học viện hoặc chứng chỉ TOEIC quốc tế để được miễn học Tiếng Anh 1, 2, 3 và xét quy đổi điểm tương ứng. 
+       - Để được xét miễn học Tiếng Anh, các em phải nộp đơn xét miễn học và chuyển điểm quy đổi các học phần Tiếng Anh về Ban Giáo vụ - Tuyển sinh Phòng Đào tạo vào tuần lễ trước khi đăng kí học của mỗi kì.
+  utter_soLuongKhoaHoc:
+  - text: |-
+      Tính đến năm nay (2024), học viện có các khóa như sau: 
+       - Ngành An toàn thông tin là khóa thứ 21 (AT21)
+       - Ngành Công nghệ thông tin là khóa thứ 9 (CT9)
+       - Ngành Điện tử viễn thông là khóa thứ 8 (DT8)
+  utter_soLuongSinhVien:
+  - text: |-
+      Học viện hiện có khoảng 3000 sinh viên đang theo học tại trường.
+  utter_diemTrungBinh:
+  - text: |-
+      Trung bình điểm chuẩn của trường hàng năm khoảng:
+       - Ngành An toàn thông tin: 25.9
+       - Ngành Điện tử viễn thông: 25.2
+       - Ngành Công nghệ thông tin: 26.2
 actions:
 - action_handle_tuyen_sinh
 - action_Manganh
