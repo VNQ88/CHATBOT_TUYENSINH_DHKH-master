@@ -12,21 +12,20 @@ class ActionHandleTuyenSinh(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         # Lấy giá trị của slot 'year'
-        year = tracker.get_slot("year")
-
+        int_year = int(tracker.get_slot("year"))
         valid_years = {2021, 2022, 2023, 2024}
         # Xử lý logic dựa trên giá trị của 'year'
-        if year in valid_years:
-            if year == "2021":
+        if int_year in valid_years:
+            if int_year == 2021:
                 dispatcher.utter_message(text="Thông tin tuyển sinh cho năm 2021",
                                          image="https://i.imgur.com/P9e43lQ.jpeg")
-            elif year == "2022":
+            elif int_year == 2022:
                 dispatcher.utter_message(text="Thông tin tuyển sinh cho năm 2022",
                                          image="https://i.imgur.com/RzdAZNE.jpeg")
-            elif year == "2023":
+            elif int_year == 2023:
                 dispatcher.utter_message(text="Thông tin tuyển sinh cho năm 2023",
                                          image="https://i.imgur.com/gMWznIY.png")
-            elif year == "2024":
+            elif int_year == 2024:
                 dispatcher.utter_message(text="Thông tin tuyển sinh cho năm 2024",
                                          image="https://i.imgur.com/jMXQwbp.jpeg")
         else:
