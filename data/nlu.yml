@@ -541,6 +541,7 @@ nlu:
     - Đổi điểm tiếng Anh 123 như thế nào?
     - Tôi muốn đổi điểm tiếng Anh 123 thì làm thế nào?
 - intent: soLuongKhoaHoc
+#  oikakojga
   examples: |
     - [trường] có bao nhiêu khóa?
     - Có bao nhiêu khóa học trong [học viện]?
