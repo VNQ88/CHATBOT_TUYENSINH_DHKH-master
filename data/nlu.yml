@@ -365,72 +365,42 @@ nlu:
     - [Việc làm](job) sau khi học xong
     - [Việc làm](job) sau khi học xong ngành
     - Ra [học viện] làm gì
-- intent: Vieclam_CongNgheThongTin
-  examples: |
-    - học xong ngành [Công nghệ thông tin](major) thì làm gì
-    - [Việc làm](job) ngành [Công nghệ thông tin](major)
-    - Công việc cho ngành [Công nghệ thông tin](major)
-    - ngành [Công nghệ thông tin](major) ra làm gì?
-    - Ngành [Công nghệ thông tin](major) ra trường làm gì?
-    - học xong ngành [CNTT](major) thì làm gì
-    - [Việc làm](job) ngành [CNTT](major)
-    - Công việc cho ngành [IT](major)
-    - ngành [CNTT](major) ra làm gì?
-    - Ngành [IT](major) ra trường làm gì?
-- intent: Vieclam_AnToanThongTin
-  examples: |
-    - học xong ngành [An toàn thông tin](major) thì làm gì
-    - [Việc làm](job) ngành [An toàn thông tin](major)
-    - Công việc cho ngành [An toàn thông tin](major)
-    - ngành [An toàn thông tin](major) ra làm gì?
-    - Ngành [An toàn thông tin](major) ra trường làm gì?
-    - học xong ngành [ATTT](major) thì làm gì
-    - [Việc làm](job) ngành [ATTT](major)
-    - Công việc cho ngành [ATTT](major)
-    - ngành [ATTT](major) ra làm gì?
-    - Ngành [ATTT](major) ra trường làm gì?
-- intent: Vieclam_DienTuVienThong
-  examples: |
-    - học xong ngành [Điện tử viễn thông](major) thì làm gì
-    - [Việc làm](job) ngành [Điện tử viễn thông](major)
-    - Công việc cho ngành [Điện tử viễn thông](major)
-    - ngành [Điện tử viễn thông](major) ra làm gì?
-    - Ngành [Điện tử viễn thông](major) ra trường làm gì?
-    - học xong ngành [DTVT](major) thì làm gì
-    - [Việc làm](job) ngành [DTVT](major)
-    - Công việc cho ngành [DTVT](major)
-    - ngành [DTVT](major) ra làm gì?
-    - Ngành [DTVT](major) ra trường làm gì?
 - intent: tochatnganhCNTT
   examples: |
-    - Ngành [CNTT](major) yêu cầu những [Kỹ năng] gì
+    - Ngành [CNTT](major) yêu cầu những [tố chất] gì
     - Ngành [IT](major) yêu cầu những gì
-    - Học [Công nghệ thông tin](major) cần những [tố chất] gì
-    - Để học ngành [Công nghệ thông tin](major) cần có những [Phẩm chất] nào
-    - Để vào ngành [CNTT](major) cần có những [tố chất] gì
-    - Những [tố chất] cần có cho ngành [Công nghệ thông tin](major) là gì
-    - Ngành [Công nghệ thông tin](major) cần [tố chất] nào
-    - Ngành [Công nghệ thông tin](major) đòi hỏi những [tố chất] gì
+    - Học [Công nghệ thông tin](major) cần những [Yếu tố] gì
+    - Để học ngành [Công nghệ thông tin](major) cần có những [Kỹ năng] nào
+    - Để vào ngành [CNTT](major) cần có những [Năng lực] gì
+    - Những [Năng khiếu] cần có cho ngành [Công nghệ thông tin](major) là gì
+    - Ngành [Công nghệ thông tin](major) cần [Tài năng] nào
+    - Ngành [Công nghệ thông tin](major) đòi hỏi những [Đặc điểm] gì
+    - Ngành [CNTT](major) cần [Tính cách] nào
+    - Ngành [CNTT](major) cần [Khả năng] nào
 - intent: tochatnganhATTT
   examples: |
+    - Ngành [ATTT](major) yêu cầu những [tố chất] gì
     - Ngành [ATTT](major) yêu cầu những gì
-    - Ngành [An toàn thông tin](major) yêu cầu những [Phẩm chất] gì
-    - Học [An toàn thông tin](major) cần những [Kỹ năng] gì
-    - Để học ngành [An toàn thông tin](major) cần có những [tố chất] nào
-    - Để vào ngành [ATTT](major) cần có những [tố chất] gì
-    - Những [tố chất] cần có cho ngành [An toàn thông tin](major) là gì
-    - Ngành [An toàn thông tin](major) cần [tố chất] nào
-    - Ngành [An toàn thông tin](major) đòi hỏi những [tố chất] gì
+    - Học [ATTT](major) cần những [Yếu tố] gì
+    - Ngành [An toàn thông tin](major) yêu cầu những [Kỹ năng] gì
+    - Học [An toàn thông tin](major) cần những [Năng lực] gì
+    - Để học ngành [An toàn thông tin](major) cần có những [Năng khiếu] nào
+    - Để vào ngành [ATTT](major) cần có những [Tài năng] gì
+    - Những [Đặc điểm] cần có cho ngành [An toàn thông tin](major) là gì
+    - Ngành [An toàn thông tin](major) cần [Tính cách] nào
+    - Ngành [An toàn thông tin](major) đòi hỏi những [Khả năng] gì
 - intent: tochatnganhDTVT
   examples: |
     - Ngành [DTVT](major) yêu cầu những [tố chất] gì
     - Ngành [DTVT](major) yêu cầu những gì
-    - Học [Điện tử viễn thông](major) cần những [tố chất] gì
-    - Để học ngành [Điện tử viễn thông](major) cần có những [tố chất] nào
-    - Để vào ngành [Điện tử viễn thông](major) cần có những [Kỹ năng] gì
-    - Những [tố chất] cần có cho ngành [DTVT](major) là gì
-    - Ngành [DTVT](major) cần [tố chất] nào
-    - Ngành [Điện tử viễn thông](major) đòi hỏi những [Phẩm chất] gì
+    - Học [Điện tử viễn thông](major) cần những [Yếu tố] gì
+    - Để học ngành [Điện tử viễn thông](major) cần có những [Kỹ năng] nào
+    - Để vào ngành [Điện tử viễn thông](major) cần có những [Năng lực] gì
+    - Những [Năng khiếu] cần có cho ngành [DTVT](major) là gì
+    - Ngành [DTVT](major) cần [Tài năng] nào
+    - Ngành [Điện tử viễn thông](major) đòi hỏi những [Đặc điểm] gì
+    - Ngành [DTVT](major) cần [Tính cách] nào
+    - Ngành [DTVT](major) cần [Khả năng] nào
 - intent: monHocNganhCNTT
   examples: |
     - Chương trình đào tạo của ngành [CNTT](major) có những môn học nào?
@@ -598,6 +568,43 @@ nlu:
     - Mỗi năm điểm chuẩn của [trường] khoảng bao nhiêu?
     - Điểm chuẩn vào [trường] khoảng bao nhiêu?
     - [trường] có điểm chuẩn trung bình là bao nhiêu?
+
+- intent: Vieclam_DienTuVienThong
+  examples: |
+    - học xong ngành [Điện tử viễn thông](major) thì làm gì
+    - [Việc làm](job) ngành [Điện tử viễn thông](major)
+    - Công việc cho ngành [Điện tử viễn thông](major)
+    - ngành [Điện tử viễn thông](major) ra làm gì?
+    - Ngành [Điện tử viễn thông](major) ra trường làm gì?
+    - học xong ngành [DTVT](major) thì làm gì
+    - [Việc làm](job) ngành [DTVT](major)
+    - Công việc cho ngành [DTVT](major)
+    - ngành [DTVT](major) ra làm gì?
+    - Ngành [DTVT](major) ra trường làm gì?
+- intent: Vieclam_AnToanThongTin
+  examples: |
+    - học xong ngành [An toàn thông tin](major) thì làm gì
+    - [Việc làm](job) ngành [An toàn thông tin](major)
+    - Công việc cho ngành [An toàn thông tin](major)
+    - ngành [An toàn thông tin](major) ra làm gì?
+    - Ngành [An toàn thông tin](major) ra trường làm gì?
+    - học xong ngành [ATTT](major) thì làm gì
+    - [Việc làm](job) ngành [ATTT](major)
+    - Công việc cho ngành [ATTT](major)
+    - ngành [ATTT](major) ra làm gì?
+    - Ngành [ATTT](major) ra trường làm gì?
+- intent: Vieclam_CongNgheThongTin
+  examples: |
+    - học xong ngành [Công nghệ thông tin](major) thì làm gì
+    - [Việc làm](job) ngành [Công nghệ thông tin](major)
+    - Công việc cho ngành [Công nghệ thông tin](major)
+    - ngành [Công nghệ thông tin](major) ra làm gì?
+    - Ngành [Công nghệ thông tin](major) ra trường làm gì?
+    - học xong ngành [CNTT](major) thì làm gì
+    - [Việc làm](job) ngành [CNTT](major)
+    - Công việc cho ngành [IT](major)
+    - ngành [CNTT](major) ra làm gì?
+    - Ngành [IT](major) ra trường làm gì?
 - synonym: sinh viên
   examples: |
     - học sinh
@@ -619,7 +626,7 @@ nlu:
     - học viện
 - synonym: tố chất
   examples: |
-    - Phẩm chất
+    - Yếu tố
     - Kỹ năng
     - Năng lực
     - Năng khiếu
@@ -627,7 +634,6 @@ nlu:
     - Đặc điểm
     - Tính cách
     - Khả năng
-    - Yếu tố
 - synonym: Công nghệ thông tin
   examples: |
     - IT
