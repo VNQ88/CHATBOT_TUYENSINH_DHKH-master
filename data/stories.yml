@@ -16,10 +16,6 @@ stories:
     steps:
       - intent: chaohoithongminh
       - action: utter_chaohoithongminh
-  - story: tracuu
-    steps:
-      - intent: tracuu
-      - action: utter_tracuu
   - story: kytucxa
     steps:
       - intent: kytucxa
@@ -173,14 +169,23 @@ stories:
   - story: hỏi tố chất ngành CNTT
     steps:
       - intent: tochatnganhCNTT
+        entities:
+          - major: "Công nghệ thông tin"
+          - tochat: "Tố chất"
       - action: utter_TochatnganhCNTT
   - story: hỏi tố chất ngành ATTT
     steps:
       - intent: tochatnganhATTT
+        entities:
+          - major: "An toàn thông tin"
+          - tochat: "Tố chất"
       - action: utter_TochatnganhATTT
   - story: hỏi tố chất ngành DTVT
     steps:
       - intent: tochatnganhDTVT
+        entities:
+          - major: "Điện tử viễn thông"
+          - tochat: "Tố chất"
       - action: utter_TochatnganhDTVT
   - story: hỏi môn học ngành CNTT
     steps:
@@ -238,9 +243,5 @@ stories:
     steps:
       - intent: diemTrungBinh
       - action: utter_diemTrungBinh
-  - story: interactive_story_1
-    steps:
-      - intent: chaohoi
-      - action: utter_chaohoi
-      - intent: hocbong
-      - action: utter_hocbong
+
+

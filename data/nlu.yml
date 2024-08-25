@@ -25,16 +25,6 @@ nlu:
     - chào bot cho tôi hỏi thông tin tuyển sinh các năm trước
     - thông tin tuyển sinh các năm
     - thông tin tuyển sinh các năm trước
-
-#-----------------------------------------------------------
-- intent: tuyensinh2021
-- intent: tuyensinh2022
-- intent: tuyensinh2023
-- intent: tuyensinh2024
-
-#-----------------------------------------------------------
-
-
 - intent: tuyenSinhCacNam
   examples: |
     - Thông tin tuyển sinh năm [2021](year)
@@ -67,12 +57,10 @@ nlu:
     - Tuyển sinh năm [2022](year) của học viện mật mã
     - Tuyển sinh năm [năm kia](year) của trường mình
     - Tuyển sinh năm [2022](year) của học viện mình
-    - thông tin tuyển sinh
     - thông tin tuyển sinh [năm nay](year)
     - thông tin tuyển sinh năm [2024](year)
     - tuyển sinh năm [2024](year)
     - tuyển sinh [năm nay](year)
-    - tuyển sinh
     - Tuyển sinh năm [2024](year)
     - Tuyển sinh năm [năm nay](year) của [học viện]
     - Tuyển sinh năm [2024](year) của trường
@@ -80,6 +68,15 @@ nlu:
     - Tuyển sinh năm [2024](year) của học viện mật mã
     - Tuyển sinh năm [2024](year) của [học viện] mình
     - Tuyển sinh năm [năm nay](year) của trường mình
+    - kết quả xét tuyển năm [2022](year)
+    - kết quả xét tuyển [năm nay](year)
+    - xem điểm chuẩn năm [2022](year) 
+    - Điểm chuẩn năm [2024](year)
+    - Điểm chuẩn [năm nay](year)
+    - Bảng điểm chuẩn năm [2024](year)
+    - Điểm chuẩn các ngành năm [2024](year)
+    - Điểm năm [2024](year)
+
 - intent: chon1
   examples: |
     - Điểm của các ngành
@@ -155,14 +152,7 @@ nlu:
     - [Chị](sex) là [Hồng Phước](name)
     - [Anh](sex) là [Thủy](name)
     - [Anh](sex) là [Đăng Bình](name)
-- intent: tracuu
-  examples: |
-    - kết quả xét tuyển
-    - cho em xin kết quả xét tuyển
-    - kết quả xét tuyển năm 2022
-    - kết quả xét tuyển năm nay
-    - xem điểm chuẩn
-    - xem điểm chuẩn năm 2022
+
 - intent: kytucxa
   examples: |
     - cho em biết thông tin về ký túc xá
@@ -349,11 +339,14 @@ nlu:
     - cách để làm hồ sơ nhập học theo phương thức điểm thi THPT
 - intent: benchmark
   examples: |
-    - Điểm năm 2024
-    - Điểm chuẩn năm 2024
-    - Điểm chuẩn năm nay
-    - Bảng điểm chuẩn năm 2024
-    - Điểm chuẩn các ngành năm 2024
+    - tuyển sinh
+    - điểm chuẩn
+    - xem điểm chuẩn
+    - kết quả xét tuyển
+    - cho em xin kết quả xét tuyển
+    - thông tin tuyển sinh
+    - xét tuyển
+    - tra điểm
 - intent: job
   examples: |
     - Công việc sau khi ra [trường]
@@ -367,40 +360,41 @@ nlu:
     - Ra [học viện] làm gì
 - intent: tochatnganhCNTT
   examples: |
-    - Ngành [CNTT](major) yêu cầu những [tố chất] gì
+    - Ngành [CNTT](major) yêu cầu những [tố chất](tochat) gì
     - Ngành [IT](major) yêu cầu những gì
-    - Học [Công nghệ thông tin](major) cần những [Yếu tố] gì
-    - Để học ngành [Công nghệ thông tin](major) cần có những [Kỹ năng] nào
-    - Để vào ngành [CNTT](major) cần có những [Năng lực] gì
-    - Những [Năng khiếu] cần có cho ngành [Công nghệ thông tin](major) là gì
-    - Ngành [Công nghệ thông tin](major) cần [Tài năng] nào
-    - Ngành [Công nghệ thông tin](major) đòi hỏi những [Đặc điểm] gì
-    - Ngành [CNTT](major) cần [Tính cách] nào
-    - Ngành [CNTT](major) cần [Khả năng] nào
+    - Học [Công nghệ thông tin](major) cần những [Yếu tố](tochat) gì
+    - Để học ngành [Công nghệ thông tin](major) cần có những [Kỹ năng](tochat) nào
+    - Để vào ngành [CNTT](major) cần có những [Năng lực](tochat) gì
+    - Những [Năng khiếu](tochat) cần có cho ngành [Công nghệ thông tin](major) là gì
+    - Ngành [Công nghệ thông tin](major) cần [Tài năng](tochat) nào
+    - Ngành [Công nghệ thông tin](major) đòi hỏi những [Đặc điểm](tochat) gì
+    - Ngành [CNTT](major) cần [Tính cách](tochat) nào
+    - Ngành [CNTT](major) cần [Khả năng](tochat) nào
+    - ngành [CNTT](major) cần [tố chất](tochat) nào
 - intent: tochatnganhATTT
   examples: |
-    - Ngành [ATTT](major) yêu cầu những [tố chất] gì
+    - Ngành [ATTT](major) yêu cầu những [tố chất](tochat) gì
     - Ngành [ATTT](major) yêu cầu những gì
-    - Học [ATTT](major) cần những [Yếu tố] gì
-    - Ngành [An toàn thông tin](major) yêu cầu những [Kỹ năng] gì
-    - Học [An toàn thông tin](major) cần những [Năng lực] gì
-    - Để học ngành [An toàn thông tin](major) cần có những [Năng khiếu] nào
-    - Để vào ngành [ATTT](major) cần có những [Tài năng] gì
+    - Học [ATTT](major) cần những [Yếu tố](tochat) gì
+    - Ngành [An toàn thông tin](major) yêu cầu những [Kỹ năng](tochat) gì
+    - Học [An toàn thông tin](major) cần những [Năng lực](tochat) gì
+    - Để học ngành [An toàn thông tin](major) cần có những [Năng khiếu](tochat) nào
+    - Để vào ngành [ATTT](major) cần có những [Tài năng](tochat) gì
     - Những [Đặc điểm] cần có cho ngành [An toàn thông tin](major) là gì
-    - Ngành [An toàn thông tin](major) cần [Tính cách] nào
-    - Ngành [An toàn thông tin](major) đòi hỏi những [Khả năng] gì
+    - Ngành [An toàn thông tin](major) cần [Tính cách](tochat) nào
+    - Ngành [An toàn thông tin](major) đòi hỏi những [Khả năng](tochat) gì
 - intent: tochatnganhDTVT
   examples: |
-    - Ngành [DTVT](major) yêu cầu những [tố chất] gì
+    - Ngành [DTVT](major) yêu cầu những [tố chất](tochat) gì
     - Ngành [DTVT](major) yêu cầu những gì
-    - Học [Điện tử viễn thông](major) cần những [Yếu tố] gì
-    - Để học ngành [Điện tử viễn thông](major) cần có những [Kỹ năng] nào
-    - Để vào ngành [Điện tử viễn thông](major) cần có những [Năng lực] gì
-    - Những [Năng khiếu] cần có cho ngành [DTVT](major) là gì
-    - Ngành [DTVT](major) cần [Tài năng] nào
-    - Ngành [Điện tử viễn thông](major) đòi hỏi những [Đặc điểm] gì
-    - Ngành [DTVT](major) cần [Tính cách] nào
-    - Ngành [DTVT](major) cần [Khả năng] nào
+    - Học [Điện tử viễn thông](major) cần những [Yếu tố](tochat) gì
+    - Để học ngành [Điện tử viễn thông](major) cần có những [Kỹ năng](tochat) nào
+    - Để vào ngành [Điện tử viễn thông](major) cần có những [Năng lực](tochat) gì
+    - Những [Năng khiếu](tochat) cần có cho ngành [DTVT](major) là gì
+    - Ngành [DTVT](major) cần [Tài năng](tochat) nào
+    - Ngành [Điện tử viễn thông](major) đòi hỏi những [Đặc điểm](tochat) gì
+    - Ngành [DTVT](major) cần [Tính cách](tochat) nào
+    - Ngành [DTVT](major) cần [Khả năng](tochat) nào
 - intent: monHocNganhCNTT
   examples: |
     - Chương trình đào tạo của ngành [CNTT](major) có những môn học nào?
@@ -411,6 +405,7 @@ nlu:
     - Những môn học trong chương trình của ngành [Công nghệ thông tin](major) là gì?
     - Chương trình học của ngành [CNTT](major) có những môn học gì?
     - Các môn học trong chương trình đào tạo ngành [Công nghệ thông tin](major) là gì?
+    - chương trình đào tạo ngành [CNTT](major) có những môn học nào
 - intent: monHocNganhATTT
   examples: |
     - Chương trình đào tạo của ngành [ATTT](major) có những môn học nào?
@@ -445,7 +440,7 @@ nlu:
     - Kinh nghiệm của các [giảng viên] tại [học viện] là thế nào?
     - Trình độ kinh nghiệm của [giảng viên] trong [trường] như thế nào??
     - [thầy] trong [trường] có giỏi không?
-    - [cô] trong [trường] có thế nào?
+    - [cô] trong [trường] thế nào?
     - [giảng viên] của học viện mật mã có giỏi không?
 - intent: cauLacBo
   examples: |
@@ -568,7 +563,7 @@ nlu:
     - Mỗi năm điểm chuẩn của [trường] khoảng bao nhiêu?
     - Điểm chuẩn vào [trường] khoảng bao nhiêu?
     - [trường] có điểm chuẩn trung bình là bao nhiêu?
-
+    - trường có điểm chuẩn trung bình là bao nhiêu
 - intent: Vieclam_DienTuVienThong
   examples: |
     - học xong ngành [Điện tử viễn thông](major) thì làm gì
@@ -605,6 +600,9 @@ nlu:
     - Công việc cho ngành [IT](major)
     - ngành [CNTT](major) ra làm gì?
     - Ngành [IT](major) ra trường làm gì?
+- synonym: HoàngLong
+  examples: |
+    - Hoàng Long
 - synonym: sinh viên
   examples: |
     - học sinh
@@ -616,6 +614,8 @@ nlu:
   examples: |
     - gái
     - bạn gái
+    - girl
+
 - synonym: giảng viên
   examples: |
     - giáo viên
