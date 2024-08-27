@@ -79,6 +79,7 @@ entities:
 - sex
 - tochat
 - year
+- monhoc
 slots:
   major:
     type: text
@@ -94,10 +95,11 @@ slots:
     influence_conversation: true
 responses:
   utter_toanbo:
-  - text: ' Thông tin ngành Công nghệ thông tin: https://tuyensinh.actvn.edu.vn/nganh-cong-nghe-thong-tin/ '
-  - text: ' Thông tin ngành An toàn thông tin: https://tuyensinh.actvn.edu.vn/nganh-an-toan-thong-tin/ '
-  - text: ' Thông tin ngành Kỹ thuật Điện tử viễn thông: https://tuyensinh.actvn.edu.vn/nganh-ky-thuat-dien-tu-vien-thong/ '
-  - text: ' Đây là trang thông tin tuyển sinh của học viện. Bạn có thể tìm hiểu thêm ở đây: https://tuyensinh.actvn.edu.vn/'
+  - text: |
+          - Thông tin ngành Công nghệ thông tin: https://tuyensinh.actvn.edu.vn/nganh-cong-nghe-thong-tin/ 
+          - Thông tin ngành An toàn thông tin: https://tuyensinh.actvn.edu.vn/nganh-an-toan-thong-tin/ 
+          - Thông tin ngành Kỹ thuật Điện tử viễn thông: https://tuyensinh.actvn.edu.vn/nganh-ky-thuat-dien-tu-vien-thong/ 
+          - Đây là trang thông tin tuyển sinh của học viện. Bạn có thể tìm hiểu thêm ở đây: https://tuyensinh.actvn.edu.vn/
   utter_diem2021:
   - text: ' Thông tin năm 2021 '
     image: https://i.imgur.com/P9e43lQ.jpeg
@@ -236,7 +238,7 @@ responses:
   utter_iamabot:
   - text: '- mình là auto chatbot, mình có khả năng trả lời các câu hỏi về tuyển sinh của trường Học viện Kỹ thuật Mật Mã'
   utter_job:
-  - text: Bạn muốn hỏi công việc cho ngành đào tạo nào?
+  - text: Bạn muốn hỏi công việc cho ngành đào tạo nào? Hãy nhập theo cú pháp "Việc làm ngành [tên ngành]". Ví dụ "Việc làm ngành Công nghệ thông tin"
   utter_ViecLamNganhCongNgheThongTin:
   - text: |-
       Sinh viên tốt nghiệp ngành Công nghệ Thông tin có thể làm việc trong các lĩnh vực và vị trí sau:

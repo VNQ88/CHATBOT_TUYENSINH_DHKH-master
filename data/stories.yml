@@ -39,6 +39,11 @@ stories:
       - intent: tuyensinh2024
       - action: utter_diem2024
 
+  - story: thongtintoanbo
+    steps:
+      - intent: thongtintoanbo
+      - action: utter_toanbo
+
   - story: handle_tuyen_sinh
     steps:
       - intent: tuyenSinhCacNam
@@ -190,14 +195,23 @@ stories:
   - story: hỏi môn học ngành CNTT
     steps:
       - intent: monHocNganhCNTT
+        entities:
+          - major: "Công nghệ thông tin"
+          - monhoc: "môn học"
       - action: utter_monHocNganhCNTT
   - story: hỏi môn học ngành ATTT
     steps:
       - intent: monHocNganhATTT
+        entities:
+          - major: "An toàn thông tin"
+          - monhoc: "môn học"
       - action: utter_monHocNganhATTT
   - story: hỏi môn học ngành DTVT
     steps:
       - intent: monHocNganhDTVT
+        entities:
+          - major: "Điện tử viễn thông"
+          - monhoc: "môn học"
       - action: utter_monHocNganhDTVT
   - story: hỏi về giảng viên
     steps:
