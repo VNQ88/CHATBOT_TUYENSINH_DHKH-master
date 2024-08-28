@@ -1,10 +1,10 @@
 [
   {
-    "text": "Điểm",
-    "intent": "benchmark",
+    "text": "cách để xét tuyển theo phương thức tuyển thẳng",
+    "intent": "cachXetTuyenThang",
     "intent_prediction": {
-      "name": "chon1",
-      "confidence": 0.3169808089733124
+      "name": "tuyenthang",
+      "confidence": 0.4896026849746704
     }
   }
 ]

@@ -1,28 +1,129 @@
 [
   {
-    "text": "Tổ hợp môn xét tuyển ngành Kỹ thuật sinh học năm 2021",
+    "text": "Tuyển sinh năm năm kia",
     "entities": [
       {
-        "start": 0,
-        "end": 26,
-        "value": "Tổ hợp môn xét tuyển ngành",
-        "entity": "mon"
-      },
-      {
-        "start": 27,
-        "end": 44,
-        "value": "ky thuat sinh hoc",
-        "entity": "major"
+        "start": 15,
+        "end": 22,
+        "value": "năm kia",
+        "entity": "year"
       }
     ],
     "predicted_entities": [
       {
-        "entity": "mon",
-        "start": 0,
-        "end": 44,
-        "confidence_entity": 0.6839463710784912,
-        "value": "Tổ hợp môn xét tuyển ngành Kỹ thuật sinh học",
+        "entity": "year",
+        "start": 11,
+        "end": 14,
+        "confidence_entity": 0.7819656133651733,
+        "value": "năm",
         "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "year",
+        "start": 15,
+        "end": 22,
+        "confidence_entity": 0.9883953332901001,
+        "value": "2022",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Tuyển sinh năm năm nay của [học viện]",
+    "entities": [
+      {
+        "start": 15,
+        "end": 22,
+        "value": "năm nay",
+        "entity": "year"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "year",
+        "start": 11,
+        "end": 14,
+        "confidence_entity": 0.9466174840927124,
+        "value": "năm",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "year",
+        "start": 15,
+        "end": 22,
+        "confidence_entity": 0.987141489982605,
+        "value": "2024",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Tuyển sinh năm năm nay của KMA",
+    "entities": [
+      {
+        "start": 15,
+        "end": 22,
+        "value": "năm nay",
+        "entity": "year"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "year",
+        "start": 11,
+        "end": 14,
+        "confidence_entity": 0.8889543414115906,
+        "value": "năm",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "year",
+        "start": 15,
+        "end": 22,
+        "confidence_entity": 0.9886122345924377,
+        "value": "2024",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Tuyển sinh năm năm nay của trường mình",
+    "entities": [
+      {
+        "start": 15,
+        "end": 22,
+        "value": "năm nay",
+        "entity": "year"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "year",
+        "start": 11,
+        "end": 14,
+        "confidence_entity": 0.9468842148780823,
+        "value": "năm",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "year",
+        "start": 15,
+        "end": 22,
+        "confidence_entity": 0.9809587597846985,
+        "value": "2024",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
       }
     ]
   }

@@ -16,10 +16,6 @@ stories:
     steps:
       - intent: chaohoithongminh
       - action: utter_chaohoithongminh
-  - story: tracuu
-    steps:
-      - intent: tracuu
-      - action: utter_tracuu
   - story: kytucxa
     steps:
       - intent: kytucxa
@@ -43,12 +39,25 @@ stories:
       - intent: tuyensinh2024
       - action: utter_diem2024
 
+  - story: thongtintoanbo
+    steps:
+      - intent: thongtintoanbo
+      - action: utter_toanbo
+
   - story: handle_tuyen_sinh
     steps:
       - intent: tuyenSinhCacNam
       - action: action_handle_tuyen_sinh
 
 
+  - story: chon1
+    steps:
+      - intent: chon1
+      - action: utter_chon1
+  - story: chon2
+    steps:
+      - intent: chon2
+      - action: utter_chon2
   - story: diem
     steps:
       - intent: diemchuan2021
@@ -140,10 +149,7 @@ stories:
       - intent: cachXetTuyenThang
       - action: utter_cachxettuyenthang
 
-  - story: hỏi điểm chuẩn
-    steps:
-      - intent: benchmark
-      - action: utter_benchmark
+
   - story: hỏi việc làm
     steps:
       - intent: job
@@ -173,26 +179,44 @@ stories:
   - story: hỏi tố chất ngành CNTT
     steps:
       - intent: tochatnganhCNTT
+        entities:
+          - major: "Công nghệ thông tin"
+          - tochat: "Tố chất"
       - action: utter_TochatnganhCNTT
   - story: hỏi tố chất ngành ATTT
     steps:
       - intent: tochatnganhATTT
+        entities:
+          - major: "An toàn thông tin"
+          - tochat: "Tố chất"
       - action: utter_TochatnganhATTT
   - story: hỏi tố chất ngành DTVT
     steps:
       - intent: tochatnganhDTVT
+        entities:
+          - major: "Điện tử viễn thông"
+          - tochat: "Tố chất"
       - action: utter_TochatnganhDTVT
   - story: hỏi môn học ngành CNTT
     steps:
       - intent: monHocNganhCNTT
+        entities:
+          - major: "Công nghệ thông tin"
+          - monhoc: "môn học"
       - action: utter_monHocNganhCNTT
   - story: hỏi môn học ngành ATTT
     steps:
       - intent: monHocNganhATTT
+        entities:
+          - major: "An toàn thông tin"
+          - monhoc: "môn học"
       - action: utter_monHocNganhATTT
   - story: hỏi môn học ngành DTVT
     steps:
       - intent: monHocNganhDTVT
+        entities:
+          - major: "Điện tử viễn thông"
+          - monhoc: "môn học"
       - action: utter_monHocNganhDTVT
   - story: hỏi về giảng viên
     steps:
@@ -238,9 +262,5 @@ stories:
     steps:
       - intent: diemTrungBinh
       - action: utter_diemTrungBinh
-  - story: interactive_story_1
-    steps:
-      - intent: chaohoi
-      - action: utter_chaohoi
-      - intent: hocbong
-      - action: utter_hocbong
+
+
