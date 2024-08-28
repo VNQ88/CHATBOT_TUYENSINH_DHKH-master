@@ -3,9 +3,6 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- diemTrungBinh
-- monHocNganhCNTT
-- tochatnganhCNTT
 - asktuyensinh
 - tuyenSinhCacNam:
     use_entities: []
@@ -15,7 +12,6 @@ intents:
 - thongtintoanbo
 - chon1
 - chon2
-- chon3
 - tohopmon:
     use_entities: []
 - Manganh:
@@ -36,7 +32,6 @@ intents:
 - phuongthuchocba
 - phuongthucxetdiemthithpt
 - tuyenthang
-- benchmark
 - job
 - bot_challenge
 - tuyensinh2021
@@ -55,6 +50,9 @@ intents:
     use_entities:
     - major
     - job
+- diemTrungBinh
+- monHocNganhCNTT
+- tochatnganhCNTT
 - tochatnganhATTT
 - tochatnganhDTVT
 - monHocNganhATTT
@@ -123,26 +121,7 @@ responses:
       payload: /tuyensinh2023
     - title: Năm 2024
       payload: /tuyensinh2024
-  utter_thongtintuyensinhnam2021:
-  - text: Thông tin về ngành
-    buttons:
-    - title: Thông tin toàn bộ về ngành
-      payload: /thongtintoanbo
-  utter_thongtindiemnam2021:
-  - text: thông tin về điểm
-    buttons:
-    - title: Điểm 2021
-      payload: /chon1
-  utter_thongtinmanganhnam2021:
-  - text: thông tin về ngành
-    buttons:
-    - title: Mã ngành 2021
-      payload: /chon2
-  utter_thongtintohopmonnam2021:
-  - text: thông tin về tổ hợp môn
-    buttons:
-    - title: Tổ hợp môn
-      payload: /chon3
+
   utter_chaohoithongminh:
   - text: Kính chào {sex} {name}. Bot có thể giúp gì được cho {sex} {name} ạ !!
   utter_kytucxa:
@@ -232,9 +211,13 @@ responses:
   utter_dieukienxethocba:
   - text: |
       Hiện tại Học viện Kỹ thuật Mật Mã không cung cấp phương thức xét tuyển bằng học bạ.
-  utter_benchmark:
-  - text: ''
+  utter_chon1:
+  - text: 'Điểm chuẩn năm 2024'
     image: https://i.imgur.com/jMXQwbp.jpeg
+
+  utter_chon2:
+  - text: 'Thông tin mã ngành và tổ hợp môn'
+    image: https://i.imgur.com/VOz1RCu.jpeg
   utter_iamabot:
   - text: '- mình là auto chatbot, mình có khả năng trả lời các câu hỏi về tuyển sinh của trường Học viện Kỹ thuật Mật Mã'
   utter_job:

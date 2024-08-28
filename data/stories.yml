@@ -50,6 +50,14 @@ stories:
       - action: action_handle_tuyen_sinh
 
 
+  - story: chon1
+    steps:
+      - intent: chon1
+      - action: utter_chon1
+  - story: chon2
+    steps:
+      - intent: chon2
+      - action: utter_chon2
   - story: diem
     steps:
       - intent: diemchuan2021
@@ -141,10 +149,7 @@ stories:
       - intent: cachXetTuyenThang
       - action: utter_cachxettuyenthang
 
-  - story: hỏi điểm chuẩn
-    steps:
-      - intent: benchmark
-      - action: utter_benchmark
+
   - story: hỏi việc làm
     steps:
       - intent: job

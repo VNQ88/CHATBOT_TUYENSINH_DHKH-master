@@ -83,18 +83,28 @@ nlu:
     - điểm của các ngành
     - điểm của ngành
     - điểm của các ngành đào tạo
+    - tuyển sinh
+    - điểm chuẩn
+    - xem điểm chuẩn
+    - kết quả xét tuyển
+    - cho em xin kết quả xét tuyển
+    - thông tin tuyển sinh
+    - xét tuyển
+    - tra điểm
 - intent: chon2
   examples: |
     - Mã của các ngành
     - mã của các ngành
     - Mã của ngành
     - Mã của các ngành đào tạo
-- intent: chon3
-  examples: |
     - Tổ hợp môn của các ngành
     - tổ hợp môn của các ngành
     - Tổ hợp môn của ngành đào tạo
     - tổ hợp môn của các ngành đào tạo
+    - tổ hợp môn
+- intent: chon3
+  examples: |
+
 - intent: Manganh
   examples: |
     - [Mã ngành](code) [Công nghệ thông tin](major)
@@ -339,16 +349,8 @@ nlu:
     - cách để xét tuyển theo phương thức lấy điểm thi THPT
     - làm cách nào để nộp hồ sơ xét tuyển phương thức lấy điểm thi THPT
     - cách để làm hồ sơ nhập học theo phương thức điểm thi THPT
-- intent: benchmark
-  examples: |
-    - tuyển sinh
-    - điểm chuẩn
-    - xem điểm chuẩn
-    - kết quả xét tuyển
-    - cho em xin kết quả xét tuyển
-    - thông tin tuyển sinh
-    - xét tuyển
-    - tra điểm
+
+
 - intent: job
   examples: |
     - Công việc sau khi ra [trường]
