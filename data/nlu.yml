@@ -102,8 +102,6 @@ nlu:
     - Tổ hợp môn của ngành đào tạo
     - tổ hợp môn của các ngành đào tạo
     - tổ hợp môn
-- intent: chon3
-  examples: |
 
 - intent: Manganh
   examples: |

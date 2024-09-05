@@ -21,7 +21,7 @@ stories:
   - intent: mood_unhappy  # predicted: chaohoi: not good
   - action: utter_cheer_up  # predicted: action_default_fallback
   - action: utter_did_that_help  # predicted: action_listen
-  - intent: affirm  # predicted: tambiet: yes
+  - intent: affirm  # predicted: chon1: yes
   - action: utter_happy  # predicted: action_default_fallback
 - story: sad path 2 (.\venv\Lib\site-packages\rasa\cli\initial_project\tests\test_stories.yml)
   steps:
@@ -30,13 +30,13 @@ stories:
   - intent: mood_unhappy  # predicted: chaohoi: not good
   - action: utter_cheer_up  # predicted: action_default_fallback
   - action: utter_did_that_help  # predicted: action_listen
-  - intent: deny  # predicted: chaohoi: not really
+  - intent: deny  # predicted: chon1: not really
   - action: utter_goodbye  # predicted: action_default_fallback
 - story: sad path 3 (.\venv\Lib\site-packages\rasa\cli\initial_project\tests\test_stories.yml)
   steps:
   - intent: greet  # predicted: chaohoi: hi
   - action: utter_greet  # predicted: action_default_fallback
-  - intent: mood_unhappy  # predicted: tambiet: very terrible
+  - intent: mood_unhappy  # predicted: chon1: very terrible
   - action: utter_cheer_up  # predicted: action_default_fallback
   - action: utter_did_that_help  # predicted: action_listen
   - intent: deny  # predicted: chaohoi: no
