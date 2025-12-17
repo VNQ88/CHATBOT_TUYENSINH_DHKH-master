@@ -1,4 +1,4 @@
-## Chatbot hỗ trợ tuyển sinh Đại học Khoa học
+## Chatbot hỗ trợ tuyển sinh Đại học
 
 ## Mở đầu
 - Trong phần này tôi sẽ mô tả từng bước cài đặt môi trường cho  mã nguồn mở Rasa.
@@ -42,16 +42,6 @@ django
 
 ## Chạy chương trình trên web
 - chạy `rasa run -m model --enable-api --cors "*"` trong Terminal
-
-## Phản hồi
-- Mọi ý kiến phản hồi vui lòng liên hệ (`nguyenngoclongpdl13@gmail.com`hoặc `0772061082`)
-## Phiên bản
 - v1.0.0
-
-## Tác giả
-
-* **Nguyễn Ngọc Long**
-* **Trần Nhơn Tiến**
-* **Đoàn Thị Hồng Phước** - *Giáo viên hướng dẫn*
 
 
